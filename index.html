@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>PÉPITE 💎 - Dénicheur de pépites</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
@@ -13,7 +13,6 @@
         
         .brand-logo { font-family: 'Inter', sans-serif; font-weight: 900; font-style: italic; letter-spacing: -0.05em; }
         
-        /* Conteneur de la carte avec animation de sortie fluide */
         .card-wrapper { 
             height: 100vh; 
             display: flex; 
@@ -33,11 +32,21 @@
         }
 
         .card.active { border: 2px solid #facb15; transform: scale(1.02); box-shadow: 0 0 30px rgba(250, 203, 21, 0.15); }
-        .product-img { height: 50%; width: 100%; object-fit: cover; }
+        .product-img { height: 50%; width: 100%; object-fit: cover; pointer-events: none; }
         .promo-badge { position: absolute; top: 20px; left: 20px; background: #facb15; color: black; font-weight: 900; padding: 5px 12px; border-radius: 12px; font-size: 0.9rem; z-index: 10; }
-        .share-btn { position: absolute; top: 20px; right: 20px; background: rgba(0,0,0,0.5); backdrop-filter: blur(8px); color: white; padding: 10px; border-radius: 50%; z-index: 10; border: 1px solid rgba(255,255,255,0.2); }
-        .product-info { height: 50%; padding: 20px; display: flex; flex-direction: column; justify-content: space-between; }
         
+        /* Coeur animation Double Tap */
+        .heart-tap {
+            position: absolute; top: 25%; left: 50%; transform: translate(-50%, -50%) scale(0);
+            color: #facb15; font-size: 80px; z-index: 20; opacity: 0; pointer-events: none;
+        }
+        .animate-heart { animation: heartPop 0.6s ease-out; }
+        @keyframes heartPop {
+            0% { transform: translate(-50%, -50%) scale(0); opacity: 0; }
+            50% { transform: translate(-50%, -50%) scale(1.2); opacity: 1; }
+            100% { transform: translate(-50%, -50%) scale(1); opacity: 0; }
+        }
+
         .btn-action { flex: 1; padding: 12px; border-radius: 15px; font-weight: 800; font-size: 0.8rem; text-transform: uppercase; transition: all 0.2s; display: flex; align-items: center; justify-content: center; gap: 8px; border: 1px solid; }
         .btn-nope { background: rgba(239, 68, 68, 0.1); color: #ef4444; border-color: #ef4444; }
         .btn-like { background: rgba(16, 185, 129, 0.1); color: #10b981; border-color: #10b981; }
@@ -64,6 +73,9 @@
     </div>
 
     <div class="fixed top-20 right-6 z-[100] flex flex-col items-end gap-3">
+        <button onclick="undoLastAction()" class="bg-zinc-900/90 border border-gray-500 p-3 rounded-full text-gray-400 hover:text-white transition-colors">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><polyline points="3 3 3 8 8 8"/></svg>
+        </button>
         <div class="bg-zinc-900/90 border border-white/10 px-4 py-2 rounded-2xl flex items-center gap-3">
             <span class="text-white font-black text-xl" id="flow-count">0</span>
             <span class="text-[9px] font-bold uppercase leading-none text-gray-400">Restants</span>
@@ -82,18 +94,24 @@
             <button onclick="toggleSavedList()" class="text-4xl text-gray-400">&times;</button>
         </div>
         <div id="saved-grid" class="grid-saved max-w-4xl mx-auto"></div>
+        <div class="flex justify-center mt-10">
+            <button onclick="clearCache()" class="text-red-500 text-[10px] font-bold uppercase tracking-widest border border-red-500/30 px-6 py-2 rounded-full">Réinitialiser l'App</button>
+        </div>
     </div>
 
     <script>
         let allProducts = [];
         let filteredProducts = [];
+        let history = []; 
         let currentIndex = 0;
+        let lastTap = 0;
+
         let likedIds = JSON.parse(localStorage.getItem('pepite_likes')) || [];
         let dislikedIds = JSON.parse(localStorage.getItem('pepite_dislikes')) || [];
 
         async function init() {
             try {
-                const response = await fetch('tinder_shopping_final.json');
+                const response = await fetch('tinder_shopping_final.json?t=' + Date.now());
                 allProducts = await response.json();
                 
                 const marques = [...new Set(allProducts.map(p => p.marque))].sort();
@@ -108,7 +126,6 @@
                 });
 
                 applyFilters();
-                updateCounts();
             } catch (e) { console.error("Erreur JSON", e); }
         }
 
@@ -121,9 +138,10 @@
             const checkboxes = document.querySelectorAll('.brand-checkbox:checked');
             let selectedBrands = Array.from(checkboxes).map(cb => cb.value);
             
+            // On traite les IDs en String pour éviter les bugs
             filteredProducts = allProducts.filter(p => {
                 const isBrandMatch = selectedBrands.length === 0 || selectedBrands.includes(p.marque);
-                const isNotDisliked = !dislikedIds.includes(p.id);
+                const isNotDisliked = !dislikedIds.includes(String(p.id));
                 return isBrandMatch && isNotDisliked;
             });
 
@@ -140,17 +158,18 @@
             container.innerHTML = '';
             
             if(filteredProducts.length === 0) {
-                container.innerHTML = '<div class="h-screen flex items-center justify-center text-gray-500 italic px-10 text-center">Toutes les pépites ont été triées ! ✨</div>';
+                container.innerHTML = '<div class="h-screen flex items-center justify-center text-gray-500 italic px-10 text-center">Toutes les pépites ont été triées ! Reviens demain. ✨</div>';
                 return;
             }
 
             filteredProducts.forEach((p, i) => {
-                const isLiked = likedIds.includes(p.id);
+                const isLiked = likedIds.includes(String(p.id));
                 const wrapper = document.createElement('div');
                 wrapper.className = "card-wrapper";
                 wrapper.id = `wrapper-${i}`;
                 wrapper.innerHTML = `
-                    <div class="card" id="card-${i}">
+                    <div class="card" id="card-${i}" onclick="detectDoubleTap(event, ${i})">
+                        <div class="heart-tap" id="heart-${i}">💎</div>
                         <div class="promo-badge">${p.reduction_label || "-50%"}</div>
                         <button onclick="shareProduct('${p.nom}', '${p.url}')" class="share-btn">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><polyline points="16 6 12 2 8 6"/><line x1="12" y1="2" x2="12" y2="15"/></svg>
@@ -164,6 +183,7 @@
                                     <span class="text-3xl font-black">${p.prix_actuel}</span>
                                     <span class="ml-2 text-sm text-gray-500 line-through">${p.prix_base}</span>
                                 </div>
+                                <p class="text-[9px] text-gray-400 mt-2 uppercase tracking-tighter">Tailles: ${p.tailles.join(', ')}</p>
                             </div>
                             <div class="flex gap-3 mt-4">
                                 <button onclick="vote(${i}, 'nope')" class="btn-action btn-nope">✖️ Bof</button>
@@ -179,27 +199,39 @@
             });
         }
 
+        function detectDoubleTap(e, index) {
+            let now = new Date().getTime();
+            let timesince = now - lastTap;
+            if((timesince < 300) && (timesince > 0)){
+                const heart = document.getElementById(`heart-${index}`);
+                heart.classList.add('animate-heart');
+                setTimeout(() => heart.classList.remove('animate-heart'), 600);
+                vote(index, 'like');
+            }
+            lastTap = now;
+        }
+
         function vote(index, type) {
             const product = filteredProducts[index];
+            const pId = String(product.id);
             const wrapper = document.getElementById(`wrapper-${index}`);
 
             if (type === 'like') {
-                if (!likedIds.includes(product.id)) {
-                    likedIds.push(product.id);
+                if (!likedIds.includes(pId)) {
+                    likedIds.push(pId);
                     confetti({ particleCount: 100, spread: 70, origin: { y: 0.6 }, colors: ['#facb15', '#ffffff'] });
                 } else {
-                    likedIds = likedIds.filter(id => id !== product.id);
+                    likedIds = likedIds.filter(id => id !== pId);
                 }
                 localStorage.setItem('pepite_likes', JSON.stringify(likedIds));
                 render(); 
             } else if (type === 'nope') {
-                dislikedIds.push(product.id);
+                history.push({ index: index, data: product }); // Sauvegarde pour Undo
+                dislikedIds.push(pId);
                 localStorage.setItem('pepite_dislikes', JSON.stringify(dislikedIds));
                 
-                // DISPARITION FLUIDE (Fade + Shrink)
                 wrapper.style.opacity = '0';
                 wrapper.style.maxHeight = '0';
-                wrapper.style.pointerEvents = 'none';
                 
                 setTimeout(() => {
                     filteredProducts.splice(index, 1);
@@ -209,6 +241,24 @@
                 }, 400);
             }
             updateCounts();
+        }
+
+        function undoLastAction() {
+            if (history.length === 0) return;
+            const last = history.pop();
+            
+            // Retirer du stockage des dislikes
+            dislikedIds = dislikedIds.filter(id => id !== String(last.data.id));
+            localStorage.setItem('pepite_dislikes', JSON.stringify(dislikedIds));
+            
+            // Remettre dans la liste affichée
+            filteredProducts.splice(last.index, 0, last.data);
+            render();
+            updateCounts();
+            
+            // Scroller vers l'élément remis
+            const target = document.getElementById(`wrapper-${last.index}`);
+            if (target) target.scrollIntoView({ behavior: 'smooth' });
         }
 
         function updateCounts() { 
@@ -221,29 +271,29 @@
             const grid = document.getElementById('saved-grid');
             modal.style.display = (modal.style.display === 'block') ? 'none' : 'block';
             if (modal.style.display === 'block') {
-                const savedItems = allProducts.filter(p => likedIds.includes(p.id));
+                const savedItems = allProducts.filter(p => likedIds.includes(String(p.id)));
                 grid.innerHTML = savedItems.length ? '' : '<p class="col-span-full text-center text-gray-500 py-20 italic">Rien par ici...</p>';
                 savedItems.forEach(p => {
                     grid.innerHTML += `
-                        <div class="saved-item-card">
-                            <img src="${p.image}" class="saved-item-img mb-3" referrerpolicy="no-referrer">
+                        <div class="bg-zinc-900 border border-white/5 p-3 rounded-3xl">
+                            <img src="${p.image}" class="w-full h-32 object-cover rounded-2xl mb-3" referrerpolicy="no-referrer">
                             <p class="text-yellow-400 font-black text-[9px] uppercase mb-1">${p.marque}</p>
                             <span class="font-black text-sm">${p.prix_actuel}</span>
-                            <a href="${p.url}" target="_blank" class="mt-2 bg-white text-black py-2 rounded-lg text-[10px] text-center font-bold">🛒 VOIR</a>
+                            <a href="${p.url}" target="_blank" class="block w-full mt-2 bg-white text-black py-2 rounded-lg text-[10px] text-center font-bold uppercase">🛒 VOIR</a>
                         </div>`;
                 });
             }
         }
 
-        function navigate(dir) {
-            currentIndex = Math.max(0, Math.min(filteredProducts.length - 1, currentIndex + dir));
-            const target = document.getElementById(`wrapper-${currentIndex}`);
-            if (target) target.scrollIntoView({ behavior: 'smooth' });
-            updateActiveCard();
-        }
-
         function updateActiveCard() {
             document.querySelectorAll('.card').forEach((c, i) => c.classList.toggle('active', i === currentIndex));
+        }
+
+        function clearCache() {
+            if(confirm("Supprimer tous tes choix ?")) {
+                localStorage.clear();
+                location.reload();
+            }
         }
 
         window.addEventListener('scroll', () => {
