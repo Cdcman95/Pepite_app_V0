@@ -19,9 +19,11 @@ def recuperer_marques_favorites_detaillees():
 
     nouvelles_pepites = []
 
-    # --- 1. COLLECTE DES NOUVELLES PÉPITES ---
+    print(f"🚀 DÉMARRAGE DU SCAN : {time.strftime('%H:%M:%S')}")
+
+    # --- 1. COLLECTE ---
     for marque in marques:
-        print(f"🔍 Scan quotidien : {marque}...")
+        print(f"🔍 Analyse en cours : {marque}...")
         querystring = {
             "store": "FR", "offset": "0", "q": marque,
             "limit": "40", "country": "FR", "sort": "discount",
@@ -30,8 +32,14 @@ def recuperer_marques_favorites_detaillees():
 
         try:
             response = requests.get(url_list, headers=headers, params=querystring)
+            # Vérification du statut de l'API
+            if response.status_code != 200:
+                print(f"⚠️ Erreur API ({response.status_code}) pour {marque}")
+                continue
+
             data = response.json()
             products = data.get('products', [])
+            trouves_pour_cette_marque = 0
             
             for p in products:
                 brand_name = p.get('brandName', '').lower()
@@ -42,67 +50,71 @@ def recuperer_marques_favorites_detaillees():
                     if prix_prev and prix_prev > prix_actuel:
                         reduction_pct = round(((prix_prev - prix_actuel) / prix_prev) * 100)
                         
-                        # Extraction des tailles dispos
                         variants = p.get('variants', [])
                         tailles_dispos = [v.get('brandSize', 'N/A') for v in variants if v.get('isInStock')]
                         
-                        if not tailles_dispos:
-                            tailles_dispos = ["Vérifier sur site"]
-
                         img_url = p.get('imageUrl')
                         if img_url and not img_url.startswith('http'):
                             img_url = "https://" + img_url
 
                         nouvelles_pepites.append({
-                            "id": str(p.get('id')), # ID en string pour la comparaison
+                            "id": str(p.get('id')),
                             "marque": p.get('brandName'),
                             "nom": p.get('name'),
                             "prix_actuel": f"{prix_actuel}€",
                             "prix_base": f"{prix_prev}€",
                             "reduction_valeur": reduction_pct,
                             "reduction_label": f"-{reduction_pct}%",
-                            "tailles": tailles_dispos,
+                            "tailles": tailles_dispos or ["Vérifier sur site"],
                             "image": img_url,
                             "url": f"https://www.asos.com/fr/{p.get('url')}",
                             "date_ajout": time.strftime("%Y-%m-%d")
                         })
-            time.sleep(1) # Pause anti-ban
+                        trouves_pour_cette_marque += 1
+            
+            print(f"✅ {marque} : {trouves_pour_cette_marque} pépites ajoutées.")
+            time.sleep(1) 
 
         except Exception as e:
-            print(f"❌ Erreur sur {marque}: {e}")
+            print(f"❌ Erreur critique sur {marque}: {e}")
 
-    # --- 2. FUSION AVEC L'ANCIEN CATALOGUE (ANTI-DOUBLONS) ---
+    print(f"\n📊 FIN DU SCAN. Total récolté : {len(nouvelles_pepites)} articles.")
+
+    # --- 2. FUSION ET SAUVEGARDE ---
     if os.path.exists(file_name):
         try:
             with open(file_name, "r", encoding="utf-8") as f:
                 catalogue_existant = json.load(f)
+            print(f"📂 Catalogue existant chargé ({len(catalogue_existant)} articles).")
         except:
+            print("⚠️ Impossible de lire l'ancien fichier, on repart à zéro.")
             catalogue_existant = []
     else:
+        print("ℹ️ Aucun fichier existant trouvé. Création d'un nouveau.")
         catalogue_existant = []
 
-    # On utilise un dictionnaire (clé = ID) pour fusionner. 
-    # Les nouvelles pépites écrasent les anciennes si l'ID est identique (mise à jour prix).
+    # Fusion anti-doublons
     dict_fusion = {str(item['id']): item for item in catalogue_existant}
     for n in nouvelles_pepites:
         dict_fusion[str(n['id'])] = n
 
-    # --- 3. TRI ET NETTOYAGE ---
-    # On transforme le dico en liste
     liste_finale = list(dict_fusion.values())
-    
-    # On trie par le plus gros pourcentage de réduction
     liste_finale.sort(key=lambda x: x['reduction_valeur'], reverse=True)
+    liste_finale = liste_finale[:150] # Limite
 
-    # On ne garde que les 150 meilleures pépites pour garantir la performance
-    liste_finale = liste_finale[:150]
-
-    # --- 4. SAUVEGARDE ---
-    with open(file_name, "w", encoding="utf-8") as f:
-        json.dump(liste_finale, f, indent=4, ensure_ascii=False)
-            
-    print(f"\n✨ BASE DE DONNÉES MISE À JOUR")
-    print(f"📈 Total dans le catalogue : {len(liste_finale)} pépites (après fusion).")
+    # --- 3. ÉCRITURE ET DEBUG ---
+    print(f"💾 Tentative d'écriture dans {file_name}...")
+    try:
+        with open(file_name, "w", encoding="utf-8") as f:
+            json.dump(liste_finale, f, indent=4, ensure_ascii=False)
+        
+        if os.path.exists(file_name):
+            taille = os.path.getsize(file_name)
+            print(f"✅ SUCCÈS : Fichier créé avec succès ({taille} octets).")
+        else:
+            print("❌ ERREUR : Le fichier n'apparaît pas sur le disque après l'écriture.")
+    except Exception as e:
+        print(f"❌ ERREUR d'écriture : {e}")
 
 if __name__ == "__main__":
     recuperer_marques_favorites_detaillees()
