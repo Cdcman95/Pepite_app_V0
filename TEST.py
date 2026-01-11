@@ -51,15 +51,17 @@ def recuperer_marques_favorites_detaillees():
                     if prix_prev and prix_prev > prix_actuel:
                         reduction_pct = round(((prix_prev - prix_actuel) / prix_prev) * 100)
                         
-                        # Récupération des tailles (Stock Web)
-                        # Note: L'API liste parfois les tailles dans 'variants' ou 'sizes'
-                        # On extrait les noms de tailles disponibles
-                        sizes_list = p.get('variants', [])
-                        tailles_dispos = [v.get('brandSize', 'N/A') for v in sizes_list if v.get('isInStock')]
+                        # Extraction des tailles
+                        variants = p.get('variants', [])
+                        tailles_dispos = [v.get('brandSize', 'N/A') for v in variants if v.get('isInStock')]
                         
-                        # Si l'API ne donne pas les tailles dans la liste, on met un message informatif
                         if not tailles_dispos:
                             tailles_dispos = ["Consulter sur le site"]
+
+                        # Correction Image URL
+                        img_url = p.get('imageUrl')
+                        if img_url and not img_url.startswith('http'):
+                            img_url = "https://" + img_url
 
                         toutes_les_pepites.append({
                             "id": p.get('id'),
@@ -67,29 +69,30 @@ def recuperer_marques_favorites_detaillees():
                             "nom": p.get('name'),
                             "prix_actuel": f"{prix_actuel}€",
                             "prix_base": f"{prix_prev}€",
-                            "reduction_valeur": reduction_pct, # Garder en chiffre pour le tri
+                            "reduction_valeur": reduction_pct,
                             "reduction_label": f"-{reduction_pct}%",
                             "tailles": tailles_dispos,
-                            "image": "https://" + p.get('imageUrl') if p.get('imageUrl') else None,
+                            "image": img_url,
                             "url": f"https://www.asos.com/fr/{p.get('url')}"
                         })
             
-            time.sleep(1)
+            time.sleep(1) # Sécurité pour ne pas être banni de l'API
 
         except Exception as e:
             print(f"❌ Erreur pour {marque}: {e}")
 
-    # --- TRI PAR RÉDUCTION DÉCROISSANTE ---
-    # On trie la liste complète : les plus gros % de réduction apparaissent en haut
+    # Tri par réduction
     toutes_les_pepites.sort(key=lambda x: x['reduction_valeur'], reverse=True)
 
-    # Sauvegarde
-    download_path = os.path.join(os.path.expanduser("~"), "Downloads", "tinder_shopping_final.json")
-    with open(download_path, "w", encoding="utf-8") as f:
+    # --- MODIFICATION CRUCIALE POUR GITHUB ACTIONS ---
+    # On enregistre dans le dossier courant du projet, pas dans Downloads
+    file_name = "tinder_shopping_final.json"
+    
+    with open(file_name, "w", encoding="utf-8") as f:
         json.dump(toutes_les_pepites, f, indent=4, ensure_ascii=False)
             
-    print(f"\n🚀 RAPPORT GÉNÉRÉ : {len(toutes_les_pepites)} pépites triées par promo.")
-    print(f"📁 Fichier avec tailles disponible : {download_path}")
+    print(f"\n🚀 RAPPORT GÉNÉRÉ : {len(toutes_les_pepites)} pépites triées.")
+    print(f"📁 Fichier mis à jour : {file_name}")
 
 if __name__ == "__main__":
     recuperer_marques_favorites_detaillees()
