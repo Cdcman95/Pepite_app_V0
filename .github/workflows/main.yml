@@ -1,0 +1,12 @@
+name: Routine Matinale Pepite
+
+on:
+  workflow_dispatch: # On garde juste ce bouton pour l'instant pour tester l'apparition
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Lancement de TEST
+        run: echo "Le robot est pret"
