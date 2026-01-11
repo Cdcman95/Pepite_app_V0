@@ -16,7 +16,7 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
       - name: Run scraper
-        run: python ton_script.py  # <-- REMPLACE PAR LE NOM DE TON FICHIER .PY
+        run: python TEST.py 
       - name: Commit and Push
         run: |
           git config --global user.name 'RobotPepite'
