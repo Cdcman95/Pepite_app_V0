@@ -1,0 +1,26 @@
+name: Routine Matinale Pepite
+
+on:
+  schedule:
+    - cron: '0 8 * * *'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Run scraper
+        run: python ton_script.py  # <-- REMPLACE PAR LE NOM DE TON FICHIER .PY
+      - name: Commit and Push
+        run: |
+          git config --global user.name 'RobotPepite'
+          git config --global user.email 'bot@pepite.com'
+          git add tinder_shopping_final.json
+          git commit -m "MAJ automatique des pépites" || echo "Pas de changements"
+          git push
