@@ -2,221 +2,256 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <title>Pépites App</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PÉPITE 💎 - Dénicheur de pépites</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
     <style>
-        :root { --primary: #ff4b2b; --secondary: #ff416c; --bg: #f0f2f5; }
-        body { font-family: sans-serif; background: var(--bg); margin: 0; height: 100vh; overflow: hidden; display: flex; flex-direction: column; }
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+        body { background: #000; color: white; margin: 0; font-family: 'Inter', sans-serif; overflow-y: scroll; scroll-snap-type: y mandatory; }
+        body::-webkit-scrollbar { display: none; }
         
-        header { padding: 15px; text-align: center; background: white; box-shadow: 0 2px 5px rgba(0,0,0,0.1); z-index: 10; position: relative; }
-        h1 { margin: 0; font-size: 1.3rem; color: var(--primary); }
+        .brand-logo { font-family: 'Inter', sans-serif; font-weight: 900; font-style: italic; letter-spacing: -0.05em; }
+        
+        /* Conteneur de la carte avec animation de sortie fluide */
+        .card-wrapper { 
+            height: 100vh; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            scroll-snap-align: center; 
+            transition: opacity 0.4s ease, transform 0.4s ease, max-height 0.4s ease;
+            overflow: hidden;
+        }
 
-        #deck { flex: 1; position: relative; display: flex; justify-content: center; align-items: center; perspective: 1000px; padding: 20px; }
-        
         .card { 
-            position: absolute; width: 90%; max-width: 350px; height: 500px; 
-            background: white; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); 
-            overflow: hidden; transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
-            user-select: none;
+            width: 90vw; max-width: 380px; height: 78vh; 
+            background: #1c1c1e; border-radius: 2.5rem; 
+            overflow: hidden; position: relative; 
+            border: 1px solid rgba(255,255,255,0.1); 
+            transition: all 0.3s ease; 
         }
-        .card img { width: 100%; height: 70%; object-fit: cover; pointer-events: none; }
-        .card-info { padding: 12px; }
-        .price { font-weight: bold; color: var(--primary); }
-        .old-price { text-decoration: line-through; color: #999; font-size: 0.8rem; }
+
+        .card.active { border: 2px solid #facb15; transform: scale(1.02); box-shadow: 0 0 30px rgba(250, 203, 21, 0.15); }
+        .product-img { height: 50%; width: 100%; object-fit: cover; }
+        .promo-badge { position: absolute; top: 20px; left: 20px; background: #facb15; color: black; font-weight: 900; padding: 5px 12px; border-radius: 12px; font-size: 0.9rem; z-index: 10; }
+        .share-btn { position: absolute; top: 20px; right: 20px; background: rgba(0,0,0,0.5); backdrop-filter: blur(8px); color: white; padding: 10px; border-radius: 50%; z-index: 10; border: 1px solid rgba(255,255,255,0.2); }
+        .product-info { height: 50%; padding: 20px; display: flex; flex-direction: column; justify-content: space-between; }
         
-        /* Animation Coeur Double Tap */
-        .heart-overlay {
-            position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%) scale(0);
-            color: white; font-size: 5rem; opacity: 0; pointer-events: none; transition: all 0.3s;
-        }
-        .animate-heart { animation: heartBeat 0.6s ease-out; }
-        @keyframes heartBeat {
-            0% { transform: translate(-50%, -50%) scale(0); opacity: 0; }
-            50% { transform: translate(-50%, -50%) scale(1.2); opacity: 0.9; }
-            100% { transform: translate(-50%, -50%) scale(1); opacity: 0; }
-        }
-
-        .controls { padding: 20px; display: flex; justify-content: center; gap: 15px; background: white; }
-        .btn { 
-            width: 55px; height: 55px; border-radius: 50%; border: none; 
-            display: flex; justify-content: center; align-items: center; 
-            font-size: 1.2rem; cursor: pointer; box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
-        }
-        .btn-dislike { color: #f44336; border: 2px solid #f44336; background: white; }
-        .btn-undo { color: #ff9800; border: 2px solid #ff9800; background: white; width: 45px; height: 45px; font-size: 1rem; }
-        .btn-like { color: #4caf50; border: 2px solid #4caf50; background: white; }
-
-        #saved-modal { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: white; z-index: 100; display: none; flex-direction: column; }
-        .saved-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; padding: 10px; overflow-y: auto; }
-        .saved-item { border: 1px solid #eee; border-radius: 8px; overflow: hidden; }
-        .saved-item img { width: 100%; height: 120px; object-fit: cover; }
+        .btn-action { flex: 1; padding: 12px; border-radius: 15px; font-weight: 800; font-size: 0.8rem; text-transform: uppercase; transition: all 0.2s; display: flex; align-items: center; justify-content: center; gap: 8px; border: 1px solid; }
+        .btn-nope { background: rgba(239, 68, 68, 0.1); color: #ef4444; border-color: #ef4444; }
+        .btn-like { background: rgba(16, 185, 129, 0.1); color: #10b981; border-color: #10b981; }
+        .voted-like { background: #10b981 !important; color: white !important; }
+        
+        #filter-menu { display: none; position: fixed; top: 70px; left: 20px; right: 20px; background: #18181b; border: 1px solid rgba(255,255,255,0.1); border-radius: 1.5rem; z-index: 150; padding: 20px; box-shadow: 0 20px 40px rgba(0,0,0,0.8); }
+        #saved-modal { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.95); z-index: 200; overflow-y: auto; padding: 20px; }
+        .grid-saved { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; margin-top: 20px; }
     </style>
 </head>
 <body>
 
-<header>
-    <h1>🔥 Mes Pépites</h1>
-    <button onclick="toggleSaved(true)" style="position:absolute; right:15px; top:15px; background:none; border:none; font-size: 1.4rem;">
-        <i class="fa-solid fa-bookmark"></i>
-    </button>
-</header>
-
-<div id="deck">
-    <p id="loader">Chargement...</p>
-</div>
-
-<div class="controls">
-    <button class="btn btn-dislike" onclick="handleSwipe('left')"><i class="fa-solid fa-xmark"></i></button>
-    <button class="btn btn-undo" onclick="goBack()"><i class="fa-solid fa-rotate-left"></i></button>
-    <button class="btn btn-like" onclick="handleSwipe('right')"><i class="fa-solid fa-heart"></i></button>
-</div>
-
-<div id="saved-modal">
-    <div style="padding:20px; display:flex; justify-content:space-between; align-items:center; border-bottom:1px solid #ddd;">
-        <h2>Mes Favoris</h2>
-        <button onclick="toggleSaved(false)" style="font-size:2rem; border:none; background:none;">&times;</button>
+    <div class="fixed top-0 left-0 w-full z-[100] bg-black/80 backdrop-blur-lg p-4 flex justify-between items-center border-b border-white/10">
+        <h1 class="text-2xl brand-logo uppercase">PÉ<span class="text-yellow-400">PITE</span> 💎</h1>
+        <button onclick="toggleFilterMenu()" class="bg-zinc-800 px-4 py-2 rounded-full text-[10px] font-black uppercase border border-white/10 flex items-center gap-2">
+            <span>🔍</span> Marques
+        </button>
     </div>
-    <div id="saved-grid" class="saved-grid"></div>
-</div>
 
-<script>
-    let allProducts = [];
-    let currentIndex = 0;
-    let history = []; // Pour le bouton retour
-    let lastTap = 0; // Pour le double tap
+    <div id="filter-menu">
+        <h3 class="text-xs font-black uppercase text-gray-500 mb-4 tracking-widest text-center">Filtrer par marques</h3>
+        <div id="brands-container" class="grid grid-cols-2 gap-3 mb-6 max-h-60 overflow-y-auto pr-2"></div>
+        <button onclick="applyFilters()" class="w-full bg-yellow-400 text-black py-4 rounded-xl font-black uppercase text-xs">Appliquer</button>
+    </div>
 
-    let likedIds = JSON.parse(localStorage.getItem('pepite_likes')) || [];
-    let dislikedIds = JSON.parse(localStorage.getItem('pepite_dislikes')) || [];
+    <div class="fixed top-20 right-6 z-[100] flex flex-col items-end gap-3">
+        <div class="bg-zinc-900/90 border border-white/10 px-4 py-2 rounded-2xl flex items-center gap-3">
+            <span class="text-white font-black text-xl" id="flow-count">0</span>
+            <span class="text-[9px] font-bold uppercase leading-none text-gray-400">Restants</span>
+        </div>
+        <div onclick="toggleSavedList()" class="bg-zinc-900/90 border border-yellow-400 px-4 py-2 rounded-2xl flex items-center gap-3 cursor-pointer">
+            <span class="text-yellow-400 font-black text-xl" id="pepites-count">0</span>
+            <span class="text-[9px] font-bold uppercase leading-none text-yellow-400">Sauvés</span>
+        </div>
+    </div>
 
-    async function loadProducts() {
-        try {
-            const response = await fetch('tinder_shopping_final.json?t=' + Date.now());
-            const data = await response.json();
-            // Filtrage initial
-            allProducts = data.filter(p => !likedIds.includes(String(p.id)) && !dislikedIds.includes(String(p.id)));
-            renderDeck();
-        } catch (e) { document.getElementById('loader').innerText = "Erreur."; }
-    }
+    <div id="main-container" class="mt-20"></div>
 
-    function renderDeck() {
-        const deck = document.getElementById('deck');
-        deck.innerHTML = '';
-        
-        if (currentIndex >= allProducts.length) {
-            deck.innerHTML = '<div style="text-align:center;"><h2>Plus de pépites !</h2><button onclick="location.reload()">Recharger</button></div>';
-            return;
-        }
+    <div id="saved-modal">
+        <div class="flex justify-between items-center max-w-4xl mx-auto">
+            <h2 class="text-3xl font-black italic uppercase">Mon <span class="text-yellow-400">Butin</span></h2>
+            <button onclick="toggleSavedList()" class="text-4xl text-gray-400">&times;</button>
+        </div>
+        <div id="saved-grid" class="grid-saved max-w-4xl mx-auto"></div>
+    </div>
 
-        for (let i = currentIndex + 1; i >= currentIndex; i--) {
-            if (allProducts[i]) {
-                const p = allProducts[i];
-                const card = document.createElement('div');
-                card.className = 'card';
-                card.style.zIndex = allProducts.length - i;
-                card.innerHTML = `
-                    <div class="heart-overlay"><i class="fa-solid fa-heart"></i></div>
-                    <img src="${p.image}">
-                    <div class="card-info">
-                        <strong>${p.marque}</strong>
-                        <p style="font-size:0.9rem; height:40px; overflow:hidden;">${p.nom}</p>
-                        <p><span class="price">${p.prix_actuel}</span> <span class="old-price">${p.prix_base}</span></p>
-                    </div>
-                `;
+    <script>
+        let allProducts = [];
+        let filteredProducts = [];
+        let currentIndex = 0;
+        let likedIds = JSON.parse(localStorage.getItem('pepite_likes')) || [];
+        let dislikedIds = JSON.parse(localStorage.getItem('pepite_dislikes')) || [];
+
+        async function init() {
+            try {
+                const response = await fetch('tinder_shopping_final.json');
+                allProducts = await response.json();
                 
-                // Event Double Tap
-                card.addEventListener('click', function(e) {
-                    let now = new Date().getTime();
-                    let timesince = now - lastTap;
-                    if((timesince < 300) && (timesince > 0)){
-                        const heart = card.querySelector('.heart-overlay');
-                        heart.classList.add('animate-heart');
-                        handleSwipe('right');
-                    }
-                    lastTap = now;
+                const marques = [...new Set(allProducts.map(p => p.marque))].sort();
+                const container = document.getElementById('brands-container');
+                marques.forEach(m => {
+                    container.innerHTML += `
+                        <label class="flex items-center gap-2 bg-zinc-800 p-3 rounded-xl cursor-pointer">
+                            <input type="checkbox" value="${m}" class="brand-checkbox accent-yellow-400">
+                            <span class="text-[10px] font-bold uppercase truncate">${m}</span>
+                        </label>
+                    `;
                 });
 
-                deck.appendChild(card);
-            }
+                applyFilters();
+                updateCounts();
+            } catch (e) { console.error("Erreur JSON", e); }
         }
-    }
 
-    function handleSwipe(direction) {
-        if (currentIndex >= allProducts.length) return;
-        
-        const cards = document.querySelectorAll('.card');
-        const topCard = cards[cards.length - 1];
-        const product = allProducts[currentIndex];
+        function toggleFilterMenu() {
+            const menu = document.getElementById('filter-menu');
+            menu.style.display = (menu.style.display === 'block') ? 'none' : 'block';
+        }
 
-        // On enregistre dans l'historique avant de swiper
-        history.push({ index: currentIndex, id: String(product.id), type: direction });
+        function applyFilters() {
+            const checkboxes = document.querySelectorAll('.brand-checkbox:checked');
+            let selectedBrands = Array.from(checkboxes).map(cb => cb.value);
+            
+            filteredProducts = allProducts.filter(p => {
+                const isBrandMatch = selectedBrands.length === 0 || selectedBrands.includes(p.marque);
+                const isNotDisliked = !dislikedIds.includes(p.id);
+                return isBrandMatch && isNotDisliked;
+            });
 
-        if (direction === 'right') {
-            topCard.style.transform = 'translateX(200%) rotate(30deg)';
-            if (!likedIds.includes(String(product.id))) {
-                likedIds.push(String(product.id));
+            document.getElementById('filter-menu').style.display = 'none';
+            render();
+            window.scrollTo(0,0);
+            currentIndex = 0;
+            updateCounts();
+            updateActiveCard();
+        }
+
+        function render() {
+            const container = document.getElementById('main-container');
+            container.innerHTML = '';
+            
+            if(filteredProducts.length === 0) {
+                container.innerHTML = '<div class="h-screen flex items-center justify-center text-gray-500 italic px-10 text-center">Toutes les pépites ont été triées ! ✨</div>';
+                return;
+            }
+
+            filteredProducts.forEach((p, i) => {
+                const isLiked = likedIds.includes(p.id);
+                const wrapper = document.createElement('div');
+                wrapper.className = "card-wrapper";
+                wrapper.id = `wrapper-${i}`;
+                wrapper.innerHTML = `
+                    <div class="card" id="card-${i}">
+                        <div class="promo-badge">${p.reduction_label || "-50%"}</div>
+                        <button onclick="shareProduct('${p.nom}', '${p.url}')" class="share-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><polyline points="16 6 12 2 8 6"/><line x1="12" y1="2" x2="12" y2="15"/></svg>
+                        </button>
+                        <img src="${p.image}" class="product-img" referrerpolicy="no-referrer">
+                        <div class="product-info">
+                            <div>
+                                <p class="text-yellow-400 font-bold uppercase text-[10px] mb-1">${p.marque}</p>
+                                <h2 class="text-white text-xl font-bold leading-tight line-clamp-1">${p.nom}</h2>
+                                <div class="mt-2">
+                                    <span class="text-3xl font-black">${p.prix_actuel}</span>
+                                    <span class="ml-2 text-sm text-gray-500 line-through">${p.prix_base}</span>
+                                </div>
+                            </div>
+                            <div class="flex gap-3 mt-4">
+                                <button onclick="vote(${i}, 'nope')" class="btn-action btn-nope">✖️ Bof</button>
+                                <button onclick="vote(${i}, 'like')" id="btn-like-${i}" class="btn-action btn-like ${isLiked ? 'voted-like' : ''}">
+                                    💎 ${isLiked ? 'Sauvé' : 'Pépite'}
+                                </button>
+                            </div>
+                            <a href="${p.url}" target="_blank" class="block w-full text-center bg-white text-black py-4 rounded-2xl font-black text-xs uppercase mt-3">Saisir l'offre</a>
+                        </div>
+                    </div>
+                `;
+                container.appendChild(wrapper);
+            });
+        }
+
+        function vote(index, type) {
+            const product = filteredProducts[index];
+            const wrapper = document.getElementById(`wrapper-${index}`);
+
+            if (type === 'like') {
+                if (!likedIds.includes(product.id)) {
+                    likedIds.push(product.id);
+                    confetti({ particleCount: 100, spread: 70, origin: { y: 0.6 }, colors: ['#facb15', '#ffffff'] });
+                } else {
+                    likedIds = likedIds.filter(id => id !== product.id);
+                }
                 localStorage.setItem('pepite_likes', JSON.stringify(likedIds));
+                render(); 
+            } else if (type === 'nope') {
+                dislikedIds.push(product.id);
+                localStorage.setItem('pepite_dislikes', JSON.stringify(dislikedIds));
+                
+                // DISPARITION FLUIDE (Fade + Shrink)
+                wrapper.style.opacity = '0';
+                wrapper.style.maxHeight = '0';
+                wrapper.style.pointerEvents = 'none';
+                
+                setTimeout(() => {
+                    filteredProducts.splice(index, 1);
+                    render();
+                    updateCounts();
+                    updateActiveCard();
+                }, 400);
             }
-        } else {
-            topCard.style.transform = 'translateX(-200%) rotate(-30deg)';
-            dislikedIds.push(String(product.id));
-            localStorage.setItem('pepite_dislikes', JSON.stringify(dislikedIds));
+            updateCounts();
         }
 
-        setTimeout(() => {
-            currentIndex++;
-            renderDeck();
-        }, 300);
-    }
-
-    function goBack() {
-        if (history.length === 0) return;
-
-        const lastAction = history.pop();
-        currentIndex = lastAction.index;
-
-        if (lastAction.type === 'right') {
-            likedIds = likedIds.filter(id => id !== lastAction.id);
-            localStorage.setItem('pepite_likes', JSON.stringify(likedIds));
-        } else {
-            dislikedIds = dislikedIds.filter(id => id !== lastAction.id);
-            localStorage.setItem('pepite_dislikes', JSON.stringify(dislikedIds));
+        function updateCounts() { 
+            document.getElementById('pepites-count').innerText = likedIds.length;
+            document.getElementById('flow-count').innerText = filteredProducts.length;
         }
 
-        renderDeck();
-    }
-
-    function toggleSaved(show) {
-        const modal = document.getElementById('saved-modal');
-        modal.style.display = show ? 'flex' : 'none';
-        if(show) renderSavedItems();
-    }
-
-    async function renderSavedItems() {
-        const grid = document.getElementById('saved-grid');
-        grid.innerHTML = 'Chargement...';
-        const response = await fetch('tinder_shopping_final.json');
-        const data = await response.json();
-        const savedProducts = data.filter(p => likedIds.includes(String(p.id)));
-
-        if (savedProducts.length === 0) {
-            grid.innerHTML = '<p style="grid-column:1/3; text-align:center;">Vide.</p>';
-            return;
+        function toggleSavedList() {
+            const modal = document.getElementById('saved-modal');
+            const grid = document.getElementById('saved-grid');
+            modal.style.display = (modal.style.display === 'block') ? 'none' : 'block';
+            if (modal.style.display === 'block') {
+                const savedItems = allProducts.filter(p => likedIds.includes(p.id));
+                grid.innerHTML = savedItems.length ? '' : '<p class="col-span-full text-center text-gray-500 py-20 italic">Rien par ici...</p>';
+                savedItems.forEach(p => {
+                    grid.innerHTML += `
+                        <div class="saved-item-card">
+                            <img src="${p.image}" class="saved-item-img mb-3" referrerpolicy="no-referrer">
+                            <p class="text-yellow-400 font-black text-[9px] uppercase mb-1">${p.marque}</p>
+                            <span class="font-black text-sm">${p.prix_actuel}</span>
+                            <a href="${p.url}" target="_blank" class="mt-2 bg-white text-black py-2 rounded-lg text-[10px] text-center font-bold">🛒 VOIR</a>
+                        </div>`;
+                });
+            }
         }
 
-        grid.innerHTML = savedProducts.map(p => `
-            <div class="saved-item">
-                <img src="${p.image}">
-                <div style="padding:5px;">
-                    <strong>${p.marque}</strong><br>
-                    <span>${p.prix_actuel}</span>
-                    <a href="${p.url}" target="_blank" style="display:block; background:var(--primary); color:white; text-align:center; text-decoration:none; padding:5px; border-radius:4px; margin-top:5px;">Lien</a>
-                </div>
-            </div>
-        `).join('');
-    }
+        function navigate(dir) {
+            currentIndex = Math.max(0, Math.min(filteredProducts.length - 1, currentIndex + dir));
+            const target = document.getElementById(`wrapper-${currentIndex}`);
+            if (target) target.scrollIntoView({ behavior: 'smooth' });
+            updateActiveCard();
+        }
 
-    loadProducts();
-</script>
+        function updateActiveCard() {
+            document.querySelectorAll('.card').forEach((c, i) => c.classList.toggle('active', i === currentIndex));
+        }
+
+        window.addEventListener('scroll', () => {
+            const index = Math.round(window.scrollY / window.innerHeight);
+            if (index !== currentIndex) { currentIndex = index; updateActiveCard(); }
+        });
+
+        init();
+    </script>
 </body>
 </html>
