@@ -1,6 +1,6 @@
 [
     {
-        "id": 209273079,
+        "id": "209273079",
         "marque": "AllSaints",
         "nom": "AllSaints - Millie - Chaussures - Blanc ",
         "prix_actuel": "35.39€",
@@ -8,13 +8,14 @@
         "reduction_valeur": 80,
         "reduction_label": "-80%",
         "tailles": [
-            "Consulter sur le site"
+            "Vérifier sur site"
         ],
         "image": "https://images.asos-media.com/products/allsaints-millie-chaussures-blanc/209273079-1-white",
-        "url": "https://www.asos.com/fr/allsaints/allsaints-millie-chaussures-blanc/prd/209273079#colourWayId-209273080"
+        "url": "https://www.asos.com/fr/allsaints/allsaints-millie-chaussures-blanc/prd/209273079#colourWayId-209273080",
+        "date_ajout": "2026-01-11"
     },
     {
-        "id": 203813652,
+        "id": "203813652",
         "marque": "AllSaints",
         "nom": "AllSaints - Tonic - T-shirt à logo crâne de bélier - Blanc",
         "prix_actuel": "11.2€",
@@ -22,13 +23,14 @@
         "reduction_valeur": 75,
         "reduction_label": "-75%",
         "tailles": [
-            "Consulter sur le site"
+            "Vérifier sur site"
         ],
         "image": "https://images.asos-media.com/products/allsaints-tonic-t-shirt-a-logo-crane-de-belier-blanc/203813652-1-white",
-        "url": "https://www.asos.com/fr/allsaints/allsaints-tonic-t-shirt-a-logo-crane-de-belier-blanc/prd/203813652#colourWayId-203813692"
+        "url": "https://www.asos.com/fr/allsaints/allsaints-tonic-t-shirt-a-logo-crane-de-belier-blanc/prd/203813652#colourWayId-203813692",
+        "date_ajout": "2026-01-11"
     },
     {
-        "id": 207185087,
+        "id": "207185087",
         "marque": "AAPE BY A BATHING APE®",
         "nom": "Aape By A Bathing Ape - Pantalon de jogging molletonné - Ivoire ",
         "prix_actuel": "59.7€",
@@ -36,13 +38,14 @@
         "reduction_valeur": 70,
         "reduction_label": "-70%",
         "tailles": [
-            "Consulter sur le site"
+            "Vérifier sur site"
         ],
         "image": "https://images.asos-media.com/products/aape-by-a-bathing-ape-pantalon-de-jogging-molletonne-ivoire/207185087-1-ivory",
-        "url": "https://www.asos.com/fr/aape-by-a-bathing-ape/aape-by-a-bathing-ape-pantalon-de-jogging-molletonne-ivoire/prd/207185087#colourWayId-207185105"
+        "url": "https://www.asos.com/fr/aape-by-a-bathing-ape/aape-by-a-bathing-ape-pantalon-de-jogging-molletonne-ivoire/prd/207185087#colourWayId-207185105",
+        "date_ajout": "2026-01-11"
     },
     {
-        "id": 207937795,
+        "id": "207937795",
         "marque": "PS Paul Smith",
         "nom": "PS Paul Smith - Chemise à imprimé ombres et à manches courtes - Vert",
         "prix_actuel": "57.0€",
@@ -50,13 +53,14 @@
         "reduction_valeur": 70,
         "reduction_label": "-70%",
         "tailles": [
-            "Consulter sur le site"
+            "Vérifier sur site"
         ],
         "image": "https://images.asos-media.com/products/ps-paul-smith-chemise-a-imprime-ombres-et-a-manches-courtes-vert/207937795-1-khaki",
-        "url": "https://www.asos.com/fr/ps-paul-smith/ps-paul-smith-chemise-a-imprime-ombres-et-a-manches-courtes-vert/prd/207937795#colourWayId-207937796"
+        "url": "https://www.asos.com/fr/ps-paul-smith/ps-paul-smith-chemise-a-imprime-ombres-et-a-manches-courtes-vert/prd/207937795#colourWayId-207937796",
+        "date_ajout": "2026-01-11"
     },
     {
-        "id": 207937657,
+        "id": "207937657",
         "marque": "PS Paul Smith",
         "nom": "PS Paul Smith - Chemise en crépon à manches courtes - Kaki",
         "prix_actuel": "64.5€",
@@ -64,13 +68,14 @@
         "reduction_valeur": 70,
         "reduction_label": "-70%",
         "tailles": [
-            "Consulter sur le site"
+            "Vérifier sur site"
         ],
         "image": "https://images.asos-media.com/products/ps-paul-smith-chemise-en-crepon-a-manches-courtes-kaki/207937657-1-khaki",
-        "url": "https://www.asos.com/fr/ps-paul-smith/ps-paul-smith-chemise-en-crepon-a-manches-courtes-kaki/prd/207937657#colourWayId-207937665"
+        "url": "https://www.asos.com/fr/ps-paul-smith/ps-paul-smith-chemise-en-crepon-a-manches-courtes-kaki/prd/207937657#colourWayId-207937665",
+        "date_ajout": "2026-01-11"
     },
     {
-        "id": 208326365,
+        "id": "208326365",
         "marque": "Vans",
         "nom": "Vans - Perfs - Cabas - Vert",
         "prix_actuel": "17.94€",
@@ -78,13 +83,44 @@
         "reduction_valeur": 70,
         "reduction_label": "-70%",
         "tailles": [
-            "Consulter sur le site"
+            "Vérifier sur site"
         ],
         "image": "https://images.asos-media.com/products/vans-perfs-cabas-vert/208326365-1-green",
-        "url": "https://www.asos.com/fr/vans/vans-perfs-cabas-vert/prd/208326365#colourWayId-208326371"
+        "url": "https://www.asos.com/fr/vans/vans-perfs-cabas-vert/prd/208326365#colourWayId-208326371",
+        "date_ajout": "2026-01-11"
     },
     {
-        "id": 203257332,
+        "id": "208603660",
+        "marque": "Arket",
+        "nom": "ARKET - Top dos nu en jersey de coton majoritaire - Noir",
+        "prix_actuel": "8.99€",
+        "prix_base": "29.99€",
+        "reduction_valeur": 70,
+        "reduction_label": "-70%",
+        "tailles": [
+            "Vérifier sur site"
+        ],
+        "image": "https://images.asos-media.com/products/arket-top-dos-nu-en-jersey-de-coton-majoritaire-noir/208603660-1-black",
+        "url": "https://www.asos.com/fr/arket/arket-top-dos-nu-en-jersey-de-coton-majoritaire-noir/prd/208603660#colourWayId-208603662",
+        "date_ajout": "2026-01-11"
+    },
+    {
+        "id": "209193047",
+        "marque": "Vans",
+        "nom": "Vans - Ballerines style babies avec brides croisées à boucle - Blanc",
+        "prix_actuel": "27.13€",
+        "prix_base": "90.0€",
+        "reduction_valeur": 70,
+        "reduction_label": "-70%",
+        "tailles": [
+            "Vérifier sur site"
+        ],
+        "image": "https://images.asos-media.com/products/vans-ballerines-style-babies-avec-brides-croisees-a-boucle-blanc/209193047-1-white",
+        "url": "https://www.asos.com/fr/vans/vans-ballerines-style-babies-avec-brides-croisees-a-boucle-blanc/prd/209193047#colourWayId-209193048",
+        "date_ajout": "2026-01-11"
+    },
+    {
+        "id": "203257332",
         "marque": "Vans",
         "nom": "Vans - Prospect MTE-1 - Doudoune - Noir",
         "prix_actuel": "38.5€",
@@ -92,13 +128,14 @@
         "reduction_valeur": 68,
         "reduction_label": "-68%",
         "tailles": [
-            "Consulter sur le site"
+            "Vérifier sur site"
         ],
         "image": "https://images.asos-media.com/products/vans-prospect-mte-1-doudoune-noir/203257332-1-black",
-        "url": "https://www.asos.com/fr/vans/vans-prospect-mte-1-doudoune-noir/prd/203257332#colourWayId-203257370"
+        "url": "https://www.asos.com/fr/vans/vans-prospect-mte-1-doudoune-noir/prd/203257332#colourWayId-203257370",
+        "date_ajout": "2026-01-11"
     },
     {
-        "id": 207910086,
+        "id": "207910086",
         "marque": "AAPE BY A BATHING APE®",
         "nom": "AAPE by A BATHING APE® - Veste en jean à imprimé camouflage - Beige",
         "prix_actuel": "148.75€",
@@ -106,13 +143,14 @@
         "reduction_valeur": 65,
         "reduction_label": "-65%",
         "tailles": [
-            "Consulter sur le site"
+            "Vérifier sur site"
         ],
         "image": "https://images.asos-media.com/products/aape-by-a-bathing-ape-veste-en-jean-a-imprime-camouflage-beige/207910086-1-beige",
-        "url": "https://www.asos.com/fr/aape-by-a-bathing-ape/aape-by-a-bathing-ape-veste-en-jean-a-imprime-camouflage-beige/prd/207910086#colourWayId-207910087"
+        "url": "https://www.asos.com/fr/aape-by-a-bathing-ape/aape-by-a-bathing-ape-veste-en-jean-a-imprime-camouflage-beige/prd/207910086#colourWayId-207910087",
+        "date_ajout": "2026-01-11"
     },
     {
-        "id": 209246161,
+        "id": "209246161",
         "marque": "AAPE BY A BATHING APE®",
         "nom": "Aape by A Bathing Ape - Pantalon ample en moleskine - Noir délavé",
         "prix_actuel": "80.15€",
@@ -120,13 +158,14 @@
         "reduction_valeur": 65,
         "reduction_label": "-65%",
         "tailles": [
-            "Consulter sur le site"
+            "Vérifier sur site"
         ],
         "image": "https://images.asos-media.com/products/aape-by-a-bathing-ape-pantalon-ample-en-moleskine-noir-delave/209246161-1-black",
-        "url": "https://www.asos.com/fr/aape-by-a-bathing-ape/aape-by-a-bathing-ape-pantalon-ample-en-moleskine-noir-delave/prd/209246161#colourWayId-209246162"
+        "url": "https://www.asos.com/fr/aape-by-a-bathing-ape/aape-by-a-bathing-ape-pantalon-ample-en-moleskine-noir-delave/prd/209246161#colourWayId-209246162",
+        "date_ajout": "2026-01-11"
     },
     {
-        "id": 207909954,
+        "id": "207909954",
         "marque": "AAPE BY A BATHING APE®",
         "nom": "Aape by A Bathing Ape - Bomber style universitaire à logo - Blanc cassé  ",
         "prix_actuel": "79.69€",
@@ -134,13 +173,14 @@
         "reduction_valeur": 65,
         "reduction_label": "-65%",
         "tailles": [
-            "Consulter sur le site"
+            "Vérifier sur site"
         ],
         "image": "https://images.asos-media.com/products/aape-by-a-bathing-ape-bomber-style-universitaire-a-logo-blanc-casse/207909954-1-cream",
-        "url": "https://www.asos.com/fr/aape-by-a-bathing-ape/aape-by-a-bathing-ape-bomber-style-universitaire-a-logo-blanc-casse/prd/207909954#colourWayId-207909955"
+        "url": "https://www.asos.com/fr/aape-by-a-bathing-ape/aape-by-a-bathing-ape-bomber-style-universitaire-a-logo-blanc-casse/prd/207909954#colourWayId-207909955",
+        "date_ajout": "2026-01-11"
     },
     {
-        "id": 207909984,
+        "id": "207909984",
         "marque": "AAPE BY A BATHING APE®",
         "nom": "AAPE By A Bathing Ape - Short molletonné réversible avec logo - Blanc cassé",
         "prix_actuel": "62.65€",
@@ -148,13 +188,14 @@
         "reduction_valeur": 65,
         "reduction_label": "-65%",
         "tailles": [
-            "Consulter sur le site"
+            "Vérifier sur site"
         ],
         "image": "https://images.asos-media.com/products/aape-by-a-bathing-ape-short-molletonne-reversible-avec-logo-blanc-casse/207909984-1-cream",
-        "url": "https://www.asos.com/fr/aape-by-a-bathing-ape/aape-by-a-bathing-ape-short-molletonne-reversible-avec-logo-blanc-casse/prd/207909984#colourWayId-207909985"
+        "url": "https://www.asos.com/fr/aape-by-a-bathing-ape/aape-by-a-bathing-ape-short-molletonne-reversible-avec-logo-blanc-casse/prd/207909984#colourWayId-207909985",
+        "date_ajout": "2026-01-11"
     },
     {
-        "id": 207909900,
+        "id": "207909900",
         "marque": "AAPE BY A BATHING APE®",
         "nom": "Aape by A Bathing Ape - T-shirt réversible à logo style universitaire - Blanc cassé ",
         "prix_actuel": "50.75€",
@@ -162,10 +203,11 @@
         "reduction_valeur": 65,
         "reduction_label": "-65%",
         "tailles": [
-            "Consulter sur le site"
+            "Vérifier sur site"
         ],
         "image": "https://images.asos-media.com/products/aape-by-a-bathing-ape-t-shirt-reversible-a-logo-style-universitaire-blanc-casse/207909900-1-cream",
-        "url": "https://www.asos.com/fr/aape-by-a-bathing-ape/aape-by-a-bathing-ape-t-shirt-reversible-a-logo-style-universitaire-blanc-casse/prd/207909900#colourWayId-207909901"
+        "url": "https://www.asos.com/fr/aape-by-a-bathing-ape/aape-by-a-bathing-ape-t-shirt-reversible-a-logo-style-universitaire-blanc-casse/prd/207909900#colourWayId-207909901",
+        "date_ajout": "2026-01-11"
     },
     {
         "id": 209245935,
@@ -182,7 +224,7 @@
         "url": "https://www.asos.com/fr/aape-by-a-bathing-ape/aape-by-a-bathing-ape-t-shirt-coupe-carree-avec-imprime-sur-la-poitrine-et-au-dos-beige/prd/209245935#colourWayId-209245941"
     },
     {
-        "id": 209271112,
+        "id": "209271112",
         "marque": "AllSaints",
         "nom": "AllSaints - Faye - Robe floquée à motif camouflage - Vert ",
         "prix_actuel": "88.54€",
@@ -190,13 +232,14 @@
         "reduction_valeur": 65,
         "reduction_label": "-65%",
         "tailles": [
-            "Consulter sur le site"
+            "Vérifier sur site"
         ],
         "image": "https://images.asos-media.com/products/allsaints-faye-robe-floquee-a-motif-camouflage-vert/209271112-1-camogreen",
-        "url": "https://www.asos.com/fr/allsaints/allsaints-faye-robe-floquee-a-motif-camouflage-vert/prd/209271112#colourWayId-209271122"
+        "url": "https://www.asos.com/fr/allsaints/allsaints-faye-robe-floquee-a-motif-camouflage-vert/prd/209271112#colourWayId-209271122",
+        "date_ajout": "2026-01-11"
     },
     {
-        "id": 209268938,
+        "id": "209268938",
         "marque": "AllSaints",
         "nom": "AllSaints - T-shirt à motif - Écru ",
         "prix_actuel": "26.24€",
@@ -204,13 +247,14 @@
         "reduction_valeur": 65,
         "reduction_label": "-65%",
         "tailles": [
-            "Consulter sur le site"
+            "Vérifier sur site"
         ],
         "image": "https://images.asos-media.com/products/allsaints-t-shirt-a-motif-ecru/209268938-1-chalkwhite",
-        "url": "https://www.asos.com/fr/allsaints/allsaints-t-shirt-a-motif-ecru/prd/209268938#colourWayId-209268948"
+        "url": "https://www.asos.com/fr/allsaints/allsaints-t-shirt-a-motif-ecru/prd/209268938#colourWayId-209268948",
+        "date_ajout": "2026-01-11"
     },
     {
-        "id": 209268766,
+        "id": "209268766",
         "marque": "AllSaints",
         "nom": "AllSaints - Orlando - T-shirt - Gris ",
         "prix_actuel": "26.24€",
@@ -218,13 +262,14 @@
         "reduction_valeur": 65,
         "reduction_label": "-65%",
         "tailles": [
-            "Consulter sur le site"
+            "Vérifier sur site"
         ],
         "image": "https://images.asos-media.com/products/allsaints-orlando-t-shirt-gris/209268766-1-grey",
-        "url": "https://www.asos.com/fr/allsaints/allsaints-orlando-t-shirt-gris/prd/209268766#colourWayId-209268776"
+        "url": "https://www.asos.com/fr/allsaints/allsaints-orlando-t-shirt-gris/prd/209268766#colourWayId-209268776",
+        "date_ajout": "2026-01-11"
     },
     {
-        "id": 209269099,
+        "id": "209269099",
         "marque": "AllSaints",
         "nom": "AllSaints - Underground - Sweat à capuche - Vert ",
         "prix_actuel": "66.49€",
@@ -232,13 +277,14 @@
         "reduction_valeur": 65,
         "reduction_label": "-65%",
         "tailles": [
-            "Consulter sur le site"
+            "Vérifier sur site"
         ],
         "image": "https://images.asos-media.com/products/allsaints-underground-sweat-a-capuche-vert/209269099-1-gastorgreen",
-        "url": "https://www.asos.com/fr/allsaints/allsaints-underground-sweat-a-capuche-vert/prd/209269099#colourWayId-209269113"
+        "url": "https://www.asos.com/fr/allsaints/allsaints-underground-sweat-a-capuche-vert/prd/209269099#colourWayId-209269113",
+        "date_ajout": "2026-01-11"
     },
     {
-        "id": 209271201,
+        "id": "209271201",
         "marque": "AllSaints",
         "nom": "AllSaints - Freda - Jean à motif camouflage - Bleu marine",
         "prix_actuel": "66.49€",
@@ -246,13 +292,14 @@
         "reduction_valeur": 65,
         "reduction_label": "-65%",
         "tailles": [
-            "Consulter sur le site"
+            "Vérifier sur site"
         ],
         "image": "https://images.asos-media.com/products/allsaints-freda-jean-a-motif-camouflage-bleu-marine/209271201-1-camoinkblue",
-        "url": "https://www.asos.com/fr/allsaints/allsaints-freda-jean-a-motif-camouflage-bleu-marine/prd/209271201#colourWayId-209271202"
+        "url": "https://www.asos.com/fr/allsaints/allsaints-freda-jean-a-motif-camouflage-bleu-marine/prd/209271201#colourWayId-209271202",
+        "date_ajout": "2026-01-11"
     },
     {
-        "id": 209270627,
+        "id": "209270627",
         "marque": "AllSaints",
         "nom": "AllSaints - Orlando Etta - T-shirt - Rose ",
         "prix_actuel": "26.24€",
@@ -260,13 +307,14 @@
         "reduction_valeur": 65,
         "reduction_label": "-65%",
         "tailles": [
-            "Consulter sur le site"
+            "Vérifier sur site"
         ],
         "image": "https://images.asos-media.com/products/allsaints-orlando-etta-t-shirt-rose/209270627-1-rosetanpink",
-        "url": "https://www.asos.com/fr/allsaints/allsaints-orlando-etta-t-shirt-rose/prd/209270627#colourWayId-209270639"
+        "url": "https://www.asos.com/fr/allsaints/allsaints-orlando-etta-t-shirt-rose/prd/209270627#colourWayId-209270639",
+        "date_ajout": "2026-01-11"
     },
     {
-        "id": 208885235,
+        "id": "208885235",
         "marque": "Arket",
         "nom": "ARKET - Surchemise courte en denim avec col contrastant - Indigo brut délavé ",
         "prix_actuel": "33.59€",
@@ -274,13 +322,14 @@
         "reduction_valeur": 65,
         "reduction_label": "-65%",
         "tailles": [
-            "Consulter sur le site"
+            "Vérifier sur site"
         ],
         "image": "https://images.asos-media.com/products/arket-surchemise-courte-en-denim-avec-col-contrastant-indigo-brut-delave/208885235-1-rinsewashindigo",
-        "url": "https://www.asos.com/fr/arket/arket-surchemise-courte-en-denim-avec-col-contrastant-indigo-brut-delave/prd/208885235#colourWayId-208885261"
+        "url": "https://www.asos.com/fr/arket/arket-surchemise-courte-en-denim-avec-col-contrastant-indigo-brut-delave/prd/208885235#colourWayId-208885261",
+        "date_ajout": "2026-01-11"
     },
     {
-        "id": 209309827,
+        "id": "209309827",
         "marque": "Arket",
         "nom": "ARKET - Veste matelassée avec boutons-pression devant - Bleu marine",
         "prix_actuel": "32.89€",
@@ -288,13 +337,14 @@
         "reduction_valeur": 65,
         "reduction_label": "-65%",
         "tailles": [
-            "Consulter sur le site"
+            "Vérifier sur site"
         ],
         "image": "https://images.asos-media.com/products/arket-veste-matelassee-avec-boutons-pression-devant-bleu-marine/209309827-1-navy",
-        "url": "https://www.asos.com/fr/arket/arket-veste-matelassee-avec-boutons-pression-devant-bleu-marine/prd/209309827#colourWayId-209309834"
+        "url": "https://www.asos.com/fr/arket/arket-veste-matelassee-avec-boutons-pression-devant-bleu-marine/prd/209309827#colourWayId-209309834",
+        "date_ajout": "2026-01-11"
     },
     {
-        "id": 209450131,
+        "id": "209450131",
         "marque": "Arket",
         "nom": "ARKET - Veste de moto matelassée avec fermeture éclair - Bleu marine",
         "prix_actuel": "41.99€",
@@ -302,13 +352,14 @@
         "reduction_valeur": 65,
         "reduction_label": "-65%",
         "tailles": [
-            "Consulter sur le site"
+            "Vérifier sur site"
         ],
         "image": "https://images.asos-media.com/products/arket-veste-de-moto-matelassee-avec-fermeture-eclair-bleu-marine/209450131-1-navy",
-        "url": "https://www.asos.com/fr/arket/arket-veste-de-moto-matelassee-avec-fermeture-eclair-bleu-marine/prd/209450131#colourWayId-209450160"
+        "url": "https://www.asos.com/fr/arket/arket-veste-de-moto-matelassee-avec-fermeture-eclair-bleu-marine/prd/209450131#colourWayId-209450160",
+        "date_ajout": "2026-01-11"
     },
     {
-        "id": 209027862,
+        "id": "209027862",
         "marque": "Arket",
         "nom": "ARKET - Robe babydoll longue à manches bouffantes en pur coton - Noir",
         "prix_actuel": "36.74€",
@@ -316,13 +367,14 @@
         "reduction_valeur": 65,
         "reduction_label": "-65%",
         "tailles": [
-            "Consulter sur le site"
+            "Vérifier sur site"
         ],
         "image": "https://images.asos-media.com/products/arket-robe-babydoll-longue-a-manches-bouffantes-en-pur-coton-noir/209027862-1-black",
-        "url": "https://www.asos.com/fr/arket/arket-robe-babydoll-longue-a-manches-bouffantes-en-pur-coton-noir/prd/209027862#colourWayId-209027870"
+        "url": "https://www.asos.com/fr/arket/arket-robe-babydoll-longue-a-manches-bouffantes-en-pur-coton-noir/prd/209027862#colourWayId-209027870",
+        "date_ajout": "2026-01-11"
     },
     {
-        "id": 209282859,
+        "id": "209282859",
         "marque": "PS Paul Smith",
         "nom": "Paul Smith - Sweat coupe classique à col zippé - Bleu",
         "prix_actuel": "70.0€",
@@ -330,13 +382,14 @@
         "reduction_valeur": 65,
         "reduction_label": "-65%",
         "tailles": [
-            "Consulter sur le site"
+            "Vérifier sur site"
         ],
         "image": "https://images.asos-media.com/products/paul-smith-sweat-coupe-classique-a-col-zippe-bleu/209282859-1-blue",
-        "url": "https://www.asos.com/fr/ps-paul-smith/paul-smith-sweat-coupe-classique-a-col-zippe-bleu/prd/209282859#colourWayId-209282866"
+        "url": "https://www.asos.com/fr/ps-paul-smith/paul-smith-sweat-coupe-classique-a-col-zippe-bleu/prd/209282859#colourWayId-209282866",
+        "date_ajout": "2026-01-11"
     },
     {
-        "id": 209283010,
+        "id": "209283010",
         "marque": "PS Paul Smith",
         "nom": "Paul Smith - Pull à col zippé - Noir",
         "prix_actuel": "80.5€",
@@ -344,13 +397,14 @@
         "reduction_valeur": 65,
         "reduction_label": "-65%",
         "tailles": [
-            "Consulter sur le site"
+            "Vérifier sur site"
         ],
         "image": "https://images.asos-media.com/products/paul-smith-pull-a-col-zippe-noir/209283010-1-black",
-        "url": "https://www.asos.com/fr/ps-paul-smith/paul-smith-pull-a-col-zippe-noir/prd/209283010#colourWayId-209283013"
+        "url": "https://www.asos.com/fr/ps-paul-smith/paul-smith-pull-a-col-zippe-noir/prd/209283010#colourWayId-209283013",
+        "date_ajout": "2026-01-11"
     },
     {
-        "id": 209282942,
+        "id": "209282942",
         "marque": "PS Paul Smith",
         "nom": "Paul Smith - T-shirt à logo - Blanc",
         "prix_actuel": "42.0€",
@@ -358,13 +412,14 @@
         "reduction_valeur": 65,
         "reduction_label": "-65%",
         "tailles": [
-            "Consulter sur le site"
+            "Vérifier sur site"
         ],
         "image": "https://images.asos-media.com/products/paul-smith-t-shirt-a-logo-blanc/209282942-1-white",
-        "url": "https://www.asos.com/fr/ps-paul-smith/paul-smith-t-shirt-a-logo-blanc/prd/209282942#colourWayId-209282955"
+        "url": "https://www.asos.com/fr/ps-paul-smith/paul-smith-t-shirt-a-logo-blanc/prd/209282942#colourWayId-209282955",
+        "date_ajout": "2026-01-11"
     },
     {
-        "id": 209282833,
+        "id": "209282833",
         "marque": "PS Paul Smith",
         "nom": "Paul Smith - T-shirt classique à imprimé squelette - Noir",
         "prix_actuel": "33.25€",
@@ -372,13 +427,14 @@
         "reduction_valeur": 65,
         "reduction_label": "-65%",
         "tailles": [
-            "Consulter sur le site"
+            "Vérifier sur site"
         ],
         "image": "https://images.asos-media.com/products/paul-smith-t-shirt-classique-a-imprime-squelette-noir/209282833-1-black",
-        "url": "https://www.asos.com/fr/ps-paul-smith/paul-smith-t-shirt-classique-a-imprime-squelette-noir/prd/209282833#colourWayId-209282845"
+        "url": "https://www.asos.com/fr/ps-paul-smith/paul-smith-t-shirt-classique-a-imprime-squelette-noir/prd/209282833#colourWayId-209282845",
+        "date_ajout": "2026-01-11"
     },
     {
-        "id": 209282828,
+        "id": "209282828",
         "marque": "PS Paul Smith",
         "nom": "Paul Smith - T-shirt classique à imprimé graphique - Noir",
         "prix_actuel": "33.25€",
@@ -386,13 +442,14 @@
         "reduction_valeur": 65,
         "reduction_label": "-65%",
         "tailles": [
-            "Consulter sur le site"
+            "Vérifier sur site"
         ],
         "image": "https://images.asos-media.com/products/paul-smith-t-shirt-classique-a-imprime-graphique-noir/209282828-1-black",
-        "url": "https://www.asos.com/fr/ps-paul-smith/paul-smith-t-shirt-classique-a-imprime-graphique-noir/prd/209282828#colourWayId-209282834"
+        "url": "https://www.asos.com/fr/ps-paul-smith/paul-smith-t-shirt-classique-a-imprime-graphique-noir/prd/209282828#colourWayId-209282834",
+        "date_ajout": "2026-01-11"
     },
     {
-        "id": 208475009,
+        "id": "208475009",
         "marque": "PS Paul Smith",
         "nom": "PS Paul Smith - T-shirt classique à imprimé Dept - Blanc",
         "prix_actuel": "33.25€",
@@ -400,13 +457,14 @@
         "reduction_valeur": 65,
         "reduction_label": "-65%",
         "tailles": [
-            "Consulter sur le site"
+            "Vérifier sur site"
         ],
         "image": "https://images.asos-media.com/products/ps-paul-smith-t-shirt-classique-a-imprime-dept-blanc/208475009-1-white",
-        "url": "https://www.asos.com/fr/ps-paul-smith/ps-paul-smith-t-shirt-classique-a-imprime-dept-blanc/prd/208475009#colourWayId-208475016"
+        "url": "https://www.asos.com/fr/ps-paul-smith/ps-paul-smith-t-shirt-classique-a-imprime-dept-blanc/prd/208475009#colourWayId-208475016",
+        "date_ajout": "2026-01-11"
     },
     {
-        "id": 209283083,
+        "id": "209283083",
         "marque": "PS Paul Smith",
         "nom": "Paul Smith - T-shirt casual à imprimé graphique - Noir",
         "prix_actuel": "35.0€",
@@ -414,13 +472,14 @@
         "reduction_valeur": 65,
         "reduction_label": "-65%",
         "tailles": [
-            "Consulter sur le site"
+            "Vérifier sur site"
         ],
         "image": "https://images.asos-media.com/products/paul-smith-t-shirt-casual-a-imprime-graphique-noir/209283083-1-black",
-        "url": "https://www.asos.com/fr/ps-paul-smith/paul-smith-t-shirt-casual-a-imprime-graphique-noir/prd/209283083#colourWayId-209283084"
+        "url": "https://www.asos.com/fr/ps-paul-smith/paul-smith-t-shirt-casual-a-imprime-graphique-noir/prd/209283083#colourWayId-209283084",
+        "date_ajout": "2026-01-11"
     },
     {
-        "id": 209282957,
+        "id": "209282957",
         "marque": "PS Paul Smith",
         "nom": "Paul Smith - Sweat à manches longues et col polo - Bleu",
         "prix_actuel": "78.75€",
@@ -428,13 +487,14 @@
         "reduction_valeur": 65,
         "reduction_label": "-65%",
         "tailles": [
-            "Consulter sur le site"
+            "Vérifier sur site"
         ],
         "image": "https://images.asos-media.com/products/paul-smith-sweat-a-manches-longues-et-col-polo-bleu/209282957-1-blue",
-        "url": "https://www.asos.com/fr/ps-paul-smith/paul-smith-sweat-a-manches-longues-et-col-polo-bleu/prd/209282957#colourWayId-209282970"
+        "url": "https://www.asos.com/fr/ps-paul-smith/paul-smith-sweat-a-manches-longues-et-col-polo-bleu/prd/209282957#colourWayId-209282970",
+        "date_ajout": "2026-01-11"
     },
     {
-        "id": 204013430,
+        "id": "204013430",
         "marque": "PS Paul Smith",
         "nom": "PS Paul Smith - T-shirt classique à logo - Gris",
         "prix_actuel": "30.79€",
@@ -442,13 +502,14 @@
         "reduction_valeur": 65,
         "reduction_label": "-65%",
         "tailles": [
-            "Consulter sur le site"
+            "Vérifier sur site"
         ],
         "image": "https://images.asos-media.com/products/ps-paul-smith-t-shirt-classique-a-logo-gris/204013430-1-grey",
-        "url": "https://www.asos.com/fr/ps-paul-smith/ps-paul-smith-t-shirt-classique-a-logo-gris/prd/204013430#colourWayId-204013434"
+        "url": "https://www.asos.com/fr/ps-paul-smith/ps-paul-smith-t-shirt-classique-a-logo-gris/prd/204013430#colourWayId-204013434",
+        "date_ajout": "2026-01-11"
     },
     {
-        "id": 209283156,
+        "id": "209283156",
         "marque": "PS Paul Smith",
         "nom": "Paul Smith - T-shirt à logo - Vert",
         "prix_actuel": "42.0€",
@@ -456,41 +517,14 @@
         "reduction_valeur": 65,
         "reduction_label": "-65%",
         "tailles": [
-            "Consulter sur le site"
+            "Vérifier sur site"
         ],
         "image": "https://images.asos-media.com/products/paul-smith-t-shirt-a-logo-vert/209283156-1-green",
-        "url": "https://www.asos.com/fr/ps-paul-smith/paul-smith-t-shirt-a-logo-vert/prd/209283156#colourWayId-209283158"
+        "url": "https://www.asos.com/fr/ps-paul-smith/paul-smith-t-shirt-a-logo-vert/prd/209283156#colourWayId-209283158",
+        "date_ajout": "2026-01-11"
     },
     {
-        "id": 208475009,
-        "marque": "PS Paul Smith",
-        "nom": "PS Paul Smith - T-shirt classique à imprimé Dept - Blanc",
-        "prix_actuel": "33.25€",
-        "prix_base": "95.0€",
-        "reduction_valeur": 65,
-        "reduction_label": "-65%",
-        "tailles": [
-            "Consulter sur le site"
-        ],
-        "image": "https://images.asos-media.com/products/ps-paul-smith-t-shirt-classique-a-imprime-dept-blanc/208475009-1-white",
-        "url": "https://www.asos.com/fr/ps-paul-smith/ps-paul-smith-t-shirt-classique-a-imprime-dept-blanc/prd/208475009#colourWayId-208475016"
-    },
-    {
-        "id": 204013430,
-        "marque": "PS Paul Smith",
-        "nom": "PS Paul Smith - T-shirt classique à logo - Gris",
-        "prix_actuel": "30.79€",
-        "prix_base": "87.99€",
-        "reduction_valeur": 65,
-        "reduction_label": "-65%",
-        "tailles": [
-            "Consulter sur le site"
-        ],
-        "image": "https://images.asos-media.com/products/ps-paul-smith-t-shirt-classique-a-logo-gris/204013430-1-grey",
-        "url": "https://www.asos.com/fr/ps-paul-smith/ps-paul-smith-t-shirt-classique-a-logo-gris/prd/204013430#colourWayId-204013434"
-    },
-    {
-        "id": 208474808,
+        "id": "208474808",
         "marque": "PS Paul Smith",
         "nom": "PS Paul Smith - T-shirt coupe classique à motif Dept - Noir",
         "prix_actuel": "33.25€",
@@ -498,13 +532,14 @@
         "reduction_valeur": 65,
         "reduction_label": "-65%",
         "tailles": [
-            "Consulter sur le site"
+            "Vérifier sur site"
         ],
         "image": "https://images.asos-media.com/products/ps-paul-smith-t-shirt-coupe-classique-a-motif-dept-noir/208474808-1-black",
-        "url": "https://www.asos.com/fr/ps-paul-smith/ps-paul-smith-t-shirt-coupe-classique-a-motif-dept-noir/prd/208474808#colourWayId-208474810"
+        "url": "https://www.asos.com/fr/ps-paul-smith/ps-paul-smith-t-shirt-coupe-classique-a-motif-dept-noir/prd/208474808#colourWayId-208474810",
+        "date_ajout": "2026-01-11"
     },
     {
-        "id": 209191183,
+        "id": "209191183",
         "marque": "Vans",
         "nom": "Vans - Old Skool - Baskets avec semelle en gomme - Rose clair ",
         "prix_actuel": "29.92€",
@@ -512,13 +547,14 @@
         "reduction_valeur": 65,
         "reduction_label": "-65%",
         "tailles": [
-            "Consulter sur le site"
+            "Vérifier sur site"
         ],
         "image": "https://images.asos-media.com/products/vans-old-skool-baskets-avec-semelle-en-gomme-rose-clair/209191183-1-lightpink",
-        "url": "https://www.asos.com/fr/vans/vans-old-skool-baskets-avec-semelle-en-gomme-rose-clair/prd/209191183#colourWayId-209191193"
+        "url": "https://www.asos.com/fr/vans/vans-old-skool-baskets-avec-semelle-en-gomme-rose-clair/prd/209191183#colourWayId-209191193",
+        "date_ajout": "2026-01-11"
     },
     {
-        "id": 209191899,
+        "id": "209191899",
         "marque": "Vans",
         "nom": "Vans - Old Skool EK - Baskets à damier avec tige en maille - Noir et gris",
         "prix_actuel": "33.25€",
@@ -526,13 +562,44 @@
         "reduction_valeur": 65,
         "reduction_label": "-65%",
         "tailles": [
-            "Consulter sur le site"
+            "Vérifier sur site"
         ],
         "image": "https://images.asos-media.com/products/vans-old-skool-ek-baskets-a-damier-avec-tige-en-maille-noir-et-gris/209191899-1-black",
-        "url": "https://www.asos.com/fr/vans/vans-old-skool-ek-baskets-a-damier-avec-tige-en-maille-noir-et-gris/prd/209191899#colourWayId-209191924"
+        "url": "https://www.asos.com/fr/vans/vans-old-skool-ek-baskets-a-damier-avec-tige-en-maille-noir-et-gris/prd/209191899#colourWayId-209191924",
+        "date_ajout": "2026-01-11"
     },
     {
-        "id": 209283058,
+        "id": "207909852",
+        "marque": "AAPE BY A BATHING APE®",
+        "nom": "Aape By A Bathing Ape - Veste en jean avec capuche et broderie au dos - Bleu clair ",
+        "prix_actuel": "104.05€",
+        "prix_base": "299.0€",
+        "reduction_valeur": 65,
+        "reduction_label": "-65%",
+        "tailles": [
+            "Vérifier sur site"
+        ],
+        "image": "https://images.asos-media.com/products/aape-by-a-bathing-ape-veste-en-jean-avec-capuche-et-broderie-au-dos-bleu-clair/207909852-1-blue",
+        "url": "https://www.asos.com/fr/aape-by-a-bathing-ape/aape-by-a-bathing-ape-veste-en-jean-avec-capuche-et-broderie-au-dos-bleu-clair/prd/207909852#colourWayId-207909853",
+        "date_ajout": "2026-01-11"
+    },
+    {
+        "id": "209483598",
+        "marque": "Arket",
+        "nom": "ARKET - Veste ajustée style sport à empiècements et fermeture éclair - Marron",
+        "prix_actuel": "25.19€",
+        "prix_base": "71.99€",
+        "reduction_valeur": 65,
+        "reduction_label": "-65%",
+        "tailles": [
+            "Vérifier sur site"
+        ],
+        "image": "https://images.asos-media.com/products/arket-veste-ajustee-style-sport-a-empiecements-et-fermeture-eclair-marron/209483598-1-brown",
+        "url": "https://www.asos.com/fr/arket/arket-veste-ajustee-style-sport-a-empiecements-et-fermeture-eclair-marron/prd/209483598#colourWayId-209483603",
+        "date_ajout": "2026-01-11"
+    },
+    {
+        "id": "209283058",
         "marque": "PS Paul Smith",
         "nom": "Paul Smith - Polo à manches longues avec logo - Vert",
         "prix_actuel": "60.0€",
@@ -540,13 +607,14 @@
         "reduction_valeur": 60,
         "reduction_label": "-60%",
         "tailles": [
-            "Consulter sur le site"
+            "Vérifier sur site"
         ],
         "image": "https://images.asos-media.com/products/paul-smith-polo-a-manches-longues-avec-logo-vert/209283058-1-green",
-        "url": "https://www.asos.com/fr/ps-paul-smith/paul-smith-polo-a-manches-longues-avec-logo-vert/prd/209283058#colourWayId-209283063"
+        "url": "https://www.asos.com/fr/ps-paul-smith/paul-smith-polo-a-manches-longues-avec-logo-vert/prd/209283058#colourWayId-209283063",
+        "date_ajout": "2026-01-11"
     },
     {
-        "id": 209283182,
+        "id": "209283182",
         "marque": "PS Paul Smith",
         "nom": "Paul Smith - Polo coupe classique - Noir",
         "prix_actuel": "46.0€",
@@ -554,13 +622,14 @@
         "reduction_valeur": 60,
         "reduction_label": "-60%",
         "tailles": [
-            "Consulter sur le site"
+            "Vérifier sur site"
         ],
         "image": "https://images.asos-media.com/products/paul-smith-polo-coupe-classique-noir/209283182-1-black",
-        "url": "https://www.asos.com/fr/ps-paul-smith/paul-smith-polo-coupe-classique-noir/prd/209283182#colourWayId-209283184"
+        "url": "https://www.asos.com/fr/ps-paul-smith/paul-smith-polo-coupe-classique-noir/prd/209283182#colourWayId-209283184",
+        "date_ajout": "2026-01-11"
     },
     {
-        "id": 209282886,
+        "id": "209282886",
         "marque": "PS Paul Smith",
         "nom": "Paul Smith - Gilet coupe classique - Noir",
         "prix_actuel": "90.0€",
@@ -568,13 +637,14 @@
         "reduction_valeur": 60,
         "reduction_label": "-60%",
         "tailles": [
-            "Consulter sur le site"
+            "Vérifier sur site"
         ],
         "image": "https://images.asos-media.com/products/paul-smith-gilet-coupe-classique-noir/209282886-1-black",
-        "url": "https://www.asos.com/fr/ps-paul-smith/paul-smith-gilet-coupe-classique-noir/prd/209282886#colourWayId-209282894"
+        "url": "https://www.asos.com/fr/ps-paul-smith/paul-smith-gilet-coupe-classique-noir/prd/209282886#colourWayId-209282894",
+        "date_ajout": "2026-01-11"
     },
     {
-        "id": 209191385,
+        "id": "209191385",
         "marque": "Vans",
         "nom": "Vans - Hylane - Baskets en daim - Bleu clair bicolore",
         "prix_actuel": "40.0€",
@@ -582,13 +652,14 @@
         "reduction_valeur": 60,
         "reduction_label": "-60%",
         "tailles": [
-            "Consulter sur le site"
+            "Vérifier sur site"
         ],
         "image": "https://images.asos-media.com/products/vans-hylane-baskets-en-daim-bleu-clair-bicolore/209191385-1-lightblue",
-        "url": "https://www.asos.com/fr/vans/vans-hylane-baskets-en-daim-bleu-clair-bicolore/prd/209191385#colourWayId-209191395"
+        "url": "https://www.asos.com/fr/vans/vans-hylane-baskets-en-daim-bleu-clair-bicolore/prd/209191385#colourWayId-209191395",
+        "date_ajout": "2026-01-11"
     },
     {
-        "id": 209191283,
+        "id": "209191283",
         "marque": "Vans",
         "nom": "Vans - Old Skool - Baskets à coutures contrastantes - Triple noir et blanc",
         "prix_actuel": "38.04€",
@@ -596,13 +667,59 @@
         "reduction_valeur": 60,
         "reduction_label": "-60%",
         "tailles": [
-            "Consulter sur le site"
+            "Vérifier sur site"
         ],
         "image": "https://images.asos-media.com/products/vans-old-skool-baskets-a-coutures-contrastantes-triple-noir-et-blanc/209191283-1-black",
-        "url": "https://www.asos.com/fr/vans/vans-old-skool-baskets-a-coutures-contrastantes-triple-noir-et-blanc/prd/209191283#colourWayId-209191308"
+        "url": "https://www.asos.com/fr/vans/vans-old-skool-baskets-a-coutures-contrastantes-triple-noir-et-blanc/prd/209191283#colourWayId-209191308",
+        "date_ajout": "2026-01-11"
     },
     {
-        "id": 208099728,
+        "id": "207919241",
+        "marque": "Arket",
+        "nom": "ARKET - Polo à manches courtes en jersey texturé - Blanc",
+        "prix_actuel": "25.22€",
+        "prix_base": "62.99€",
+        "reduction_valeur": 60,
+        "reduction_label": "-60%",
+        "tailles": [
+            "Vérifier sur site"
+        ],
+        "image": "https://images.asos-media.com/products/arket-polo-a-manches-courtes-en-jersey-texture-blanc/207919241-1-offwhite",
+        "url": "https://www.asos.com/fr/arket/arket-polo-a-manches-courtes-en-jersey-texture-blanc/prd/207919241#colourWayId-207919243",
+        "date_ajout": "2026-01-11"
+    },
+    {
+        "id": "208474884",
+        "marque": "PS Paul Smith",
+        "nom": "PS Paul Smith - T-shirt standard - Bleu clair",
+        "prix_actuel": "48.0€",
+        "prix_base": "120.0€",
+        "reduction_valeur": 60,
+        "reduction_label": "-60%",
+        "tailles": [
+            "Vérifier sur site"
+        ],
+        "image": "https://images.asos-media.com/products/ps-paul-smith-t-shirt-standard-bleu-clair/208474884-1-blue",
+        "url": "https://www.asos.com/fr/ps-paul-smith/ps-paul-smith-t-shirt-standard-bleu-clair/prd/208474884#colourWayId-208474886",
+        "date_ajout": "2026-01-11"
+    },
+    {
+        "id": "208475002",
+        "marque": "PS Paul Smith",
+        "nom": "PS Paul Smith - T-shirt classique à logo et imprimé Athlétique - Blanc",
+        "prix_actuel": "42.0€",
+        "prix_base": "105.0€",
+        "reduction_valeur": 60,
+        "reduction_label": "-60%",
+        "tailles": [
+            "Vérifier sur site"
+        ],
+        "image": "https://images.asos-media.com/products/ps-paul-smith-t-shirt-classique-a-logo-et-imprime-athletique-blanc/208475002-1-white",
+        "url": "https://www.asos.com/fr/ps-paul-smith/ps-paul-smith-t-shirt-classique-a-logo-et-imprime-athletique-blanc/prd/208475002#colourWayId-208475008",
+        "date_ajout": "2026-01-11"
+    },
+    {
+        "id": "208099728",
         "marque": "AAPE BY A BATHING APE®",
         "nom": "Aape By A Bathing Ape® - Casquette à logo - Bordeaux",
         "prix_actuel": "26.55€",
@@ -610,13 +727,14 @@
         "reduction_valeur": 55,
         "reduction_label": "-55%",
         "tailles": [
-            "Consulter sur le site"
+            "Vérifier sur site"
         ],
         "image": "https://images.asos-media.com/products/aape-by-a-bathing-ape-casquette-a-logo-bordeaux/208099728-1-burgandy",
-        "url": "https://www.asos.com/fr/aape-by-a-bathing-ape/aape-by-a-bathing-ape-casquette-a-logo-bordeaux/prd/208099728#colourWayId-208099735"
+        "url": "https://www.asos.com/fr/aape-by-a-bathing-ape/aape-by-a-bathing-ape-casquette-a-logo-bordeaux/prd/208099728#colourWayId-208099735",
+        "date_ajout": "2026-01-11"
     },
     {
-        "id": 209269738,
+        "id": "209269738",
         "marque": "AllSaints",
         "nom": "AllSaints - Underground - Sweat - Beige",
         "prix_actuel": "62.54€",
@@ -624,13 +742,14 @@
         "reduction_valeur": 55,
         "reduction_label": "-55%",
         "tailles": [
-            "Consulter sur le site"
+            "Vérifier sur site"
         ],
         "image": "https://images.asos-media.com/products/allsaints-underground-sweat-beige/209269738-1-feathertaupe",
-        "url": "https://www.asos.com/fr/allsaints/allsaints-underground-sweat-beige/prd/209269738#colourWayId-209269746"
+        "url": "https://www.asos.com/fr/allsaints/allsaints-underground-sweat-beige/prd/209269738#colourWayId-209269746",
+        "date_ajout": "2026-01-11"
     },
     {
-        "id": 209269161,
+        "id": "209269161",
         "marque": "AllSaints",
         "nom": "AllSaints - Orlando - T-shirt col rond - Beige",
         "prix_actuel": "33.74€",
@@ -638,13 +757,14 @@
         "reduction_valeur": 55,
         "reduction_label": "-55%",
         "tailles": [
-            "Consulter sur le site"
+            "Vérifier sur site"
         ],
         "image": "https://images.asos-media.com/products/allsaints-orlando-t-shirt-col-rond-beige/209269161-1-feathertaupe",
-        "url": "https://www.asos.com/fr/allsaints/allsaints-orlando-t-shirt-col-rond-beige/prd/209269161#colourWayId-209269181"
+        "url": "https://www.asos.com/fr/allsaints/allsaints-orlando-t-shirt-col-rond-beige/prd/209269161#colourWayId-209269181",
+        "date_ajout": "2026-01-11"
     },
     {
-        "id": 209027726,
+        "id": "209027726",
         "marque": "Arket",
         "nom": "ARKET - Veste style barn oversize en jean - Bleu foncé délavé",
         "prix_actuel": "62.22€",
@@ -652,13 +772,14 @@
         "reduction_valeur": 55,
         "reduction_label": "-55%",
         "tailles": [
-            "Consulter sur le site"
+            "Vérifier sur site"
         ],
         "image": "https://images.asos-media.com/products/arket-veste-style-barn-oversize-en-jean-bleu-fonce-delave/209027726-1-darkwashblue",
-        "url": "https://www.asos.com/fr/arket/arket-veste-style-barn-oversize-en-jean-bleu-fonce-delave/prd/209027726#colourWayId-209027737"
+        "url": "https://www.asos.com/fr/arket/arket-veste-style-barn-oversize-en-jean-bleu-fonce-delave/prd/209027726#colourWayId-209027737",
+        "date_ajout": "2026-01-11"
     },
     {
-        "id": 208474809,
+        "id": "208474809",
         "marque": "PS Paul Smith",
         "nom": "PS Paul Smith - Chemise casual - Bleu marine",
         "prix_actuel": "90.0€",
@@ -666,13 +787,14 @@
         "reduction_valeur": 55,
         "reduction_label": "-55%",
         "tailles": [
-            "Consulter sur le site"
+            "Vérifier sur site"
         ],
         "image": "https://images.asos-media.com/products/ps-paul-smith-chemise-casual-bleu-marine/208474809-1-navy",
-        "url": "https://www.asos.com/fr/ps-paul-smith/ps-paul-smith-chemise-casual-bleu-marine/prd/208474809#colourWayId-208474813"
+        "url": "https://www.asos.com/fr/ps-paul-smith/ps-paul-smith-chemise-casual-bleu-marine/prd/208474809#colourWayId-208474813",
+        "date_ajout": "2026-01-11"
     },
     {
-        "id": 208955316,
+        "id": "208955316",
         "marque": "Vans",
         "nom": "Vans - Vans Hov - T-shirt - Algue",
         "prix_actuel": "18.0€",
@@ -680,10 +802,11 @@
         "reduction_valeur": 55,
         "reduction_label": "-55%",
         "tailles": [
-            "Consulter sur le site"
+            "Vérifier sur site"
         ],
         "image": "https://images.asos-media.com/products/vans-vans-hov-t-shirt-algue/208955316-1-driedkelp",
-        "url": "https://www.asos.com/fr/vans/vans-vans-hov-t-shirt-algue/prd/208955316#colourWayId-208955317"
+        "url": "https://www.asos.com/fr/vans/vans-vans-hov-t-shirt-algue/prd/208955316#colourWayId-208955317",
+        "date_ajout": "2026-01-11"
     },
     {
         "id": 209251218,
@@ -714,7 +837,7 @@
         "url": "https://www.asos.com/fr/vans/vans-gotsman-sacoche-noir/prd/208955725#colourWayId-208955726"
     },
     {
-        "id": 208059784,
+        "id": "208059784",
         "marque": "Vans",
         "nom": "Vans - Super Lowpro - Baskets en daim - Blanc cassé",
         "prix_actuel": "45.1€",
@@ -722,13 +845,14 @@
         "reduction_valeur": 55,
         "reduction_label": "-55%",
         "tailles": [
-            "Consulter sur le site"
+            "Vérifier sur site"
         ],
         "image": "https://images.asos-media.com/products/vans-super-lowpro-baskets-en-daim-blanc-casse/208059784-1-offwhite",
-        "url": "https://www.asos.com/fr/vans/vans-super-lowpro-baskets-en-daim-blanc-casse/prd/208059784#colourWayId-208059787"
+        "url": "https://www.asos.com/fr/vans/vans-super-lowpro-baskets-en-daim-blanc-casse/prd/208059784#colourWayId-208059787",
+        "date_ajout": "2026-01-11"
     },
     {
-        "id": 208997713,
+        "id": "208997713",
         "marque": "Vans",
         "nom": "Vans Classic - Baskets à enfiler - Blanc",
         "prix_actuel": "38.0€",
@@ -736,13 +860,14 @@
         "reduction_valeur": 55,
         "reduction_label": "-55%",
         "tailles": [
-            "Consulter sur le site"
+            "Vérifier sur site"
         ],
         "image": "https://images.asos-media.com/products/vans-classic-baskets-a-enfiler-blanc/208997713-1-white",
-        "url": "https://www.asos.com/fr/vans/vans-classic-baskets-a-enfiler-blanc/prd/208997713#colourWayId-208997714"
+        "url": "https://www.asos.com/fr/vans/vans-classic-baskets-a-enfiler-blanc/prd/208997713#colourWayId-208997714",
+        "date_ajout": "2026-01-11"
     },
     {
-        "id": 208996724,
+        "id": "208996724",
         "marque": "Vans",
         "nom": "Vans - Premium Old Skool 36 EK - Baskets - Vert",
         "prix_actuel": "52.0€",
@@ -750,13 +875,89 @@
         "reduction_valeur": 55,
         "reduction_label": "-55%",
         "tailles": [
-            "Consulter sur le site"
+            "Vérifier sur site"
         ],
         "image": "https://images.asos-media.com/products/vans-premium-old-skool-36-ek-baskets-vert/208996724-1-driedkelp",
-        "url": "https://www.asos.com/fr/vans/vans-premium-old-skool-36-ek-baskets-vert/prd/208996724#colourWayId-208996731"
+        "url": "https://www.asos.com/fr/vans/vans-premium-old-skool-36-ek-baskets-vert/prd/208996724#colourWayId-208996731",
+        "date_ajout": "2026-01-11"
     },
     {
-        "id": 209192873,
+        "id": "207185139",
+        "marque": "AAPE BY A BATHING APE®",
+        "nom": "AAPE by A BATHING APE® - Bomber à imprimé camouflage - Kaki",
+        "prix_actuel": "161.55€",
+        "prix_base": "359.0€",
+        "reduction_valeur": 55,
+        "reduction_label": "-55%",
+        "tailles": [
+            "Vérifier sur site"
+        ],
+        "image": "https://images.asos-media.com/products/aape-by-a-bathing-ape-bomber-a-imprime-camouflage-kaki/207185139-1-khaki",
+        "url": "https://www.asos.com/fr/aape-by-a-bathing-ape/aape-by-a-bathing-ape-bomber-a-imprime-camouflage-kaki/prd/207185139#colourWayId-207185140",
+        "date_ajout": "2026-01-11"
+    },
+    {
+        "id": "208452113",
+        "marque": "Arket",
+        "nom": "ARKET - T-shirt épais coupe carrée - Noir",
+        "prix_actuel": "15.75€",
+        "prix_base": "35.0€",
+        "reduction_valeur": 55,
+        "reduction_label": "-55%",
+        "tailles": [
+            "Vérifier sur site"
+        ],
+        "image": "https://images.asos-media.com/products/arket-t-shirt-epais-coupe-carree-noir/208452113-1-black",
+        "url": "https://www.asos.com/fr/arket/arket-t-shirt-epais-coupe-carree-noir/prd/208452113#colourWayId-208452115",
+        "date_ajout": "2026-01-11"
+    },
+    {
+        "id": "208955245",
+        "marque": "Vans",
+        "nom": "Vans - Evolve - Sweat à capuche - Gris clair chiné",
+        "prix_actuel": "45.0€",
+        "prix_base": "100.0€",
+        "reduction_valeur": 55,
+        "reduction_label": "-55%",
+        "tailles": [
+            "Vérifier sur site"
+        ],
+        "image": "https://images.asos-media.com/products/vans-evolve-sweat-a-capuche-gris-clair-chine/208955245-1-lightgreyheather",
+        "url": "https://www.asos.com/fr/vans/vans-evolve-sweat-a-capuche-gris-clair-chine/prd/208955245#colourWayId-208955246",
+        "date_ajout": "2026-01-11"
+    },
+    {
+        "id": "209214480",
+        "marque": "Vans",
+        "nom": "Vans - Chaos - T-shirt imprimé au dos - Blanc",
+        "prix_actuel": "15.78€",
+        "prix_base": "35.0€",
+        "reduction_valeur": 55,
+        "reduction_label": "-55%",
+        "tailles": [
+            "Vérifier sur site"
+        ],
+        "image": "https://images.asos-media.com/products/vans-chaos-t-shirt-imprime-au-dos-blanc/209214480-1-white",
+        "url": "https://www.asos.com/fr/vans/vans-chaos-t-shirt-imprime-au-dos-blanc/prd/209214480#colourWayId-209214482",
+        "date_ajout": "2026-01-11"
+    },
+    {
+        "id": "208955454",
+        "marque": "Vans",
+        "nom": "Vans - Hillgate - Doudoune courte - Noir",
+        "prix_actuel": "56.0€",
+        "prix_base": "125.0€",
+        "reduction_valeur": 55,
+        "reduction_label": "-55%",
+        "tailles": [
+            "Vérifier sur site"
+        ],
+        "image": "https://images.asos-media.com/products/vans-hillgate-doudoune-courte-noir/208955454-1-black",
+        "url": "https://www.asos.com/fr/vans/vans-hillgate-doudoune-courte-noir/prd/208955454#colourWayId-208955470",
+        "date_ajout": "2026-01-11"
+    },
+    {
+        "id": "209192873",
         "marque": "Vans",
         "nom": "Vans Classic - Baskets à enfiler à strass - Noir et blanc",
         "prix_actuel": "41.0€",
@@ -764,13 +965,44 @@
         "reduction_valeur": 54,
         "reduction_label": "-54%",
         "tailles": [
-            "Consulter sur le site"
+            "Vérifier sur site"
         ],
         "image": "https://images.asos-media.com/products/vans-classic-baskets-a-enfiler-a-strass-noir-et-blanc/209192873-1-black",
-        "url": "https://www.asos.com/fr/vans/vans-classic-baskets-a-enfiler-a-strass-noir-et-blanc/prd/209192873#colourWayId-209192886"
+        "url": "https://www.asos.com/fr/vans/vans-classic-baskets-a-enfiler-a-strass-noir-et-blanc/prd/209192873#colourWayId-209192886",
+        "date_ajout": "2026-01-11"
     },
     {
-        "id": 209269543,
+        "id": "208955968",
+        "marque": "Vans",
+        "nom": "Vans - Old Skool - Baskets - Blanc et vert",
+        "prix_actuel": "41.0€",
+        "prix_base": "90.0€",
+        "reduction_valeur": 54,
+        "reduction_label": "-54%",
+        "tailles": [
+            "Vérifier sur site"
+        ],
+        "image": "https://images.asos-media.com/products/vans-old-skool-baskets-blanc-et-vert/208955968-1-marshmallowgreen",
+        "url": "https://www.asos.com/fr/vans/vans-old-skool-baskets-blanc-et-vert/prd/208955968#colourWayId-208956000",
+        "date_ajout": "2026-01-11"
+    },
+    {
+        "id": "209214560",
+        "marque": "Vans",
+        "nom": "Vans - T-shirt ample avec logo sur le devant à gauche - Mauve",
+        "prix_actuel": "14.0€",
+        "prix_base": "30.0€",
+        "reduction_valeur": 53,
+        "reduction_label": "-53%",
+        "tailles": [
+            "Vérifier sur site"
+        ],
+        "image": "https://images.asos-media.com/products/vans-t-shirt-ample-avec-logo-sur-le-devant-a-gauche-mauve/209214560-1-mauve",
+        "url": "https://www.asos.com/fr/vans/vans-t-shirt-ample-avec-logo-sur-le-devant-a-gauche-mauve/prd/209214560#colourWayId-209214561",
+        "date_ajout": "2026-01-11"
+    },
+    {
+        "id": "209269543",
         "marque": "AllSaints",
         "nom": "AllSaints - Underground - T-shirt - Beige ",
         "prix_actuel": "37.49€",
@@ -778,13 +1010,14 @@
         "reduction_valeur": 50,
         "reduction_label": "-50%",
         "tailles": [
-            "Consulter sur le site"
+            "Vérifier sur site"
         ],
         "image": "https://images.asos-media.com/products/allsaints-underground-t-shirt-beige/209269543-1-feathertaupe",
-        "url": "https://www.asos.com/fr/allsaints/allsaints-underground-t-shirt-beige/prd/209269543#colourWayId-209269549"
+        "url": "https://www.asos.com/fr/allsaints/allsaints-underground-t-shirt-beige/prd/209269543#colourWayId-209269549",
+        "date_ajout": "2026-01-11"
     },
     {
-        "id": 208776271,
+        "id": "208776271",
         "marque": "AllSaints",
         "nom": "Allsaints - Polo en maille mérinos à manches longues - Bleu ",
         "prix_actuel": "64.5€",
@@ -792,13 +1025,14 @@
         "reduction_valeur": 50,
         "reduction_label": "-50%",
         "tailles": [
-            "Consulter sur le site"
+            "Vérifier sur site"
         ],
         "image": "https://images.asos-media.com/products/allsaints-polo-en-maille-merinos-a-manches-longues-bleu/208776271-1-navyblue",
-        "url": "https://www.asos.com/fr/allsaints/allsaints-polo-en-maille-merinos-a-manches-longues-bleu/prd/208776271#colourWayId-208776276"
+        "url": "https://www.asos.com/fr/allsaints/allsaints-polo-en-maille-merinos-a-manches-longues-bleu/prd/208776271#colourWayId-208776276",
+        "date_ajout": "2026-01-11"
     },
     {
-        "id": 209271240,
+        "id": "209271240",
         "marque": "AllSaints",
         "nom": "AllSaints - Willow - Surchemise en jean - Marron ",
         "prix_actuel": "126.61€",
@@ -806,13 +1040,14 @@
         "reduction_valeur": 50,
         "reduction_label": "-50%",
         "tailles": [
-            "Consulter sur le site"
+            "Vérifier sur site"
         ],
         "image": "https://images.asos-media.com/products/allsaints-willow-surchemise-en-jean-marron/209271240-1-leppobrown",
-        "url": "https://www.asos.com/fr/allsaints/allsaints-willow-surchemise-en-jean-marron/prd/209271240#colourWayId-209271247"
+        "url": "https://www.asos.com/fr/allsaints/allsaints-willow-surchemise-en-jean-marron/prd/209271240#colourWayId-209271247",
+        "date_ajout": "2026-01-11"
     },
     {
-        "id": 209273102,
+        "id": "209273102",
         "marque": "AllSaints",
         "nom": "AllSaints - Holly - Chaussures cloutées - Noir ",
         "prix_actuel": "114.1€",
@@ -820,13 +1055,14 @@
         "reduction_valeur": 50,
         "reduction_label": "-50%",
         "tailles": [
-            "Consulter sur le site"
+            "Vérifier sur site"
         ],
         "image": "https://images.asos-media.com/products/allsaints-holly-chaussures-cloutees-noir/209273102-1-black",
-        "url": "https://www.asos.com/fr/allsaints/allsaints-holly-chaussures-cloutees-noir/prd/209273102#colourWayId-209273103"
+        "url": "https://www.asos.com/fr/allsaints/allsaints-holly-chaussures-cloutees-noir/prd/209273102#colourWayId-209273103",
+        "date_ajout": "2026-01-11"
     },
     {
-        "id": 207040819,
+        "id": "207040819",
         "marque": "Arket",
         "nom": "ARKET - Birch - Jean slim stretch - Bleu foncé délavé",
         "prix_actuel": "39.34€",
@@ -834,13 +1070,14 @@
         "reduction_valeur": 50,
         "reduction_label": "-50%",
         "tailles": [
-            "Consulter sur le site"
+            "Vérifier sur site"
         ],
         "image": "https://images.asos-media.com/products/arket-birch-jean-slim-stretch-bleu-fonce-delave/207040819-1-darkwashblue",
-        "url": "https://www.asos.com/fr/arket/arket-birch-jean-slim-stretch-bleu-fonce-delave/prd/207040819#colourWayId-207040827"
+        "url": "https://www.asos.com/fr/arket/arket-birch-jean-slim-stretch-bleu-fonce-delave/prd/207040819#colourWayId-207040827",
+        "date_ajout": "2026-01-11"
     },
     {
-        "id": 209436906,
+        "id": "209436906",
         "marque": "Arket",
         "nom": "ARKET - Robe longue douce à manches longues - Noir",
         "prix_actuel": "35.99€",
@@ -848,13 +1085,14 @@
         "reduction_valeur": 50,
         "reduction_label": "-50%",
         "tailles": [
-            "Consulter sur le site"
+            "Vérifier sur site"
         ],
         "image": "https://images.asos-media.com/products/arket-robe-longue-douce-a-manches-longues-noir/209436906-1-black",
-        "url": "https://www.asos.com/fr/arket/arket-robe-longue-douce-a-manches-longues-noir/prd/209436906#colourWayId-209436916"
+        "url": "https://www.asos.com/fr/arket/arket-robe-longue-douce-a-manches-longues-noir/prd/209436906#colourWayId-209436916",
+        "date_ajout": "2026-01-11"
     },
     {
-        "id": 207019558,
+        "id": "207019558",
         "marque": "PS Paul Smith",
         "nom": "PS Paul Smith - Pull ras de cou en maille avec logo zèbre emblématique - Noir",
         "prix_actuel": "82.5€",
@@ -862,13 +1100,14 @@
         "reduction_valeur": 50,
         "reduction_label": "-50%",
         "tailles": [
-            "Consulter sur le site"
+            "Vérifier sur site"
         ],
         "image": "https://images.asos-media.com/products/ps-paul-smith-pull-ras-de-cou-en-maille-avec-logo-zebre-emblematique-noir/207019558-1-black",
-        "url": "https://www.asos.com/fr/ps-paul-smith/ps-paul-smith-pull-ras-de-cou-en-maille-avec-logo-zebre-emblematique-noir/prd/207019558#colourWayId-207019574"
+        "url": "https://www.asos.com/fr/ps-paul-smith/ps-paul-smith-pull-ras-de-cou-en-maille-avec-logo-zebre-emblematique-noir/prd/207019558#colourWayId-207019574",
+        "date_ajout": "2026-01-11"
     },
     {
-        "id": 209283141,
+        "id": "209283141",
         "marque": "PS Paul Smith",
         "nom": "Paul Smith - T-shirt à logo P - Noir",
         "prix_actuel": "45.04€",
@@ -876,13 +1115,14 @@
         "reduction_valeur": 50,
         "reduction_label": "-50%",
         "tailles": [
-            "Consulter sur le site"
+            "Vérifier sur site"
         ],
         "image": "https://images.asos-media.com/products/paul-smith-t-shirt-a-logo-p-noir/209283141-1-black",
-        "url": "https://www.asos.com/fr/ps-paul-smith/paul-smith-t-shirt-a-logo-p-noir/prd/209283141#colourWayId-209283149"
+        "url": "https://www.asos.com/fr/ps-paul-smith/paul-smith-t-shirt-a-logo-p-noir/prd/209283141#colourWayId-209283149",
+        "date_ajout": "2026-01-11"
     },
     {
-        "id": 209282905,
+        "id": "209282905",
         "marque": "PS Paul Smith",
         "nom": "Paul Smith - Sweat à col zippé - Bleu",
         "prix_actuel": "100.1€",
@@ -890,13 +1130,14 @@
         "reduction_valeur": 50,
         "reduction_label": "-50%",
         "tailles": [
-            "Consulter sur le site"
+            "Vérifier sur site"
         ],
         "image": "https://images.asos-media.com/products/paul-smith-sweat-a-col-zippe-bleu/209282905-1-blue",
-        "url": "https://www.asos.com/fr/ps-paul-smith/paul-smith-sweat-a-col-zippe-bleu/prd/209282905#colourWayId-209282915"
+        "url": "https://www.asos.com/fr/ps-paul-smith/paul-smith-sweat-a-col-zippe-bleu/prd/209282905#colourWayId-209282915",
+        "date_ajout": "2026-01-11"
     },
     {
-        "id": 209282887,
+        "id": "209282887",
         "marque": "PS Paul Smith",
         "nom": "Paul Smith - Polo coupe classique - Vert",
         "prix_actuel": "57.5€",
@@ -904,13 +1145,14 @@
         "reduction_valeur": 50,
         "reduction_label": "-50%",
         "tailles": [
-            "Consulter sur le site"
+            "Vérifier sur site"
         ],
         "image": "https://images.asos-media.com/products/paul-smith-polo-coupe-classique-vert/209282887-1-green",
-        "url": "https://www.asos.com/fr/ps-paul-smith/paul-smith-polo-coupe-classique-vert/prd/209282887#colourWayId-209282902"
+        "url": "https://www.asos.com/fr/ps-paul-smith/paul-smith-polo-coupe-classique-vert/prd/209282887#colourWayId-209282902",
+        "date_ajout": "2026-01-11"
     },
     {
-        "id": 209283157,
+        "id": "209283157",
         "marque": "PS Paul Smith",
         "nom": "Paul Smith - Happy - T-shirt décontracté à logo - Blanc",
         "prix_actuel": "60.06€",
@@ -918,27 +1160,14 @@
         "reduction_valeur": 50,
         "reduction_label": "-50%",
         "tailles": [
-            "Consulter sur le site"
+            "Vérifier sur site"
         ],
         "image": "https://images.asos-media.com/products/paul-smith-happy-t-shirt-decontracte-a-logo-blanc/209283157-1-white",
-        "url": "https://www.asos.com/fr/ps-paul-smith/paul-smith-happy-t-shirt-decontracte-a-logo-blanc/prd/209283157#colourWayId-209283165"
+        "url": "https://www.asos.com/fr/ps-paul-smith/paul-smith-happy-t-shirt-decontracte-a-logo-blanc/prd/209283157#colourWayId-209283165",
+        "date_ajout": "2026-01-11"
     },
     {
-        "id": 207019558,
-        "marque": "PS Paul Smith",
-        "nom": "PS Paul Smith - Pull ras de cou en maille avec logo zèbre emblématique - Noir",
-        "prix_actuel": "82.5€",
-        "prix_base": "165.0€",
-        "reduction_valeur": 50,
-        "reduction_label": "-50%",
-        "tailles": [
-            "Consulter sur le site"
-        ],
-        "image": "https://images.asos-media.com/products/ps-paul-smith-pull-ras-de-cou-en-maille-avec-logo-zebre-emblematique-noir/207019558-1-black",
-        "url": "https://www.asos.com/fr/ps-paul-smith/ps-paul-smith-pull-ras-de-cou-en-maille-avec-logo-zebre-emblematique-noir/prd/207019558#colourWayId-207019574"
-    },
-    {
-        "id": 208474980,
+        "id": "208474980",
         "marque": "PS Paul Smith",
         "nom": "PS Paul Smith - T-shirt classique à logo et imprimé Phoenix MT - Blanc",
         "prix_actuel": "52.5€",
@@ -946,13 +1175,14 @@
         "reduction_valeur": 50,
         "reduction_label": "-50%",
         "tailles": [
-            "Consulter sur le site"
+            "Vérifier sur site"
         ],
         "image": "https://images.asos-media.com/products/ps-paul-smith-t-shirt-classique-a-logo-et-imprime-phoenix-mt-blanc/208474980-1-white",
-        "url": "https://www.asos.com/fr/ps-paul-smith/ps-paul-smith-t-shirt-classique-a-logo-et-imprime-phoenix-mt-blanc/prd/208474980#colourWayId-208474985"
+        "url": "https://www.asos.com/fr/ps-paul-smith/ps-paul-smith-t-shirt-classique-a-logo-et-imprime-phoenix-mt-blanc/prd/208474980#colourWayId-208474985",
+        "date_ajout": "2026-01-11"
     },
     {
-        "id": 208474950,
+        "id": "208474950",
         "marque": "PS Paul Smith",
         "nom": "PS Paul Smith - T-shirt classique à logo PS répété - Blanc",
         "prix_actuel": "42.5€",
@@ -960,13 +1190,14 @@
         "reduction_valeur": 50,
         "reduction_label": "-50%",
         "tailles": [
-            "Consulter sur le site"
+            "Vérifier sur site"
         ],
         "image": "https://images.asos-media.com/products/ps-paul-smith-t-shirt-classique-a-logo-ps-repete-blanc/208474950-1-white",
-        "url": "https://www.asos.com/fr/ps-paul-smith/ps-paul-smith-t-shirt-classique-a-logo-ps-repete-blanc/prd/208474950#colourWayId-208474954"
+        "url": "https://www.asos.com/fr/ps-paul-smith/ps-paul-smith-t-shirt-classique-a-logo-ps-repete-blanc/prd/208474950#colourWayId-208474954",
+        "date_ajout": "2026-01-11"
     },
     {
-        "id": 208475147,
+        "id": "208475147",
         "marque": "PS Paul Smith",
         "nom": "PS Paul Smith - T-shirt coupe classique à motif gobelets - Noir",
         "prix_actuel": "47.5€",
@@ -974,13 +1205,14 @@
         "reduction_valeur": 50,
         "reduction_label": "-50%",
         "tailles": [
-            "Consulter sur le site"
+            "Vérifier sur site"
         ],
         "image": "https://images.asos-media.com/products/ps-paul-smith-t-shirt-coupe-classique-a-motif-gobelets-noir/208475147-1-black",
-        "url": "https://www.asos.com/fr/ps-paul-smith/ps-paul-smith-t-shirt-coupe-classique-a-motif-gobelets-noir/prd/208475147#colourWayId-208475158"
+        "url": "https://www.asos.com/fr/ps-paul-smith/ps-paul-smith-t-shirt-coupe-classique-a-motif-gobelets-noir/prd/208475147#colourWayId-208475158",
+        "date_ajout": "2026-01-11"
     },
     {
-        "id": 208474935,
+        "id": "208474935",
         "marque": "PS Paul Smith",
         "nom": "PS Paul Smith - T-shirt à imprimé camo - Vert kaki",
         "prix_actuel": "60.0€",
@@ -988,13 +1220,14 @@
         "reduction_valeur": 50,
         "reduction_label": "-50%",
         "tailles": [
-            "Consulter sur le site"
+            "Vérifier sur site"
         ],
         "image": "https://images.asos-media.com/products/ps-paul-smith-t-shirt-a-imprime-camo-vert-kaki/208474935-1-green",
-        "url": "https://www.asos.com/fr/ps-paul-smith/ps-paul-smith-t-shirt-a-imprime-camo-vert-kaki/prd/208474935#colourWayId-208474938"
+        "url": "https://www.asos.com/fr/ps-paul-smith/ps-paul-smith-t-shirt-a-imprime-camo-vert-kaki/prd/208474935#colourWayId-208474938",
+        "date_ajout": "2026-01-11"
     },
     {
-        "id": 208474895,
+        "id": "208474895",
         "marque": "PS Paul Smith",
         "nom": "PS Paul Smith - Sweat à logo smiley - Anthracite",
         "prix_actuel": "122.5€",
@@ -1002,13 +1235,224 @@
         "reduction_valeur": 50,
         "reduction_label": "-50%",
         "tailles": [
-            "Consulter sur le site"
+            "Vérifier sur site"
         ],
         "image": "https://images.asos-media.com/products/ps-paul-smith-sweat-a-logo-smiley-anthracite/208474895-1-charcoal",
-        "url": "https://www.asos.com/fr/ps-paul-smith/ps-paul-smith-sweat-a-logo-smiley-anthracite/prd/208474895#colourWayId-208474897"
+        "url": "https://www.asos.com/fr/ps-paul-smith/ps-paul-smith-sweat-a-logo-smiley-anthracite/prd/208474895#colourWayId-208474897",
+        "date_ajout": "2026-01-11"
     },
     {
-        "id": 209887367,
+        "id": "209246252",
+        "marque": "AAPE BY A BATHING APE®",
+        "nom": "Aape by A Bathing Ape - T-shirt coupe carrée avec logo imprimé sur la poitrine et au dos - Jaune",
+        "prix_actuel": "42.54€",
+        "prix_base": "85.0€",
+        "reduction_valeur": 50,
+        "reduction_label": "-50%",
+        "tailles": [
+            "Vérifier sur site"
+        ],
+        "image": "https://images.asos-media.com/products/aape-by-a-bathing-ape-t-shirt-coupe-carree-avec-logo-imprime-sur-la-poitrine-et-au-dos-jaune/209246252-1-yellow",
+        "url": "https://www.asos.com/fr/aape-by-a-bathing-ape/aape-by-a-bathing-ape-t-shirt-coupe-carree-avec-logo-imprime-sur-la-poitrine-et-au-dos-jaune/prd/209246252#colourWayId-209246253",
+        "date_ajout": "2026-01-11"
+    },
+    {
+        "id": "209270785",
+        "marque": "AllSaints",
+        "nom": "Allsaints - Nyla - Top à manches longues et volants - Noir",
+        "prix_actuel": "100.99€",
+        "prix_base": "201.99€",
+        "reduction_valeur": 50,
+        "reduction_label": "-50%",
+        "tailles": [
+            "Vérifier sur site"
+        ],
+        "image": "https://images.asos-media.com/products/allsaints-nyla-top-a-manches-longues-et-volants-noir/209270785-1-black",
+        "url": "https://www.asos.com/fr/allsaints/allsaints-nyla-top-a-manches-longues-et-volants-noir/prd/209270785#colourWayId-209270799",
+        "date_ajout": "2026-01-11"
+    },
+    {
+        "id": "209274816",
+        "marque": "AllSaints",
+        "nom": "AllSaints - Maeve - Porte-cartes à lanière - Rouge",
+        "prix_actuel": "50.49€",
+        "prix_base": "100.99€",
+        "reduction_valeur": 50,
+        "reduction_label": "-50%",
+        "tailles": [
+            "Vérifier sur site"
+        ],
+        "image": "https://images.asos-media.com/products/allsaints-maeve-porte-cartes-a-laniere-rouge/209274816-1-darkred",
+        "url": "https://www.asos.com/fr/allsaints/allsaints-maeve-porte-cartes-a-laniere-rouge/prd/209274816#colourWayId-209274819",
+        "date_ajout": "2026-01-11"
+    },
+    {
+        "id": "209489508",
+        "marque": "Arket",
+        "nom": "ARKET - Sweat molletonné en coton à col zippé - Noir",
+        "prix_actuel": "41.49€",
+        "prix_base": "82.99€",
+        "reduction_valeur": 50,
+        "reduction_label": "-50%",
+        "tailles": [
+            "Vérifier sur site"
+        ],
+        "image": "https://images.asos-media.com/products/arket-sweat-molletonne-en-coton-a-col-zippe-noir/209489508-1-black",
+        "url": "https://www.asos.com/fr/arket/arket-sweat-molletonne-en-coton-a-col-zippe-noir/prd/209489508#colourWayId-209489510",
+        "date_ajout": "2026-01-11"
+    },
+    {
+        "id": "207041049",
+        "marque": "Arket",
+        "nom": "ARKET - Park - Jean droit coupe classique - Bleu profond délavé",
+        "prix_actuel": "39.5€",
+        "prix_base": "79.0€",
+        "reduction_valeur": 50,
+        "reduction_label": "-50%",
+        "tailles": [
+            "Vérifier sur site"
+        ],
+        "image": "https://images.asos-media.com/products/arket-park-jean-droit-coupe-classique-bleu-profond-delave/207041049-1-deepbluewash",
+        "url": "https://www.asos.com/fr/arket/arket-park-jean-droit-coupe-classique-bleu-profond-delave/prd/207041049#colourWayId-207041050",
+        "date_ajout": "2026-01-11"
+    },
+    {
+        "id": "209282857",
+        "marque": "PS Paul Smith",
+        "nom": "Paul Smith - T-shirt à logo zèbre - Blanc",
+        "prix_actuel": "45.04€",
+        "prix_base": "90.0€",
+        "reduction_valeur": 50,
+        "reduction_label": "-50%",
+        "tailles": [
+            "Vérifier sur site"
+        ],
+        "image": "https://images.asos-media.com/products/paul-smith-t-shirt-a-logo-zebre-blanc/209282857-1-white",
+        "url": "https://www.asos.com/fr/ps-paul-smith/paul-smith-t-shirt-a-logo-zebre-blanc/prd/209282857#colourWayId-209282860",
+        "date_ajout": "2026-01-11"
+    },
+    {
+        "id": "209283118",
+        "marque": "PS Paul Smith",
+        "nom": "Paul Smith - Sweat à logo zèbre et col zippé - Rouge",
+        "prix_actuel": "90.0€",
+        "prix_base": "180.0€",
+        "reduction_valeur": 50,
+        "reduction_label": "-50%",
+        "tailles": [
+            "Vérifier sur site"
+        ],
+        "image": "https://images.asos-media.com/products/paul-smith-sweat-a-logo-zebre-et-col-zippe-rouge/209283118-1-red",
+        "url": "https://www.asos.com/fr/ps-paul-smith/paul-smith-sweat-a-logo-zebre-et-col-zippe-rouge/prd/209283118#colourWayId-209283122",
+        "date_ajout": "2026-01-11"
+    },
+    {
+        "id": "208474926",
+        "marque": "PS Paul Smith",
+        "nom": "Paul Smith - Porte-cartes - Bleu marine",
+        "prix_actuel": "57.5€",
+        "prix_base": "115.0€",
+        "reduction_valeur": 50,
+        "reduction_label": "-50%",
+        "tailles": [
+            "Vérifier sur site"
+        ],
+        "image": "https://images.asos-media.com/products/paul-smith-porte-cartes-bleu-marine/208474926-1-navy",
+        "url": "https://www.asos.com/fr/ps-paul-smith/paul-smith-porte-cartes-bleu-marine/prd/208474926#colourWayId-208474928",
+        "date_ajout": "2026-01-11"
+    },
+    {
+        "id": "208475056",
+        "marque": "PS Paul Smith",
+        "nom": "PS Paul Smith - Short chino à logo zèbre - Beige",
+        "prix_actuel": "90.0€",
+        "prix_base": "180.0€",
+        "reduction_valeur": 50,
+        "reduction_label": "-50%",
+        "tailles": [
+            "Vérifier sur site"
+        ],
+        "image": "https://images.asos-media.com/products/ps-paul-smith-short-chino-a-logo-zebre-beige/208475056-1-neutral",
+        "url": "https://www.asos.com/fr/ps-paul-smith/ps-paul-smith-short-chino-a-logo-zebre-beige/prd/208475056#colourWayId-208475064",
+        "date_ajout": "2026-01-11"
+    },
+    {
+        "id": "208474896",
+        "marque": "PS Paul Smith",
+        "nom": "PS Paul Smith - Imperméable - Vert",
+        "prix_actuel": "212.5€",
+        "prix_base": "425.0€",
+        "reduction_valeur": 50,
+        "reduction_label": "-50%",
+        "tailles": [
+            "Vérifier sur site"
+        ],
+        "image": "https://images.asos-media.com/products/ps-paul-smith-impermeable-vert/208474896-1-green",
+        "url": "https://www.asos.com/fr/ps-paul-smith/ps-paul-smith-impermeable-vert/prd/208474896#colourWayId-208474898",
+        "date_ajout": "2026-01-11"
+    },
+    {
+        "id": "207937350",
+        "marque": "PS Paul Smith",
+        "nom": "PS Paul Smith - T-shirt à logo et imprimé Smiley - Noir",
+        "prix_actuel": "42.5€",
+        "prix_base": "85.0€",
+        "reduction_valeur": 50,
+        "reduction_label": "-50%",
+        "tailles": [
+            "Vérifier sur site"
+        ],
+        "image": "https://images.asos-media.com/products/ps-paul-smith-t-shirt-a-logo-et-imprime-smiley-noir/207937350-1-black",
+        "url": "https://www.asos.com/fr/ps-paul-smith/ps-paul-smith-t-shirt-a-logo-et-imprime-smiley-noir/prd/207937350#colourWayId-207937354",
+        "date_ajout": "2026-01-11"
+    },
+    {
+        "id": "208997651",
+        "marque": "Vans",
+        "nom": "Vans Classic - Baskets à enfiler - Vert",
+        "prix_actuel": "40.0€",
+        "prix_base": "80.0€",
+        "reduction_valeur": 50,
+        "reduction_label": "-50%",
+        "tailles": [
+            "Vérifier sur site"
+        ],
+        "image": "https://images.asos-media.com/products/vans-classic-baskets-a-enfiler-vert/208997651-1-grayolive",
+        "url": "https://www.asos.com/fr/vans/vans-classic-baskets-a-enfiler-vert/prd/208997651#colourWayId-208997652",
+        "date_ajout": "2026-01-11"
+    },
+    {
+        "id": "209248309",
+        "marque": "Vans",
+        "nom": "Vans - Drill - Pantalon charpentier ample - Vert délavé",
+        "prix_actuel": "45.0€",
+        "prix_base": "90.0€",
+        "reduction_valeur": 50,
+        "reduction_label": "-50%",
+        "tailles": [
+            "Vérifier sur site"
+        ],
+        "image": "https://images.asos-media.com/products/vans-drill-pantalon-charpentier-ample-vert-delave/209248309-1-green",
+        "url": "https://www.asos.com/fr/vans/vans-drill-pantalon-charpentier-ample-vert-delave/prd/209248309#colourWayId-209248316",
+        "date_ajout": "2026-01-11"
+    },
+    {
+        "id": "209191513",
+        "marque": "Vans",
+        "nom": "Vans - Old Skool - Baskets avec lacets imprimés et détail breloque - Noir et rose",
+        "prix_actuel": "45.0€",
+        "prix_base": "90.0€",
+        "reduction_valeur": 50,
+        "reduction_label": "-50%",
+        "tailles": [
+            "Vérifier sur site"
+        ],
+        "image": "https://images.asos-media.com/products/vans-old-skool-baskets-avec-lacets-imprimes-et-detail-breloque-noir-et-rose/209191513-1-black",
+        "url": "https://www.asos.com/fr/vans/vans-old-skool-baskets-avec-lacets-imprimes-et-detail-breloque-noir-et-rose/prd/209191513#colourWayId-209191520",
+        "date_ajout": "2026-01-11"
+    },
+    {
+        "id": "209887367",
         "marque": "AAPE BY A BATHING APE®",
         "nom": "Aape By A Bathing Ape - Ensemble maillot et short à logo style université - Beige",
         "prix_actuel": "200.75€",
@@ -1016,13 +1460,14 @@
         "reduction_valeur": 49,
         "reduction_label": "-49%",
         "tailles": [
-            "Consulter sur le site"
+            "Vérifier sur site"
         ],
         "image": "https://images.asos-media.com/products/aape-by-a-bathing-ape-ensemble-maillot-et-short-a-logo-style-universite-beige/207909918-4",
-        "url": "https://www.asos.com/fr/aape-by-a-bathing-ape/aape-by-a-bathing-ape-ensemble-maillot-et-short-a-logo-style-universite-beige/grp/209887367#colourWayId-207909919"
+        "url": "https://www.asos.com/fr/aape-by-a-bathing-ape/aape-by-a-bathing-ape-ensemble-maillot-et-short-a-logo-style-universite-beige/grp/209887367#colourWayId-207909919",
+        "date_ajout": "2026-01-11"
     },
     {
-        "id": 209720366,
+        "id": "209720366",
         "marque": "Arket",
         "nom": "ARKET - Ensemble sans coutures - Noir",
         "prix_actuel": "36.33€",
@@ -1030,13 +1475,14 @@
         "reduction_valeur": 46,
         "reduction_label": "-46%",
         "tailles": [
-            "Consulter sur le site"
+            "Vérifier sur site"
         ],
         "image": "https://images.asos-media.com/products/arket-ensemble-sans-coutures-noir/209449425-3",
-        "url": "https://www.asos.com/fr/arket/arket-ensemble-sans-coutures-noir/grp/209720366#colourWayId-209449441"
+        "url": "https://www.asos.com/fr/arket/arket-ensemble-sans-coutures-noir/grp/209720366#colourWayId-209449441",
+        "date_ajout": "2026-01-11"
     },
     {
-        "id": 209268949,
+        "id": "209268949",
         "marque": "AllSaints",
         "nom": "Allsaints - T-shirt à motif anatomie - Noir ",
         "prix_actuel": "41.42€",
@@ -1044,13 +1490,14 @@
         "reduction_valeur": 45,
         "reduction_label": "-45%",
         "tailles": [
-            "Consulter sur le site"
+            "Vérifier sur site"
         ],
         "image": "https://images.asos-media.com/products/allsaints-t-shirt-a-motif-anatomie-noir/209268949-1-washedblack",
-        "url": "https://www.asos.com/fr/allsaints/allsaints-t-shirt-a-motif-anatomie-noir/prd/209268949#colourWayId-209268979"
+        "url": "https://www.asos.com/fr/allsaints/allsaints-t-shirt-a-motif-anatomie-noir/prd/209268949#colourWayId-209268979",
+        "date_ajout": "2026-01-11"
     },
     {
-        "id": 208453520,
+        "id": "208453520",
         "marque": "AllSaints",
         "nom": "AllSaints - Ode - Débardeur - Vert jade",
         "prix_actuel": "39.6€",
@@ -1058,13 +1505,14 @@
         "reduction_valeur": 45,
         "reduction_label": "-45%",
         "tailles": [
-            "Consulter sur le site"
+            "Vérifier sur site"
         ],
         "image": "https://images.asos-media.com/products/allsaints-ode-debardeur-vert-jade/208453520-1-jadegreen",
-        "url": "https://www.asos.com/fr/allsaints/allsaints-ode-debardeur-vert-jade/prd/208453520#colourWayId-208453530"
+        "url": "https://www.asos.com/fr/allsaints/allsaints-ode-debardeur-vert-jade/prd/208453520#colourWayId-208453530",
+        "date_ajout": "2026-01-11"
     },
     {
-        "id": 207161352,
+        "id": "207161352",
         "marque": "Arket",
         "nom": "ARKET - Ocean - Jean droit ample - Bleu moyen délavé",
         "prix_actuel": "48.95€",
@@ -1072,13 +1520,14 @@
         "reduction_valeur": 45,
         "reduction_label": "-45%",
         "tailles": [
-            "Consulter sur le site"
+            "Vérifier sur site"
         ],
         "image": "https://images.asos-media.com/products/arket-ocean-jean-droit-ample-bleu-moyen-delave/207161352-1-midwashedblue",
-        "url": "https://www.asos.com/fr/arket/arket-ocean-jean-droit-ample-bleu-moyen-delave/prd/207161352#colourWayId-207161354"
+        "url": "https://www.asos.com/fr/arket/arket-ocean-jean-droit-ample-bleu-moyen-delave/prd/207161352#colourWayId-207161354",
+        "date_ajout": "2026-01-11"
     },
     {
-        "id": 209309808,
+        "id": "209309808",
         "marque": "Arket",
         "nom": "ARKET - Gilet texturé en alpaga - Camel ",
         "prix_actuel": "57.74€",
@@ -1086,10 +1535,11 @@
         "reduction_valeur": 45,
         "reduction_label": "-45%",
         "tailles": [
-            "Consulter sur le site"
+            "Vérifier sur site"
         ],
         "image": "https://images.asos-media.com/products/arket-gilet-texture-en-alpaga-camel/209309808-1-darkbeige",
-        "url": "https://www.asos.com/fr/arket/arket-gilet-texture-en-alpaga-camel/prd/209309808#colourWayId-209309813"
+        "url": "https://www.asos.com/fr/arket/arket-gilet-texture-en-alpaga-camel/prd/209309808#colourWayId-209309813",
+        "date_ajout": "2026-01-11"
     },
     {
         "id": 205922833,
@@ -1106,7 +1556,7 @@
         "url": "https://www.asos.com/fr/ps-paul-smith/paul-smith-lot-de-3t-shirts-loungewear-a-logo-noir/prd/205922833#colourWayId-205922835"
     },
     {
-        "id": 207937703,
+        "id": "207937703",
         "marque": "PS Paul Smith",
         "nom": "PS Paul Smith - Polo boutonné à manches courtes - Vert clair",
         "prix_actuel": "80.0€",
@@ -1114,13 +1564,74 @@
         "reduction_valeur": 45,
         "reduction_label": "-45%",
         "tailles": [
-            "Consulter sur le site"
+            "Vérifier sur site"
         ],
         "image": "https://images.asos-media.com/products/ps-paul-smith-polo-boutonne-a-manches-courtes-vert-clair/207937703-1-lightgreen",
-        "url": "https://www.asos.com/fr/ps-paul-smith/ps-paul-smith-polo-boutonne-a-manches-courtes-vert-clair/prd/207937703#colourWayId-207937712"
+        "url": "https://www.asos.com/fr/ps-paul-smith/ps-paul-smith-polo-boutonne-a-manches-courtes-vert-clair/prd/207937703#colourWayId-207937712",
+        "date_ajout": "2026-01-11"
     },
     {
-        "id": 209449425,
+        "id": "207945208",
+        "marque": "AAPE BY A BATHING APE®",
+        "nom": "Aape by A Bathing Ape - Short large en maille épaisse avec rayures brodées sur les côtés - Bordeaux foncé",
+        "prix_actuel": "98.8€",
+        "prix_base": "179.0€",
+        "reduction_valeur": 45,
+        "reduction_label": "-45%",
+        "tailles": [
+            "Vérifier sur site"
+        ],
+        "image": "https://images.asos-media.com/products/aape-by-a-bathing-ape-short-large-en-maille-epaisse-avec-rayures-brodees-sur-les-cotes-bordeaux-fonce/207945208-1-burgandy",
+        "url": "https://www.asos.com/fr/aape-by-a-bathing-ape/aape-by-a-bathing-ape-short-large-en-maille-epaisse-avec-rayures-brodees-sur-les-cotes-bordeaux-fonce/prd/207945208#colourWayId-207945209",
+        "date_ajout": "2026-01-11"
+    },
+    {
+        "id": "207937379",
+        "marque": "PS Paul Smith",
+        "nom": "PS Paul Smith - Chemise casual imprimée à manches courtes - Multicolore",
+        "prix_actuel": "99.0€",
+        "prix_base": "180.0€",
+        "reduction_valeur": 45,
+        "reduction_label": "-45%",
+        "tailles": [
+            "Vérifier sur site"
+        ],
+        "image": "https://images.asos-media.com/products/ps-paul-smith-chemise-casual-imprimee-a-manches-courtes-multicolore/207937379-1-multi",
+        "url": "https://www.asos.com/fr/ps-paul-smith/ps-paul-smith-chemise-casual-imprimee-a-manches-courtes-multicolore/prd/207937379#colourWayId-207937383",
+        "date_ajout": "2026-01-11"
+    },
+    {
+        "id": "208475050",
+        "marque": "PS Paul Smith",
+        "nom": "PS Paul Smith - T-shirt classique à logo et imprimé hérisson - Blanc",
+        "prix_actuel": "57.75€",
+        "prix_base": "105.0€",
+        "reduction_valeur": 45,
+        "reduction_label": "-45%",
+        "tailles": [
+            "Vérifier sur site"
+        ],
+        "image": "https://images.asos-media.com/products/ps-paul-smith-t-shirt-classique-a-logo-et-imprime-herisson-blanc/208475050-1-white",
+        "url": "https://www.asos.com/fr/ps-paul-smith/ps-paul-smith-t-shirt-classique-a-logo-et-imprime-herisson-blanc/prd/208475050#colourWayId-208475057",
+        "date_ajout": "2026-01-11"
+    },
+    {
+        "id": "207937711",
+        "marque": "PS Paul Smith",
+        "nom": "PS Paul Smith - Short en crépon à manches courtes - Kaki",
+        "prix_actuel": "108.5€",
+        "prix_base": "190.0€",
+        "reduction_valeur": 43,
+        "reduction_label": "-43%",
+        "tailles": [
+            "Vérifier sur site"
+        ],
+        "image": "https://images.asos-media.com/products/ps-paul-smith-short-en-crepon-a-manches-courtes-kaki/207937711-1-khaki",
+        "url": "https://www.asos.com/fr/ps-paul-smith/ps-paul-smith-short-en-crepon-a-manches-courtes-kaki/prd/207937711#colourWayId-207937723",
+        "date_ajout": "2026-01-11"
+    },
+    {
+        "id": "209449425",
         "marque": "Arket",
         "nom": "ARKET - Débardeur court d'ensemble sans coutures - Noir",
         "prix_actuel": "16.84€",
@@ -1128,13 +1639,14 @@
         "reduction_valeur": 40,
         "reduction_label": "-40%",
         "tailles": [
-            "Consulter sur le site"
+            "Vérifier sur site"
         ],
         "image": "https://images.asos-media.com/products/arket-debardeur-court-densemble-sans-coutures-noir/209449425-1-black",
-        "url": "https://www.asos.com/fr/arket/arket-debardeur-court-densemble-sans-coutures-noir/grp/209720366#colourWayId-209449441&productId-209449425"
+        "url": "https://www.asos.com/fr/arket/arket-debardeur-court-densemble-sans-coutures-noir/grp/209720366#colourWayId-209449441&productId-209449425",
+        "date_ajout": "2026-01-11"
     },
     {
-        "id": 207383390,
+        "id": "207383390",
         "marque": "PS Paul Smith",
         "nom": "PS Paul Smith - Surchemise d'ensemble casual - Noir",
         "prix_actuel": "135.0€",
@@ -1142,13 +1654,14 @@
         "reduction_valeur": 40,
         "reduction_label": "-40%",
         "tailles": [
-            "Consulter sur le site"
+            "Vérifier sur site"
         ],
         "image": "https://images.asos-media.com/products/ps-paul-smith-surchemise-densemble-casual-noir/207383390-1-black",
-        "url": "https://www.asos.com/fr/ps-paul-smith/ps-paul-smith-surchemise-densemble-casual-noir/prd/207383390#colourWayId-207383391"
+        "url": "https://www.asos.com/fr/ps-paul-smith/ps-paul-smith-surchemise-densemble-casual-noir/prd/207383390#colourWayId-207383391",
+        "date_ajout": "2026-01-11"
     },
     {
-        "id": 207019591,
+        "id": "207019591",
         "marque": "PS Paul Smith",
         "nom": "PS Paul Smith - Pull ras de cou en maille avec logo zèbre emblématique - Bleu marine",
         "prix_actuel": "99.0€",
@@ -1156,41 +1669,14 @@
         "reduction_valeur": 40,
         "reduction_label": "-40%",
         "tailles": [
-            "Consulter sur le site"
+            "Vérifier sur site"
         ],
         "image": "https://images.asos-media.com/products/ps-paul-smith-pull-ras-de-cou-en-maille-avec-logo-zebre-emblematique-bleu-marine/207019591-1-navyblue",
-        "url": "https://www.asos.com/fr/ps-paul-smith/ps-paul-smith-pull-ras-de-cou-en-maille-avec-logo-zebre-emblematique-bleu-marine/prd/207019591#colourWayId-207019596"
+        "url": "https://www.asos.com/fr/ps-paul-smith/ps-paul-smith-pull-ras-de-cou-en-maille-avec-logo-zebre-emblematique-bleu-marine/prd/207019591#colourWayId-207019596",
+        "date_ajout": "2026-01-11"
     },
     {
-        "id": 207019591,
-        "marque": "PS Paul Smith",
-        "nom": "PS Paul Smith - Pull ras de cou en maille avec logo zèbre emblématique - Bleu marine",
-        "prix_actuel": "99.0€",
-        "prix_base": "165.0€",
-        "reduction_valeur": 40,
-        "reduction_label": "-40%",
-        "tailles": [
-            "Consulter sur le site"
-        ],
-        "image": "https://images.asos-media.com/products/ps-paul-smith-pull-ras-de-cou-en-maille-avec-logo-zebre-emblematique-bleu-marine/207019591-1-navyblue",
-        "url": "https://www.asos.com/fr/ps-paul-smith/ps-paul-smith-pull-ras-de-cou-en-maille-avec-logo-zebre-emblematique-bleu-marine/prd/207019591#colourWayId-207019596"
-    },
-    {
-        "id": 207383390,
-        "marque": "PS Paul Smith",
-        "nom": "PS Paul Smith - Surchemise d'ensemble casual - Noir",
-        "prix_actuel": "135.0€",
-        "prix_base": "225.0€",
-        "reduction_valeur": 40,
-        "reduction_label": "-40%",
-        "tailles": [
-            "Consulter sur le site"
-        ],
-        "image": "https://images.asos-media.com/products/ps-paul-smith-surchemise-densemble-casual-noir/207383390-1-black",
-        "url": "https://www.asos.com/fr/ps-paul-smith/ps-paul-smith-surchemise-densemble-casual-noir/prd/207383390#colourWayId-207383391"
-    },
-    {
-        "id": 207937380,
+        "id": "207937380",
         "marque": "PS Paul Smith",
         "nom": "PS Paul Smith - Short à cordon de serrage - Vert imprimé",
         "prix_actuel": "120.0€",
@@ -1198,13 +1684,14 @@
         "reduction_valeur": 40,
         "reduction_label": "-40%",
         "tailles": [
-            "Consulter sur le site"
+            "Vérifier sur site"
         ],
         "image": "https://images.asos-media.com/products/ps-paul-smith-short-a-cordon-de-serrage-vert-imprime/207937380-1-green",
-        "url": "https://www.asos.com/fr/ps-paul-smith/ps-paul-smith-short-a-cordon-de-serrage-vert-imprime/prd/207937380#colourWayId-207937385"
+        "url": "https://www.asos.com/fr/ps-paul-smith/ps-paul-smith-short-a-cordon-de-serrage-vert-imprime/prd/207937380#colourWayId-207937385",
+        "date_ajout": "2026-01-11"
     },
     {
-        "id": 208474937,
+        "id": "208474937",
         "marque": "PS Paul Smith",
         "nom": "PS Paul Smith - Chemise casual - Bleu",
         "prix_actuel": "114.0€",
@@ -1212,13 +1699,14 @@
         "reduction_valeur": 40,
         "reduction_label": "-40%",
         "tailles": [
-            "Consulter sur le site"
+            "Vérifier sur site"
         ],
         "image": "https://images.asos-media.com/products/ps-paul-smith-chemise-casual-bleu/208474937-1-blue",
-        "url": "https://www.asos.com/fr/ps-paul-smith/ps-paul-smith-chemise-casual-bleu/prd/208474937#colourWayId-208474944"
+        "url": "https://www.asos.com/fr/ps-paul-smith/ps-paul-smith-chemise-casual-bleu/prd/208474937#colourWayId-208474944",
+        "date_ajout": "2026-01-11"
     },
     {
-        "id": 208474777,
+        "id": "208474777",
         "marque": "PS Paul Smith",
         "nom": "PS Paul Smith - Short chino à logo zèbre - Bleu marine",
         "prix_actuel": "102.0€",
@@ -1226,13 +1714,14 @@
         "reduction_valeur": 40,
         "reduction_label": "-40%",
         "tailles": [
-            "Consulter sur le site"
+            "Vérifier sur site"
         ],
         "image": "https://images.asos-media.com/products/ps-paul-smith-short-chino-a-logo-zebre-bleu-marine/208474777-1-navy",
-        "url": "https://www.asos.com/fr/ps-paul-smith/ps-paul-smith-short-chino-a-logo-zebre-bleu-marine/prd/208474777#colourWayId-208474782"
+        "url": "https://www.asos.com/fr/ps-paul-smith/ps-paul-smith-short-chino-a-logo-zebre-bleu-marine/prd/208474777#colourWayId-208474782",
+        "date_ajout": "2026-01-11"
     },
     {
-        "id": 208427714,
+        "id": "208427714",
         "marque": "Vans",
         "nom": "Exclusivité ASOS - Vans - Fresh Baked - T-shirt - Blanc cassé",
         "prix_actuel": "21.0€",
@@ -1240,13 +1729,14 @@
         "reduction_valeur": 40,
         "reduction_label": "-40%",
         "tailles": [
-            "Consulter sur le site"
+            "Vérifier sur site"
         ],
         "image": "https://images.asos-media.com/products/exclusivite-asos-vans-fresh-baked-t-shirt-blanc-casse/208427714-1-offwhite",
-        "url": "https://www.asos.com/fr/vans/exclusivite-asos-vans-fresh-baked-t-shirt-blanc-casse/prd/208427714#colourWayId-208427721"
+        "url": "https://www.asos.com/fr/vans/exclusivite-asos-vans-fresh-baked-t-shirt-blanc-casse/prd/208427714#colourWayId-208427721",
+        "date_ajout": "2026-01-11"
     },
     {
-        "id": 209354728,
+        "id": "209354728",
         "marque": "Vans",
         "nom": "Vans - Off the Wall - Gants avec accessoire - Noir/blanc",
         "prix_actuel": "29.0€",
@@ -1254,13 +1744,14 @@
         "reduction_valeur": 40,
         "reduction_label": "-40%",
         "tailles": [
-            "Consulter sur le site"
+            "Vérifier sur site"
         ],
         "image": "https://images.asos-media.com/products/vans-off-the-wall-gants-avec-accessoire-noir-blanc/209354728-1-blackwhite",
-        "url": "https://www.asos.com/fr/vans/vans-off-the-wall-gants-avec-accessoire-noir-blanc/prd/209354728#colourWayId-209354737"
+        "url": "https://www.asos.com/fr/vans/vans-off-the-wall-gants-avec-accessoire-noir-blanc/prd/209354728#colourWayId-209354737",
+        "date_ajout": "2026-01-11"
     },
     {
-        "id": 208427818,
+        "id": "208427818",
         "marque": "Vans",
         "nom": "Exclusivité ASOS - Vans - Local Produce - T-shirt imprimé au dos - Noir",
         "prix_actuel": "21.0€",
@@ -1268,13 +1759,44 @@
         "reduction_valeur": 40,
         "reduction_label": "-40%",
         "tailles": [
-            "Consulter sur le site"
+            "Vérifier sur site"
         ],
         "image": "https://images.asos-media.com/products/exclusivite-asos-vans-local-produce-t-shirt-imprime-au-dos-noir/208427818-1-black",
-        "url": "https://www.asos.com/fr/vans/exclusivite-asos-vans-local-produce-t-shirt-imprime-au-dos-noir/prd/208427818#colourWayId-208427819"
+        "url": "https://www.asos.com/fr/vans/exclusivite-asos-vans-local-produce-t-shirt-imprime-au-dos-noir/prd/208427818#colourWayId-208427819",
+        "date_ajout": "2026-01-11"
     },
     {
-        "id": 207383068,
+        "id": "207251334",
+        "marque": "AllSaints",
+        "nom": "AllSaints - Izzy - Grand cabas en maille - Noir",
+        "prix_actuel": "91.19€",
+        "prix_base": "151.99€",
+        "reduction_valeur": 40,
+        "reduction_label": "-40%",
+        "tailles": [
+            "Vérifier sur site"
+        ],
+        "image": "https://images.asos-media.com/products/allsaints-izzy-grand-cabas-en-maille-noir/207251334-1-black",
+        "url": "https://www.asos.com/fr/allsaints/allsaints-izzy-grand-cabas-en-maille-noir/prd/207251334#colourWayId-207251335",
+        "date_ajout": "2026-01-11"
+    },
+    {
+        "id": "209269155",
+        "marque": "AllSaints",
+        "nom": "AllSaints - Underground - T-shirt - Bleu ",
+        "prix_actuel": "44.99€",
+        "prix_base": "74.99€",
+        "reduction_valeur": 40,
+        "reduction_label": "-40%",
+        "tailles": [
+            "Vérifier sur site"
+        ],
+        "image": "https://images.asos-media.com/products/allsaints-underground-t-shirt-bleu/209269155-1-sunilblue",
+        "url": "https://www.asos.com/fr/allsaints/allsaints-underground-t-shirt-bleu/prd/209269155#colourWayId-209269166",
+        "date_ajout": "2026-01-11"
+    },
+    {
+        "id": "207383068",
         "marque": "PS Paul Smith",
         "nom": "PS Paul Smith - Veste à capuche à imprimé fleurs - Beige",
         "prix_actuel": "223.0€",
@@ -1282,13 +1804,14 @@
         "reduction_valeur": 39,
         "reduction_label": "-39%",
         "tailles": [
-            "Consulter sur le site"
+            "Vérifier sur site"
         ],
         "image": "https://images.asos-media.com/products/ps-paul-smith-veste-a-capuche-a-imprime-fleurs-beige/207383068-1-lightkhaki",
-        "url": "https://www.asos.com/fr/ps-paul-smith/ps-paul-smith-veste-a-capuche-a-imprime-fleurs-beige/prd/207383068#colourWayId-207383071"
+        "url": "https://www.asos.com/fr/ps-paul-smith/ps-paul-smith-veste-a-capuche-a-imprime-fleurs-beige/prd/207383068#colourWayId-207383071",
+        "date_ajout": "2026-01-11"
     },
     {
-        "id": 206077226,
+        "id": "206077226",
         "marque": "Vans",
         "nom": "Vans - Felix - Lunettes de soleil à verres taupe - Blanc",
         "prix_actuel": "11.0€",
@@ -1296,13 +1819,14 @@
         "reduction_valeur": 39,
         "reduction_label": "-39%",
         "tailles": [
-            "Consulter sur le site"
+            "Vérifier sur site"
         ],
         "image": "https://images.asos-media.com/products/vans-felix-lunettes-de-soleil-a-verres-taupe-blanc/206077226-1-white",
-        "url": "https://www.asos.com/fr/vans/vans-felix-lunettes-de-soleil-a-verres-taupe-blanc/prd/206077226#colourWayId-206077252"
+        "url": "https://www.asos.com/fr/vans/vans-felix-lunettes-de-soleil-a-verres-taupe-blanc/prd/206077226#colourWayId-206077252",
+        "date_ajout": "2026-01-11"
     },
     {
-        "id": 209025581,
+        "id": "209025581",
         "marque": "AAPE BY A BATHING APE®",
         "nom": "Aape by A Bathing Ape - Ensemble style workwear à imprimé rodéo intégral - Beige",
         "prix_actuel": "279.5€",
@@ -1310,13 +1834,14 @@
         "reduction_valeur": 35,
         "reduction_label": "-35%",
         "tailles": [
-            "Consulter sur le site"
+            "Vérifier sur site"
         ],
         "image": "https://images.asos-media.com/products/aape-by-a-bathing-ape-ensemble-style-workwear-a-imprime-rodeo-integral-beige/207909996-4",
-        "url": "https://www.asos.com/fr/aape-by-a-bathing-ape/aape-by-a-bathing-ape-ensemble-style-workwear-a-imprime-rodeo-integral-beige/grp/209025581"
+        "url": "https://www.asos.com/fr/aape-by-a-bathing-ape/aape-by-a-bathing-ape-ensemble-style-workwear-a-imprime-rodeo-integral-beige/grp/209025581#colourWayId-207909997",
+        "date_ajout": "2026-01-11"
     },
     {
-        "id": 208163288,
+        "id": "208163288",
         "marque": "AllSaints",
         "nom": "AllSaints - Nicky - Surchemise en jean - Noir",
         "prix_actuel": "129.35€",
@@ -1324,13 +1849,14 @@
         "reduction_valeur": 35,
         "reduction_label": "-35%",
         "tailles": [
-            "Consulter sur le site"
+            "Vérifier sur site"
         ],
         "image": "https://images.asos-media.com/products/allsaints-nicky-surchemise-en-jean-noir/208163288-1-goldenblack",
-        "url": "https://www.asos.com/fr/allsaints/allsaints-nicky-surchemise-en-jean-noir/prd/208163288#colourWayId-208163294"
+        "url": "https://www.asos.com/fr/allsaints/allsaints-nicky-surchemise-en-jean-noir/prd/208163288#colourWayId-208163294",
+        "date_ajout": "2026-01-11"
     },
     {
-        "id": 209489324,
+        "id": "209489324",
         "marque": "Arket",
         "nom": "ARKET - Parapluie compact - Noir",
         "prix_actuel": "12.35€",
@@ -1338,13 +1864,14 @@
         "reduction_valeur": 35,
         "reduction_label": "-35%",
         "tailles": [
-            "Consulter sur le site"
+            "Vérifier sur site"
         ],
         "image": "https://images.asos-media.com/products/arket-parapluie-compact-noir/209489324-1-black",
-        "url": "https://www.asos.com/fr/arket/arket-parapluie-compact-noir/prd/209489324#colourWayId-209489337"
+        "url": "https://www.asos.com/fr/arket/arket-parapluie-compact-noir/prd/209489324#colourWayId-209489337",
+        "date_ajout": "2026-01-11"
     },
     {
-        "id": 207937477,
+        "id": "207937477",
         "marque": "PS Paul Smith",
         "nom": "PS Paul Smith - Polo à logo et liserés - Bleu clair",
         "prix_actuel": "71.5€",
@@ -1352,13 +1879,29 @@
         "reduction_valeur": 35,
         "reduction_label": "-35%",
         "tailles": [
-            "Consulter sur le site"
+            "Vérifier sur site"
         ],
         "image": "https://images.asos-media.com/products/ps-paul-smith-polo-a-logo-et-liseres-bleu-clair/207937477-1-lightblue",
-        "url": "https://www.asos.com/fr/ps-paul-smith/ps-paul-smith-polo-a-logo-et-liseres-bleu-clair/prd/207937477#colourWayId-207937487"
+        "url": "https://www.asos.com/fr/ps-paul-smith/ps-paul-smith-polo-a-logo-et-liseres-bleu-clair/prd/207937477#colourWayId-207937487",
+        "date_ajout": "2026-01-11"
     },
     {
-        "id": 207937738,
+        "id": "208059381",
+        "marque": "Vans",
+        "nom": "Vans - Rowley Classic - Baskets en daim avec semelle en caoutchouc - Avoine",
+        "prix_actuel": "55.33€",
+        "prix_base": "85.0€",
+        "reduction_valeur": 35,
+        "reduction_label": "-35%",
+        "tailles": [
+            "Vérifier sur site"
+        ],
+        "image": "https://images.asos-media.com/products/vans-rowley-classic-baskets-en-daim-avec-semelle-en-caoutchouc-avoine/208059381-1-offwhite",
+        "url": "https://www.asos.com/fr/vans/vans-rowley-classic-baskets-en-daim-avec-semelle-en-caoutchouc-avoine/prd/208059381#colourWayId-208059402",
+        "date_ajout": "2026-01-11"
+    },
+    {
+        "id": "207937738",
         "marque": "PS Paul Smith",
         "nom": "Paul Smith - Lot de 3 boxers - Multicolore",
         "prix_actuel": "39.6€",
@@ -1366,13 +1909,14 @@
         "reduction_valeur": 34,
         "reduction_label": "-34%",
         "tailles": [
-            "Consulter sur le site"
+            "Vérifier sur site"
         ],
         "image": "https://images.asos-media.com/products/paul-smith-lot-de-3boxers-multicolore/207937738-1-multi",
-        "url": "https://www.asos.com/fr/ps-paul-smith/paul-smith-lot-de-3boxers-multicolore/prd/207937738#colourWayId-207937754"
+        "url": "https://www.asos.com/fr/ps-paul-smith/paul-smith-lot-de-3boxers-multicolore/prd/207937738#colourWayId-207937754",
+        "date_ajout": "2026-01-11"
     },
     {
-        "id": 207909990,
+        "id": "207909990",
         "marque": "AAPE BY A BATHING APE®",
         "nom": "Aape By A Bathing Ape - Chemise rayée à manches longues - Bleu ",
         "prix_actuel": "101.5€",
@@ -1380,13 +1924,14 @@
         "reduction_valeur": 30,
         "reduction_label": "-30%",
         "tailles": [
-            "Consulter sur le site"
+            "Vérifier sur site"
         ],
         "image": "https://images.asos-media.com/products/aape-by-a-bathing-ape-chemise-rayee-a-manches-longues-bleu/207909990-1-blue",
-        "url": "https://www.asos.com/fr/aape-by-a-bathing-ape/aape-by-a-bathing-ape-chemise-rayee-a-manches-longues-bleu/prd/207909990#colourWayId-207909991"
+        "url": "https://www.asos.com/fr/aape-by-a-bathing-ape/aape-by-a-bathing-ape-chemise-rayee-a-manches-longues-bleu/prd/207909990#colourWayId-207909991",
+        "date_ajout": "2026-01-11"
     },
     {
-        "id": 209245850,
+        "id": "209245850",
         "marque": "AAPE BY A BATHING APE®",
         "nom": "AAPE by A BATHING APE - Chemise oversize manches longues à rayures avec broderie au dos - Bleu marine",
         "prix_actuel": "160.5€",
@@ -1394,13 +1939,14 @@
         "reduction_valeur": 30,
         "reduction_label": "-30%",
         "tailles": [
-            "Consulter sur le site"
+            "Vérifier sur site"
         ],
         "image": "https://images.asos-media.com/products/aape-by-a-bathing-ape-chemise-oversize-manches-longues-a-rayures-avec-broderie-au-dos-bleu-marine/209245850-1-navy",
-        "url": "https://www.asos.com/fr/aape-by-a-bathing-ape/aape-by-a-bathing-ape-chemise-oversize-manches-longues-a-rayures-avec-broderie-au-dos-bleu-marine/prd/209245850#colourWayId-209245852"
+        "url": "https://www.asos.com/fr/aape-by-a-bathing-ape/aape-by-a-bathing-ape-chemise-oversize-manches-longues-a-rayures-avec-broderie-au-dos-bleu-marine/prd/209245850#colourWayId-209245852",
+        "date_ajout": "2026-01-11"
     },
     {
-        "id": 209246143,
+        "id": "209246143",
         "marque": "AAPE BY A BATHING APE®",
         "nom": "Aape By A Bathing Ape - T-shirt coupe carrée avec imprimé graffiti au dos - Vert",
         "prix_actuel": "56.0€",
@@ -1408,13 +1954,14 @@
         "reduction_valeur": 30,
         "reduction_label": "-30%",
         "tailles": [
-            "Consulter sur le site"
+            "Vérifier sur site"
         ],
         "image": "https://images.asos-media.com/products/aape-by-a-bathing-ape-t-shirt-coupe-carree-avec-imprime-graffiti-au-dos-vert/209246143-1-khaki",
-        "url": "https://www.asos.com/fr/aape-by-a-bathing-ape/aape-by-a-bathing-ape-t-shirt-coupe-carree-avec-imprime-graffiti-au-dos-vert/prd/209246143#colourWayId-209246146"
+        "url": "https://www.asos.com/fr/aape-by-a-bathing-ape/aape-by-a-bathing-ape-t-shirt-coupe-carree-avec-imprime-graffiti-au-dos-vert/prd/209246143#colourWayId-209246146",
+        "date_ajout": "2026-01-11"
     },
     {
-        "id": 209269599,
+        "id": "209269599",
         "marque": "AllSaints",
         "nom": "AllSaints - Brace - T-shirt - Triple beige ",
         "prix_actuel": "94.0€",
@@ -1422,10 +1969,11 @@
         "reduction_valeur": 30,
         "reduction_label": "-30%",
         "tailles": [
-            "Consulter sur le site"
+            "Vérifier sur site"
         ],
         "image": "https://images.asos-media.com/products/allsaints-brace-t-shirt-triple-beige/209269599-1-greyganachebrown",
-        "url": "https://www.asos.com/fr/allsaints/allsaints-brace-t-shirt-triple-beige/prd/209269599#colourWayId-209269605"
+        "url": "https://www.asos.com/fr/allsaints/allsaints-brace-t-shirt-triple-beige/prd/209269599#colourWayId-209269605",
+        "date_ajout": "2026-01-11"
     },
     {
         "id": 209270635,
@@ -1442,7 +1990,7 @@
         "url": "https://www.asos.com/fr/allsaints/allsaints-nyelee-doudoune-noir/prd/209270635#colourWayId-209270648"
     },
     {
-        "id": 209717084,
+        "id": "209717084",
         "marque": "Arket",
         "nom": "ARKET - Doudoune à capuche garnie de duvet - Noir",
         "prix_actuel": "146.0€",
@@ -1450,13 +1998,14 @@
         "reduction_valeur": 30,
         "reduction_label": "-30%",
         "tailles": [
-            "Consulter sur le site"
+            "Vérifier sur site"
         ],
         "image": "https://images.asos-media.com/products/arket-doudoune-a-capuche-garnie-de-duvet-noir/209717084-1-black",
-        "url": "https://www.asos.com/fr/arket/arket-doudoune-a-capuche-garnie-de-duvet-noir/prd/209717084#colourWayId-209717087"
+        "url": "https://www.asos.com/fr/arket/arket-doudoune-a-capuche-garnie-de-duvet-noir/prd/209717084#colourWayId-209717087",
+        "date_ajout": "2026-01-11"
     },
     {
-        "id": 209283082,
+        "id": "209283082",
         "marque": "PS Paul Smith",
         "nom": "Paul Smith - Polo à manches longues - Noir",
         "prix_actuel": "192.5€",
@@ -1464,13 +2013,14 @@
         "reduction_valeur": 30,
         "reduction_label": "-30%",
         "tailles": [
-            "Consulter sur le site"
+            "Vérifier sur site"
         ],
         "image": "https://images.asos-media.com/products/paul-smith-polo-a-manches-longues-noir/209283082-1-black",
-        "url": "https://www.asos.com/fr/ps-paul-smith/paul-smith-polo-a-manches-longues-noir/prd/209283082#colourWayId-209283086"
+        "url": "https://www.asos.com/fr/ps-paul-smith/paul-smith-polo-a-manches-longues-noir/prd/209283082#colourWayId-209283086",
+        "date_ajout": "2026-01-11"
     },
     {
-        "id": 207937766,
+        "id": "207937766",
         "marque": "PS Paul Smith",
         "nom": "PS Paul Smith - Surchemise casual avec étiquette logo - Sable",
         "prix_actuel": "115.5€",
@@ -1478,27 +2028,14 @@
         "reduction_valeur": 30,
         "reduction_label": "-30%",
         "tailles": [
-            "Consulter sur le site"
+            "Vérifier sur site"
         ],
         "image": "https://images.asos-media.com/products/ps-paul-smith-surchemise-casual-avec-etiquette-logo-sable/207937766-1-sand",
-        "url": "https://www.asos.com/fr/ps-paul-smith/ps-paul-smith-surchemise-casual-avec-etiquette-logo-sable/prd/207937766#colourWayId-207937773"
+        "url": "https://www.asos.com/fr/ps-paul-smith/ps-paul-smith-surchemise-casual-avec-etiquette-logo-sable/prd/207937766#colourWayId-207937773",
+        "date_ajout": "2026-01-11"
     },
     {
-        "id": 207937766,
-        "marque": "PS Paul Smith",
-        "nom": "PS Paul Smith - Surchemise casual avec étiquette logo - Sable",
-        "prix_actuel": "115.5€",
-        "prix_base": "165.0€",
-        "reduction_valeur": 30,
-        "reduction_label": "-30%",
-        "tailles": [
-            "Consulter sur le site"
-        ],
-        "image": "https://images.asos-media.com/products/ps-paul-smith-surchemise-casual-avec-etiquette-logo-sable/207937766-1-sand",
-        "url": "https://www.asos.com/fr/ps-paul-smith/ps-paul-smith-surchemise-casual-avec-etiquette-logo-sable/prd/207937766#colourWayId-207937773"
-    },
-    {
-        "id": 207937496,
+        "id": "207937496",
         "marque": "PS Paul Smith",
         "nom": "PS Paul Smith - Chemise casual à manches courtes et imprimé plumes - Bleu",
         "prix_actuel": "105.0€",
@@ -1506,13 +2043,14 @@
         "reduction_valeur": 30,
         "reduction_label": "-30%",
         "tailles": [
-            "Consulter sur le site"
+            "Vérifier sur site"
         ],
         "image": "https://images.asos-media.com/products/ps-paul-smith-chemise-casual-a-manches-courtes-et-imprime-plumes-bleu/207937496-1-lightblue",
-        "url": "https://www.asos.com/fr/ps-paul-smith/ps-paul-smith-chemise-casual-a-manches-courtes-et-imprime-plumes-bleu/prd/207937496#colourWayId-207937506"
+        "url": "https://www.asos.com/fr/ps-paul-smith/ps-paul-smith-chemise-casual-a-manches-courtes-et-imprime-plumes-bleu/prd/207937496#colourWayId-207937506",
+        "date_ajout": "2026-01-11"
     },
     {
-        "id": 207937348,
+        "id": "207937348",
         "marque": "PS Paul Smith",
         "nom": "PS Paul Smith - Chemise à manches courtes décontractée en crépon - Blanc",
         "prix_actuel": "115.5€",
@@ -1520,13 +2058,14 @@
         "reduction_valeur": 30,
         "reduction_label": "-30%",
         "tailles": [
-            "Consulter sur le site"
+            "Vérifier sur site"
         ],
         "image": "https://images.asos-media.com/products/ps-paul-smith-chemise-a-manches-courtes-decontractee-en-crepon-blanc/207937348-1-white",
-        "url": "https://www.asos.com/fr/ps-paul-smith/ps-paul-smith-chemise-a-manches-courtes-decontractee-en-crepon-blanc/prd/207937348#colourWayId-207937353"
+        "url": "https://www.asos.com/fr/ps-paul-smith/ps-paul-smith-chemise-a-manches-courtes-decontractee-en-crepon-blanc/prd/207937348#colourWayId-207937353",
+        "date_ajout": "2026-01-11"
     },
     {
-        "id": 207937520,
+        "id": "207937520",
         "marque": "PS Paul Smith",
         "nom": "PS Paul Smith - Surchemise casual à carreaux - Bleu",
         "prix_actuel": "150.5€",
@@ -1534,13 +2073,14 @@
         "reduction_valeur": 30,
         "reduction_label": "-30%",
         "tailles": [
-            "Consulter sur le site"
+            "Vérifier sur site"
         ],
         "image": "https://images.asos-media.com/products/ps-paul-smith-surchemise-casual-a-carreaux-bleu/207937520-1-blue",
-        "url": "https://www.asos.com/fr/ps-paul-smith/ps-paul-smith-surchemise-casual-a-carreaux-bleu/prd/207937520#colourWayId-207937524"
+        "url": "https://www.asos.com/fr/ps-paul-smith/ps-paul-smith-surchemise-casual-a-carreaux-bleu/prd/207937520#colourWayId-207937524",
+        "date_ajout": "2026-01-11"
     },
     {
-        "id": 207937704,
+        "id": "207937704",
         "marque": "PS Paul Smith",
         "nom": "PS Paul Smith - Sweat avec col zippé et logo zèbre emblématique - Fauve",
         "prix_actuel": "115.5€",
@@ -1548,27 +2088,14 @@
         "reduction_valeur": 30,
         "reduction_label": "-30%",
         "tailles": [
-            "Consulter sur le site"
+            "Vérifier sur site"
         ],
         "image": "https://images.asos-media.com/products/ps-paul-smith-sweat-avec-col-zippe-et-logo-zebre-emblematique-fauve/207937704-1-tan",
-        "url": "https://www.asos.com/fr/ps-paul-smith/ps-paul-smith-sweat-avec-col-zippe-et-logo-zebre-emblematique-fauve/prd/207937704#colourWayId-207937713"
+        "url": "https://www.asos.com/fr/ps-paul-smith/ps-paul-smith-sweat-avec-col-zippe-et-logo-zebre-emblematique-fauve/prd/207937704#colourWayId-207937713",
+        "date_ajout": "2026-01-11"
     },
     {
-        "id": 209283082,
-        "marque": "PS Paul Smith",
-        "nom": "Paul Smith - Polo à manches longues - Noir",
-        "prix_actuel": "192.5€",
-        "prix_base": "275.0€",
-        "reduction_valeur": 30,
-        "reduction_label": "-30%",
-        "tailles": [
-            "Consulter sur le site"
-        ],
-        "image": "https://images.asos-media.com/products/paul-smith-polo-a-manches-longues-noir/209283082-1-black",
-        "url": "https://www.asos.com/fr/ps-paul-smith/paul-smith-polo-a-manches-longues-noir/prd/209283082#colourWayId-209283086"
-    },
-    {
-        "id": 209248264,
+        "id": "209248264",
         "marque": "Vans",
         "nom": "Vans - Midi Pergs - Tote bag imprimé teckel - Marron et noir",
         "prix_actuel": "35.2€",
@@ -1576,13 +2103,59 @@
         "reduction_valeur": 30,
         "reduction_label": "-30%",
         "tailles": [
-            "Consulter sur le site"
+            "Vérifier sur site"
         ],
         "image": "https://images.asos-media.com/products/vans-midi-pergs-tote-bag-imprime-teckel-marron-et-noir/209248264-1-brown",
-        "url": "https://www.asos.com/fr/vans/vans-midi-pergs-tote-bag-imprime-teckel-marron-et-noir/prd/209248264#colourWayId-209248266"
+        "url": "https://www.asos.com/fr/vans/vans-midi-pergs-tote-bag-imprime-teckel-marron-et-noir/prd/209248264#colourWayId-209248266",
+        "date_ajout": "2026-01-11"
     },
     {
-        "id": 205048649,
+        "id": "209777807",
+        "marque": "AllSaints",
+        "nom": "AllSaints - Etie - Sweat à capuche à logo - Noir",
+        "prix_actuel": "115.0€",
+        "prix_base": "163.99€",
+        "reduction_valeur": 30,
+        "reduction_label": "-30%",
+        "tailles": [
+            "Vérifier sur site"
+        ],
+        "image": "https://images.asos-media.com/products/allsaints-etie-sweat-a-capuche-a-logo-noir/209777807-1-black",
+        "url": "https://www.asos.com/fr/allsaints/allsaints-etie-sweat-a-capuche-a-logo-noir/prd/209777807#colourWayId-209777813",
+        "date_ajout": "2026-01-11"
+    },
+    {
+        "id": "209483464",
+        "marque": "Arket",
+        "nom": "ARKET - Pull en pure laine côtelé avec taille cintrée et manches chauve-souris - Rouille",
+        "prix_actuel": "66.0€",
+        "prix_base": "93.99€",
+        "reduction_valeur": 30,
+        "reduction_label": "-30%",
+        "tailles": [
+            "Vérifier sur site"
+        ],
+        "image": "https://images.asos-media.com/products/arket-pull-en-pure-laine-cotele-avec-taille-cintree-et-manches-chauve-souris-rouille/209483464-1-rust",
+        "url": "https://www.asos.com/fr/arket/arket-pull-en-pure-laine-cotele-avec-taille-cintree-et-manches-chauve-souris-rouille/prd/209483464#colourWayId-209483468",
+        "date_ajout": "2026-01-11"
+    },
+    {
+        "id": "209282932",
+        "marque": "PS Paul Smith",
+        "nom": "Paul Smith - Chaussettes lapin - Noir",
+        "prix_actuel": "21.0€",
+        "prix_base": "30.0€",
+        "reduction_valeur": 30,
+        "reduction_label": "-30%",
+        "tailles": [
+            "Vérifier sur site"
+        ],
+        "image": "https://images.asos-media.com/products/paul-smith-chaussettes-lapin-noir/209282932-1-black",
+        "url": "https://www.asos.com/fr/ps-paul-smith/paul-smith-chaussettes-lapin-noir/prd/209282932#colourWayId-209282939",
+        "date_ajout": "2026-01-11"
+    },
+    {
+        "id": "205048649",
         "marque": "Vans",
         "nom": "Vans - Knu Skool - Baskets à semelle chunky - Noir/blanc",
         "prix_actuel": "67.0€",
@@ -1590,13 +2163,14 @@
         "reduction_valeur": 29,
         "reduction_label": "-29%",
         "tailles": [
-            "Consulter sur le site"
+            "Vérifier sur site"
         ],
         "image": "https://images.asos-media.com/products/vans-knu-skool-baskets-a-semelle-chunky-noir-blanc/205048649-1-blacktruewhite",
-        "url": "https://www.asos.com/fr/vans/vans-knu-skool-baskets-a-semelle-chunky-noir-blanc/prd/205048649#colourWayId-205048675"
+        "url": "https://www.asos.com/fr/vans/vans-knu-skool-baskets-a-semelle-chunky-noir-blanc/prd/205048649#colourWayId-205048675",
+        "date_ajout": "2026-01-11"
     },
     {
-        "id": 204013231,
+        "id": "204013231",
         "marque": "PS Paul Smith",
         "nom": "PS Paul Smith - T-shirt classique à logo - Blanc",
         "prix_actuel": "63.0€",
@@ -1604,27 +2178,14 @@
         "reduction_valeur": 28,
         "reduction_label": "-28%",
         "tailles": [
-            "Consulter sur le site"
+            "Vérifier sur site"
         ],
         "image": "https://images.asos-media.com/products/ps-paul-smith-t-shirt-classique-a-logo-blanc/204013231-1-white",
-        "url": "https://www.asos.com/fr/ps-paul-smith/ps-paul-smith-t-shirt-classique-a-logo-blanc/prd/204013231#colourWayId-204013270"
+        "url": "https://www.asos.com/fr/ps-paul-smith/ps-paul-smith-t-shirt-classique-a-logo-blanc/prd/204013231#colourWayId-204013270",
+        "date_ajout": "2026-01-11"
     },
     {
-        "id": 204013231,
-        "marque": "PS Paul Smith",
-        "nom": "PS Paul Smith - T-shirt classique à logo - Blanc",
-        "prix_actuel": "63.0€",
-        "prix_base": "87.99€",
-        "reduction_valeur": 28,
-        "reduction_label": "-28%",
-        "tailles": [
-            "Consulter sur le site"
-        ],
-        "image": "https://images.asos-media.com/products/ps-paul-smith-t-shirt-classique-a-logo-blanc/204013231-1-white",
-        "url": "https://www.asos.com/fr/ps-paul-smith/ps-paul-smith-t-shirt-classique-a-logo-blanc/prd/204013231#colourWayId-204013270"
-    },
-    {
-        "id": 207909966,
+        "id": "207909966",
         "marque": "AAPE BY A BATHING APE®",
         "nom": "Aape by A Bathing Ape - T-shirt à logo imprimé - Rose",
         "prix_actuel": "59.25€",
@@ -1632,13 +2193,14 @@
         "reduction_valeur": 25,
         "reduction_label": "-25%",
         "tailles": [
-            "Consulter sur le site"
+            "Vérifier sur site"
         ],
         "image": "https://images.asos-media.com/products/aape-by-a-bathing-ape-t-shirt-a-logo-imprime-rose/207909966-1-pink",
-        "url": "https://www.asos.com/fr/aape-by-a-bathing-ape/aape-by-a-bathing-ape-t-shirt-a-logo-imprime-rose/prd/207909966#colourWayId-207909969"
+        "url": "https://www.asos.com/fr/aape-by-a-bathing-ape/aape-by-a-bathing-ape-t-shirt-a-logo-imprime-rose/prd/207909966#colourWayId-207909969",
+        "date_ajout": "2026-01-11"
     },
     {
-        "id": 209309792,
+        "id": "209309792",
         "marque": "Arket",
         "nom": "ARKET - Pull oversize en laine - Marron foncé",
         "prix_actuel": "64.0€",
@@ -1646,13 +2208,14 @@
         "reduction_valeur": 25,
         "reduction_label": "-25%",
         "tailles": [
-            "Consulter sur le site"
+            "Vérifier sur site"
         ],
         "image": "https://images.asos-media.com/products/arket-pull-oversize-en-laine-marron-fonce/209309792-1-brown",
-        "url": "https://www.asos.com/fr/arket/arket-pull-oversize-en-laine-marron-fonce/prd/209309792#colourWayId-209309799"
+        "url": "https://www.asos.com/fr/arket/arket-pull-oversize-en-laine-marron-fonce/prd/209309792#colourWayId-209309799",
+        "date_ajout": "2026-01-11"
     },
     {
-        "id": 209338335,
+        "id": "209338335",
         "marque": "Arket",
         "nom": "ARKET - Jean bouffant d'ensemble à surpiqûres - Marron",
         "prix_actuel": "70.5€",
@@ -1660,13 +2223,14 @@
         "reduction_valeur": 25,
         "reduction_label": "-25%",
         "tailles": [
-            "Consulter sur le site"
+            "Vérifier sur site"
         ],
         "image": "https://images.asos-media.com/products/arket-jean-bouffant-densemble-a-surpiqures-marron/209338335-1-brown",
-        "url": "https://www.asos.com/fr/arket/arket-jean-bouffant-densemble-a-surpiqures-marron/prd/209338335#colourWayId-209338342"
+        "url": "https://www.asos.com/fr/arket/arket-jean-bouffant-densemble-a-surpiqures-marron/prd/209338335#colourWayId-209338342",
+        "date_ajout": "2026-01-11"
     },
     {
-        "id": 209717339,
+        "id": "209717339",
         "marque": "Arket",
         "nom": "ARKET - Pull ras de cou épais en pure laine - Marron kaki",
         "prix_actuel": "79.0€",
@@ -1674,373 +2238,10 @@
         "reduction_valeur": 25,
         "reduction_label": "-25%",
         "tailles": [
-            "Consulter sur le site"
+            "Vérifier sur site"
         ],
         "image": "https://images.asos-media.com/products/arket-pull-ras-de-cou-epais-en-pure-laine-marron-kaki/209717339-1-khakibrown",
-        "url": "https://www.asos.com/fr/arket/arket-pull-ras-de-cou-epais-en-pure-laine-marron-kaki/prd/209717339#colourWayId-209717342"
-    },
-    {
-        "id": 205922982,
-        "marque": "PS Paul Smith",
-        "nom": "Paul Smith - Lot de 5 boxers à taille griffée - Noir",
-        "prix_actuel": "63.75€",
-        "prix_base": "85.0€",
-        "reduction_valeur": 25,
-        "reduction_label": "-25%",
-        "tailles": [
-            "Consulter sur le site"
-        ],
-        "image": "https://images.asos-media.com/products/paul-smith-lot-de-5boxers-a-taille-griffee-noir/205922982-1-black",
-        "url": "https://www.asos.com/fr/ps-paul-smith/paul-smith-lot-de-5boxers-a-taille-griffee-noir/prd/205922982#colourWayId-205922983"
-    },
-    {
-        "id": 205922927,
-        "marque": "PS Paul Smith",
-        "nom": "Paul Smith - Lot de 3 t-shirts confort à logo - Blanc",
-        "prix_actuel": "45.0€",
-        "prix_base": "60.0€",
-        "reduction_valeur": 25,
-        "reduction_label": "-25%",
-        "tailles": [
-            "Consulter sur le site"
-        ],
-        "image": "https://images.asos-media.com/products/paul-smith-lot-de-3t-shirts-confort-a-logo-blanc/205922927-1-white",
-        "url": "https://www.asos.com/fr/ps-paul-smith/paul-smith-lot-de-3t-shirts-confort-a-logo-blanc/prd/205922927#colourWayId-205922928"
-    },
-    {
-        "id": 206650515,
-        "marque": "PS Paul Smith",
-        "nom": "Paul Smith - Lot de 5 boxers - Multicolore",
-        "prix_actuel": "63.58€",
-        "prix_base": "85.0€",
-        "reduction_valeur": 25,
-        "reduction_label": "-25%",
-        "tailles": [
-            "Consulter sur le site"
-        ],
-        "image": "https://images.asos-media.com/products/paul-smith-lot-de-5boxers-multicolore/206650515-1-multi",
-        "url": "https://www.asos.com/fr/ps-paul-smith/paul-smith-lot-de-5boxers-multicolore/prd/206650515#colourWayId-206650532"
-    },
-    {
-        "id": 209248498,
-        "marque": "Vans",
-        "nom": "Vans Classic - Lot de 3 paires de chaussettes à carreaux - Blanc multicolore",
-        "prix_actuel": "15.0€",
-        "prix_base": "20.0€",
-        "reduction_valeur": 25,
-        "reduction_label": "-25%",
-        "tailles": [
-            "Consulter sur le site"
-        ],
-        "image": "https://images.asos-media.com/products/vans-classic-lot-de-3paires-de-chaussettes-a-carreaux-blanc-multicolore/209248498-1-white",
-        "url": "https://www.asos.com/fr/vans/vans-classic-lot-de-3paires-de-chaussettes-a-carreaux-blanc-multicolore/prd/209248498#colourWayId-209248499"
-    },
-    {
-        "id": 209248504,
-        "marque": "Vans",
-        "nom": "Vans - Lot de 3 chaussettes classiques - Blanc",
-        "prix_actuel": "15.0€",
-        "prix_base": "20.0€",
-        "reduction_valeur": 25,
-        "reduction_label": "-25%",
-        "tailles": [
-            "Consulter sur le site"
-        ],
-        "image": "https://images.asos-media.com/products/vans-lot-de-3chaussettes-classiques-blanc/209248504-1-white",
-        "url": "https://www.asos.com/fr/vans/vans-lot-de-3chaussettes-classiques-blanc/prd/209248504#colourWayId-209248505"
-    },
-    {
-        "id": 209214680,
-        "marque": "Vans",
-        "nom": "Vans - T-shirt ample avec logo sur le devant à gauche - Bleu clair",
-        "prix_actuel": "22.44€",
-        "prix_base": "30.0€",
-        "reduction_valeur": 25,
-        "reduction_label": "-25%",
-        "tailles": [
-            "Consulter sur le site"
-        ],
-        "image": "https://images.asos-media.com/products/vans-t-shirt-ample-avec-logo-sur-le-devant-a-gauche-bleu-clair/209214680-1-lightblue",
-        "url": "https://www.asos.com/fr/vans/vans-t-shirt-ample-avec-logo-sur-le-devant-a-gauche-bleu-clair/prd/209214680#colourWayId-209214681"
-    },
-    {
-        "id": 209191518,
-        "marque": "Vans",
-        "nom": "Vans - Old Skool Colour Theory - Baskets - Vert clair ",
-        "prix_actuel": "63.58€",
-        "prix_base": "85.0€",
-        "reduction_valeur": 25,
-        "reduction_label": "-25%",
-        "tailles": [
-            "Consulter sur le site"
-        ],
-        "image": "https://images.asos-media.com/products/vans-old-skool-colour-theory-baskets-vert-clair/209191518-1-lightgreen",
-        "url": "https://www.asos.com/fr/vans/vans-old-skool-colour-theory-baskets-vert-clair/prd/209191518#colourWayId-209191546"
-    },
-    {
-        "id": 207019316,
-        "marque": "PS Paul Smith",
-        "nom": "PS Paul Smith - Pull à col zippé et logo emblématique - Noir",
-        "prix_actuel": "137.0€",
-        "prix_base": "180.0€",
-        "reduction_valeur": 24,
-        "reduction_label": "-24%",
-        "tailles": [
-            "Consulter sur le site"
-        ],
-        "image": "https://images.asos-media.com/products/ps-paul-smith-pull-a-col-zippe-et-logo-emblematique-noir/207019316-1-black",
-        "url": "https://www.asos.com/fr/ps-paul-smith/ps-paul-smith-pull-a-col-zippe-et-logo-emblematique-noir/prd/207019316#colourWayId-207019364"
-    },
-    {
-        "id": 209214664,
-        "marque": "Vans",
-        "nom": "Vans - T-shirt coupe standard avec logo sur la poitrine - Noir",
-        "prix_actuel": "19.0€",
-        "prix_base": "25.0€",
-        "reduction_valeur": 24,
-        "reduction_label": "-24%",
-        "tailles": [
-            "Consulter sur le site"
-        ],
-        "image": "https://images.asos-media.com/products/vans-t-shirt-coupe-standard-avec-logo-sur-la-poitrine-noir/209214664-1-black",
-        "url": "https://www.asos.com/fr/vans/vans-t-shirt-coupe-standard-avec-logo-sur-la-poitrine-noir/prd/209214664#colourWayId-209214665"
-    },
-    {
-        "id": 207241407,
-        "marque": "AAPE BY A BATHING APE®",
-        "nom": "Aape By A Bathing Ape - Pull en maille à logo - Gris",
-        "prix_actuel": "87.2€",
-        "prix_base": "109.0€",
-        "reduction_valeur": 20,
-        "reduction_label": "-20%",
-        "tailles": [
-            "Consulter sur le site"
-        ],
-        "image": "https://images.asos-media.com/products/aape-by-a-bathing-ape-pull-en-maille-a-logo-gris/207241407-1-grey",
-        "url": "https://www.asos.com/fr/aape-by-a-bathing-ape/aape-by-a-bathing-ape-pull-en-maille-a-logo-gris/prd/207241407#colourWayId-207241413"
-    },
-    {
-        "id": 207161376,
-        "marque": "Arket",
-        "nom": "ARKET - Ocean - Jean droit ample - Noir",
-        "prix_actuel": "71.11€",
-        "prix_base": "89.0€",
-        "reduction_valeur": 20,
-        "reduction_label": "-20%",
-        "tailles": [
-            "Consulter sur le site"
-        ],
-        "image": "https://images.asos-media.com/products/arket-ocean-jean-droit-ample-noir/207161376-1-black",
-        "url": "https://www.asos.com/fr/arket/arket-ocean-jean-droit-ample-noir/prd/207161376#colourWayId-207161378"
-    },
-    {
-        "id": 209489321,
-        "marque": "Arket",
-        "nom": "ARKET - Veste en polaire duveteuse avec fermeture éclair double sens et poche à l'avant - Bleu marine",
-        "prix_actuel": "83.88€",
-        "prix_base": "104.99€",
-        "reduction_valeur": 20,
-        "reduction_label": "-20%",
-        "tailles": [
-            "Consulter sur le site"
-        ],
-        "image": "https://images.asos-media.com/products/arket-veste-en-polaire-duveteuse-avec-fermeture-eclair-double-sens-et-poche-a-lavant-bleu-marine/209489321-1-navyblue",
-        "url": "https://www.asos.com/fr/arket/arket-veste-en-polaire-duveteuse-avec-fermeture-eclair-double-sens-et-poche-a-lavant-bleu-marine/prd/209489321#colourWayId-209489326"
-    },
-    {
-        "id": 209716745,
-        "marque": "Arket",
-        "nom": "ARKET - Manteau oversize mi-long en laine et alpaga - Noir",
-        "prix_actuel": "228.0€",
-        "prix_base": "284.99€",
-        "reduction_valeur": 20,
-        "reduction_label": "-20%",
-        "tailles": [
-            "Consulter sur le site"
-        ],
-        "image": "https://images.asos-media.com/products/arket-manteau-oversize-mi-long-en-laine-et-alpaga-noir/209716745-1-black",
-        "url": "https://www.asos.com/fr/arket/arket-manteau-oversize-mi-long-en-laine-et-alpaga-noir/prd/209716745#colourWayId-209716747"
-    },
-    {
-        "id": 209716684,
-        "marque": "Arket",
-        "nom": "ARKET - Pull en laine bouillie avec col polo - Bleu marine",
-        "prix_actuel": "84.0€",
-        "prix_base": "104.99€",
-        "reduction_valeur": 20,
-        "reduction_label": "-20%",
-        "tailles": [
-            "Consulter sur le site"
-        ],
-        "image": "https://images.asos-media.com/products/arket-pull-en-laine-bouillie-avec-col-polo-bleu-marine/209716684-1-black",
-        "url": "https://www.asos.com/fr/arket/arket-pull-en-laine-bouillie-avec-col-polo-bleu-marine/prd/209716684#colourWayId-209716690"
-    },
-    {
-        "id": 209483697,
-        "marque": "Arket",
-        "nom": "ARKET - Veste zippée à col montant en tissu effet néoprène - Gris",
-        "prix_actuel": "84.0€",
-        "prix_base": "104.99€",
-        "reduction_valeur": 20,
-        "reduction_label": "-20%",
-        "tailles": [
-            "Consulter sur le site"
-        ],
-        "image": "https://images.asos-media.com/products/arket-veste-zippee-a-col-montant-en-tissu-effet-neoprene-gris/209483697-1-grey",
-        "url": "https://www.asos.com/fr/arket/arket-veste-zippee-a-col-montant-en-tissu-effet-neoprene-gris/prd/209483697#colourWayId-209483699"
-    },
-    {
-        "id": 207383223,
-        "marque": "PS Paul Smith",
-        "nom": "PS Paul Smith - Ceinture avec coutures visible - Noir",
-        "prix_actuel": "68.0€",
-        "prix_base": "85.0€",
-        "reduction_valeur": 20,
-        "reduction_label": "-20%",
-        "tailles": [
-            "Consulter sur le site"
-        ],
-        "image": "https://images.asos-media.com/products/ps-paul-smith-ceinture-avec-coutures-visible-noir/207383223-1-black",
-        "url": "https://www.asos.com/fr/ps-paul-smith/ps-paul-smith-ceinture-avec-coutures-visible-noir/prd/207383223#colourWayId-207383228"
-    },
-    {
-        "id": 207383223,
-        "marque": "PS Paul Smith",
-        "nom": "PS Paul Smith - Ceinture avec coutures visible - Noir",
-        "prix_actuel": "68.0€",
-        "prix_base": "85.0€",
-        "reduction_valeur": 20,
-        "reduction_label": "-20%",
-        "tailles": [
-            "Consulter sur le site"
-        ],
-        "image": "https://images.asos-media.com/products/ps-paul-smith-ceinture-avec-coutures-visible-noir/207383223-1-black",
-        "url": "https://www.asos.com/fr/ps-paul-smith/ps-paul-smith-ceinture-avec-coutures-visible-noir/prd/207383223#colourWayId-207383228"
-    },
-    {
-        "id": 207937381,
-        "marque": "PS Paul Smith",
-        "nom": "PS Paul Smith - Polo classique à manches courtes et logo - Fauve",
-        "prix_actuel": "84.0€",
-        "prix_base": "105.0€",
-        "reduction_valeur": 20,
-        "reduction_label": "-20%",
-        "tailles": [
-            "Consulter sur le site"
-        ],
-        "image": "https://images.asos-media.com/products/ps-paul-smith-polo-classique-a-manches-courtes-et-logo-fauve/207937381-1-tan",
-        "url": "https://www.asos.com/fr/ps-paul-smith/ps-paul-smith-polo-classique-a-manches-courtes-et-logo-fauve/prd/207937381#colourWayId-207937384"
-    },
-    {
-        "id": 209191720,
-        "marque": "Vans",
-        "nom": "Vans - Knu Skool Colour Theory - Baskets - Marron noix",
-        "prix_actuel": "76.09€",
-        "prix_base": "95.0€",
-        "reduction_valeur": 20,
-        "reduction_label": "-20%",
-        "tailles": [
-            "Consulter sur le site"
-        ],
-        "image": "https://images.asos-media.com/products/vans-knu-skool-colour-theory-baskets-marron-noix/209191720-1-brown",
-        "url": "https://www.asos.com/fr/vans/vans-knu-skool-colour-theory-baskets-marron-noix/prd/209191720#colourWayId-209191744"
-    },
-    {
-        "id": 208997490,
-        "marque": "Vans",
-        "nom": "Vans - Premium authentic 44 - Blanc",
-        "prix_actuel": "80.0€",
-        "prix_base": "100.0€",
-        "reduction_valeur": 20,
-        "reduction_label": "-20%",
-        "tailles": [
-            "Consulter sur le site"
-        ],
-        "image": "https://images.asos-media.com/products/vans-premium-authentic-44-blanc/208997490-1-white",
-        "url": "https://www.asos.com/fr/vans/vans-premium-authentic-44-blanc/prd/208997490#colourWayId-208997491"
-    },
-    {
-        "id": 204487490,
-        "marque": "Vans",
-        "nom": "Vans - Spicoli - Lunettes de soleil - Noir",
-        "prix_actuel": "14.5€",
-        "prix_base": "18.0€",
-        "reduction_valeur": 19,
-        "reduction_label": "-19%",
-        "tailles": [
-            "Consulter sur le site"
-        ],
-        "image": "https://images.asos-media.com/products/vans-spicoli-lunettes-de-soleil-noir/204487490-1-black",
-        "url": "https://www.asos.com/fr/vans/vans-spicoli-lunettes-de-soleil-noir/prd/204487490#colourWayId-204487495"
-    },
-    {
-        "id": 209338879,
-        "marque": "Arket",
-        "nom": "ARKET - Pull décontracté ultra-doux en alpaga et laine - Noir",
-        "prix_actuel": "80.0€",
-        "prix_base": "93.99€",
-        "reduction_valeur": 15,
-        "reduction_label": "-15%",
-        "tailles": [
-            "Consulter sur le site"
-        ],
-        "image": "https://images.asos-media.com/products/arket-pull-decontracte-ultra-doux-en-alpaga-et-laine-noir/209338879-1-black",
-        "url": "https://www.asos.com/fr/arket/arket-pull-decontracte-ultra-doux-en-alpaga-et-laine-noir/prd/209338879#colourWayId-209338888"
-    },
-    {
-        "id": 209716729,
-        "marque": "Arket",
-        "nom": "ARKET - Manteau mi-long oversize en laine et alpaga - Marron taupe foncé",
-        "prix_actuel": "242.5€",
-        "prix_base": "284.99€",
-        "reduction_valeur": 15,
-        "reduction_label": "-15%",
-        "tailles": [
-            "Consulter sur le site"
-        ],
-        "image": "https://images.asos-media.com/products/arket-manteau-mi-long-oversize-en-laine-et-alpaga-marron-taupe-fonce/209716729-1-brown",
-        "url": "https://www.asos.com/fr/arket/arket-manteau-mi-long-oversize-en-laine-et-alpaga-marron-taupe-fonce/prd/209716729#colourWayId-209716731"
-    },
-    {
-        "id": 209248510,
-        "marque": "Vans",
-        "nom": "Vans Classic - Lot de 3 paires de chaussettes à carreaux - Noir et blanc",
-        "prix_actuel": "17.0€",
-        "prix_base": "20.0€",
-        "reduction_valeur": 15,
-        "reduction_label": "-15%",
-        "tailles": [
-            "Consulter sur le site"
-        ],
-        "image": "https://images.asos-media.com/products/vans-classic-lot-de-3paires-de-chaussettes-a-carreaux-noir-et-blanc/209248510-1-black",
-        "url": "https://www.asos.com/fr/vans/vans-classic-lot-de-3paires-de-chaussettes-a-carreaux-noir-et-blanc/prd/209248510#colourWayId-209248511"
-    },
-    {
-        "id": 208452281,
-        "marque": "AllSaints",
-        "nom": "AllSaints - Underground - Tote bag - Kaki",
-        "prix_actuel": "38.5€",
-        "prix_base": "45.0€",
-        "reduction_valeur": 14,
-        "reduction_label": "-14%",
-        "tailles": [
-            "Consulter sur le site"
-        ],
-        "image": "https://images.asos-media.com/products/allsaints-underground-tote-bag-kaki/208452281-1-khaki",
-        "url": "https://www.asos.com/fr/allsaints/allsaints-underground-tote-bag-kaki/prd/208452281#colourWayId-208452282"
-    },
-    {
-        "id": 209489522,
-        "marque": "Arket",
-        "nom": "ARKET - Pull décontracté en laine et alpaga à col ras de cou - Beige",
-        "prix_actuel": "71.0€",
-        "prix_base": "82.99€",
-        "reduction_valeur": 14,
-        "reduction_label": "-14%",
-        "tailles": [
-            "Consulter sur le site"
-        ],
-        "image": "https://images.asos-media.com/products/arket-pull-decontracte-en-laine-et-alpaga-a-col-ras-de-cou-beige/209489522-1-beige",
-        "url": "https://www.asos.com/fr/arket/arket-pull-decontracte-en-laine-et-alpaga-a-col-ras-de-cou-beige/prd/209489522#colourWayId-209489523"
+        "url": "https://www.asos.com/fr/arket/arket-pull-ras-de-cou-epais-en-pure-laine-marron-kaki/prd/209717339#colourWayId-209717342",
+        "date_ajout": "2026-01-11"
     }
 ]
