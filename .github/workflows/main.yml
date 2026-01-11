@@ -1,12 +1,32 @@
 name: Routine Matinale Pepite
 
 on:
-  workflow_dispatch: # On garde juste ce bouton pour l'instant pour tester l'apparition
+  schedule:
+    - cron: '0 8 * * *'
+  workflow_dispatch:
 
 jobs:
-  build:
+  scraping_job:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - name: Lancement de TEST
-        run: echo "Le robot est pret"
+      - name: 1. Recuperation du code
+        uses: actions/checkout@v3
+
+      - name: 2. Installation de Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: 3. Installation des librairies
+        run: pip install -r requirements.txt
+
+      - name: 4. EXECUTION DU SCRAPER
+        run: python TEST.py
+
+      - name: 5. ENREGISTREMENT DES RESULTATS
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add tinder_shopping_final.json
+          git commit -m "MAJ automatique des pépites" || echo "Rien à ajouter"
+          git push
