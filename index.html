@@ -8,10 +8,26 @@
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
-        body { background: #000; color: white; margin: 0; font-family: 'Inter', sans-serif; overflow-y: scroll; scroll-snap-type: y mandatory; }
+        
+        body { 
+            background: #000; 
+            color: white; 
+            margin: 0; 
+            font-family: 'Inter', sans-serif; 
+            overflow-y: scroll; 
+            scroll-snap-type: y mandatory;
+            -webkit-overflow-scrolling: touch;
+            overscroll-behavior-y: contain;
+        }
+        
         body::-webkit-scrollbar { display: none; }
         
-        .brand-logo { font-family: 'Inter', sans-serif; font-weight: 900; font-style: italic; letter-spacing: -0.05em; }
+        .brand-logo { 
+            font-family: 'Inter', sans-serif; 
+            font-weight: 900; 
+            font-style: italic; 
+            letter-spacing: -0.05em; 
+        }
         
         .card-wrapper { 
             height: 100vh; 
@@ -24,37 +40,169 @@
         }
 
         .card { 
-            width: 90vw; max-width: 380px; height: 78vh; 
-            background: #1c1c1e; border-radius: 2.5rem; 
-            overflow: hidden; position: relative; 
+            width: 90vw; 
+            max-width: 380px; 
+            height: 78vh; 
+            background: #1c1c1e; 
+            border-radius: 2.5rem; 
+            overflow: hidden; 
+            position: relative; 
             border: 1px solid rgba(255,255,255,0.1); 
             transition: all 0.3s ease; 
         }
 
-        .card.active { border: 2px solid #facb15; transform: scale(1.02); box-shadow: 0 0 30px rgba(250, 203, 21, 0.15); }
-        .product-img { height: 50%; width: 100%; object-fit: cover; pointer-events: none; }
-        .promo-badge { position: absolute; top: 20px; left: 20px; background: #facb15; color: black; font-weight: 900; padding: 5px 12px; border-radius: 12px; font-size: 0.9rem; z-index: 10; }
+        .card.active { 
+            border: 2px solid #facb15; 
+            transform: scale(1.02); 
+            box-shadow: 0 0 30px rgba(250, 203, 21, 0.15); 
+        }
+        
+        .product-img { 
+            height: 50%; 
+            width: 100%; 
+            object-fit: cover; 
+            pointer-events: none; 
+        }
+        
+        .product-info {
+            padding: 20px;
+            height: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        
+        .promo-badge { 
+            position: absolute; 
+            top: 20px; 
+            left: 20px; 
+            background: #facb15; 
+            color: black; 
+            font-weight: 900; 
+            padding: 5px 12px; 
+            border-radius: 12px; 
+            font-size: 0.9rem; 
+            z-index: 10; 
+        }
+        
+        .share-btn {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: rgba(0,0,0,0.6);
+            border: 1px solid rgba(255,255,255,0.2);
+            padding: 10px;
+            border-radius: 50%;
+            color: white;
+            z-index: 10;
+            backdrop-filter: blur(10px);
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        
+        .share-btn:hover {
+            background: rgba(0,0,0,0.8);
+            transform: scale(1.1);
+        }
         
         /* Coeur animation Double Tap */
         .heart-tap {
-            position: absolute; top: 25%; left: 50%; transform: translate(-50%, -50%) scale(0);
-            color: #facb15; font-size: 80px; z-index: 20; opacity: 0; pointer-events: none;
+            position: absolute; 
+            top: 25%; 
+            left: 50%; 
+            transform: translate(-50%, -50%) scale(0);
+            color: #facb15; 
+            font-size: 80px; 
+            z-index: 20; 
+            opacity: 0; 
+            pointer-events: none;
         }
-        .animate-heart { animation: heartPop 0.6s ease-out; }
+        
+        .animate-heart { 
+            animation: heartPop 0.6s ease-out; 
+        }
+        
         @keyframes heartPop {
             0% { transform: translate(-50%, -50%) scale(0); opacity: 0; }
             50% { transform: translate(-50%, -50%) scale(1.2); opacity: 1; }
             100% { transform: translate(-50%, -50%) scale(1); opacity: 0; }
         }
 
-        .btn-action { flex: 1; padding: 12px; border-radius: 15px; font-weight: 800; font-size: 0.8rem; text-transform: uppercase; transition: all 0.2s; display: flex; align-items: center; justify-content: center; gap: 8px; border: 1px solid; }
-        .btn-nope { background: rgba(239, 68, 68, 0.1); color: #ef4444; border-color: #ef4444; }
-        .btn-like { background: rgba(16, 185, 129, 0.1); color: #10b981; border-color: #10b981; }
-        .voted-like { background: #10b981 !important; color: white !important; }
+        .btn-action { 
+            flex: 1; 
+            padding: 12px; 
+            border-radius: 15px; 
+            font-weight: 800; 
+            font-size: 0.8rem; 
+            text-transform: uppercase; 
+            transition: all 0.2s; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            gap: 8px; 
+            border: 1px solid;
+            cursor: pointer;
+        }
         
-        #filter-menu { display: none; position: fixed; top: 70px; left: 20px; right: 20px; background: #18181b; border: 1px solid rgba(255,255,255,0.1); border-radius: 1.5rem; z-index: 150; padding: 20px; box-shadow: 0 20px 40px rgba(0,0,0,0.8); }
-        #saved-modal { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.95); z-index: 200; overflow-y: auto; padding: 20px; }
-        .grid-saved { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; margin-top: 20px; }
+        .btn-action:focus-visible {
+            outline: 2px solid #facb15;
+            outline-offset: 2px;
+        }
+        
+        .btn-nope { 
+            background: rgba(239, 68, 68, 0.1); 
+            color: #ef4444; 
+            border-color: #ef4444; 
+        }
+        
+        .btn-like { 
+            background: rgba(16, 185, 129, 0.1); 
+            color: #10b981; 
+            border-color: #10b981; 
+        }
+        
+        .voted-like { 
+            background: #10b981 !important; 
+            color: white !important; 
+        }
+        
+        #filter-menu { 
+            display: none; 
+            position: fixed; 
+            top: 70px; 
+            left: 20px; 
+            right: 20px; 
+            background: #18181b; 
+            border: 1px solid rgba(255,255,255,0.1); 
+            border-radius: 1.5rem; 
+            z-index: 150; 
+            padding: 20px; 
+            box-shadow: 0 20px 40px rgba(0,0,0,0.8); 
+        }
+        
+        #saved-modal { 
+            display: none; 
+            position: fixed; 
+            inset: 0; 
+            background: rgba(0,0,0,0.95); 
+            z-index: 200; 
+            overflow-y: auto; 
+            padding: 20px; 
+        }
+        
+        .grid-saved { 
+            display: grid; 
+            grid-template-columns: repeat(2, 1fr); 
+            gap: 20px; 
+            margin-top: 20px; 
+        }
+
+        .line-clamp-1 {
+            display: -webkit-box;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
     </style>
 </head>
 <body>
@@ -69,11 +217,12 @@
     <div id="filter-menu">
         <h3 class="text-xs font-black uppercase text-gray-500 mb-4 tracking-widest text-center">Filtrer par marques</h3>
         <div id="brands-container" class="grid grid-cols-2 gap-3 mb-6 max-h-60 overflow-y-auto pr-2"></div>
-        <button onclick="applyFilters()" class="w-full bg-yellow-400 text-black py-4 rounded-xl font-black uppercase text-xs">Appliquer</button>
+        <button onclick="applyFilters(event)" id="apply-filters-btn" class="w-full bg-yellow-400 text-black py-4 rounded-xl font-black uppercase text-xs">Appliquer</button>
+        <button onclick="resetFilters()" class="w-full bg-transparent border border-gray-600 text-gray-400 py-3 rounded-xl font-bold uppercase text-xs mt-2">Réinitialiser</button>
     </div>
 
     <div class="fixed top-20 right-6 z-[100] flex flex-col items-end gap-3">
-        <button onclick="undoLastAction()" class="bg-zinc-900/90 border border-gray-500 p-3 rounded-full text-gray-400 hover:text-white transition-colors">
+        <button onclick="undoLastAction()" aria-label="Annuler la dernière action" class="bg-zinc-900/90 border border-gray-500 p-3 rounded-full text-gray-400 hover:text-white transition-colors">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><polyline points="3 3 3 8 8 8"/></svg>
         </button>
         <div class="bg-zinc-900/90 border border-white/10 px-4 py-2 rounded-2xl flex items-center gap-3">
@@ -94,7 +243,8 @@
             <button onclick="toggleSavedList()" class="text-4xl text-gray-400">&times;</button>
         </div>
         <div id="saved-grid" class="grid-saved max-w-4xl mx-auto"></div>
-        <div class="flex justify-center mt-10">
+        <div class="flex justify-center mt-10 gap-4">
+            <button onclick="showStats()" class="text-yellow-400 text-[10px] font-bold uppercase tracking-widest border border-yellow-400/30 px-6 py-2 rounded-full">📊 Statistiques</button>
             <button onclick="clearCache()" class="text-red-500 text-[10px] font-bold uppercase tracking-widest border border-red-500/30 px-6 py-2 rounded-full">Réinitialiser l'App</button>
         </div>
     </div>
@@ -105,28 +255,57 @@
         let history = []; 
         let currentIndex = 0;
         let lastTap = 0;
+        let touchStartX = 0;
+        let scrollTimeout;
 
         let likedIds = JSON.parse(localStorage.getItem('pepite_likes')) || [];
         let dislikedIds = JSON.parse(localStorage.getItem('pepite_dislikes')) || [];
 
         async function init() {
             try {
+                // Vérifier le cache de session
+                const cached = sessionStorage.getItem('products_cache');
+                if (cached) {
+                    allProducts = JSON.parse(cached);
+                    initBrands();
+                    applyFilters();
+                    return;
+                }
+
                 const response = await fetch('tinder_shopping_final.json?t=' + Date.now());
                 allProducts = await response.json();
                 
-                const marques = [...new Set(allProducts.map(p => p.marque))].sort();
-                const container = document.getElementById('brands-container');
-                marques.forEach(m => {
-                    container.innerHTML += `
-                        <label class="flex items-center gap-2 bg-zinc-800 p-3 rounded-xl cursor-pointer">
-                            <input type="checkbox" value="${m}" class="brand-checkbox accent-yellow-400">
-                            <span class="text-[10px] font-bold uppercase truncate">${m}</span>
-                        </label>
-                    `;
-                });
-
+                // Mettre en cache
+                sessionStorage.setItem('products_cache', JSON.stringify(allProducts));
+                
+                initBrands();
                 applyFilters();
-            } catch (e) { console.error("Erreur JSON", e); }
+            } catch (e) { 
+                console.error("Erreur JSON", e);
+                document.getElementById('main-container').innerHTML = `
+                    <div class="h-screen flex flex-col items-center justify-center text-red-500 px-10 text-center gap-4">
+                        <span class="text-6xl">⚠️</span>
+                        <p class="italic">Erreur de chargement des produits</p>
+                        <button onclick="location.reload()" class="bg-red-500 text-white px-6 py-3 rounded-full font-bold">
+                            Réessayer
+                        </button>
+                    </div>
+                `;
+            }
+        }
+
+        function initBrands() {
+            const marques = [...new Set(allProducts.map(p => p.marque))].sort();
+            const container = document.getElementById('brands-container');
+            container.innerHTML = '';
+            marques.forEach(m => {
+                container.innerHTML += `
+                    <label class="flex items-center gap-2 bg-zinc-800 p-3 rounded-xl cursor-pointer hover:bg-zinc-700 transition-colors">
+                        <input type="checkbox" value="${m}" class="brand-checkbox accent-yellow-400">
+                        <span class="text-[10px] font-bold uppercase truncate">${m}</span>
+                    </label>
+                `;
+            });
         }
 
         function toggleFilterMenu() {
@@ -134,31 +313,58 @@
             menu.style.display = (menu.style.display === 'block') ? 'none' : 'block';
         }
 
-        function applyFilters() {
+        function applyFilters(event) {
             const checkboxes = document.querySelectorAll('.brand-checkbox:checked');
             let selectedBrands = Array.from(checkboxes).map(cb => cb.value);
             
-            // On traite les IDs en String pour éviter les bugs
+            // Filtrer les produits
             filteredProducts = allProducts.filter(p => {
                 const isBrandMatch = selectedBrands.length === 0 || selectedBrands.includes(p.marque);
                 const isNotDisliked = !dislikedIds.includes(String(p.id));
                 return isBrandMatch && isNotDisliked;
             });
 
+            // Feedback visuel sur le bouton
+            if (event) {
+                const btn = event.target;
+                const originalText = btn.textContent;
+                btn.textContent = '✓ Appliqué';
+                btn.classList.add('bg-green-500');
+                btn.classList.remove('bg-yellow-400');
+                setTimeout(() => {
+                    btn.textContent = originalText;
+                    btn.classList.remove('bg-green-500');
+                    btn.classList.add('bg-yellow-400');
+                }, 1500);
+            }
+
             document.getElementById('filter-menu').style.display = 'none';
             render();
-            window.scrollTo(0,0);
+            window.scrollTo(0, 0);
             currentIndex = 0;
             updateCounts();
             updateActiveCard();
+        }
+
+        function resetFilters() {
+            document.querySelectorAll('.brand-checkbox').forEach(cb => cb.checked = false);
+            applyFilters();
         }
 
         function render() {
             const container = document.getElementById('main-container');
             container.innerHTML = '';
             
-            if(filteredProducts.length === 0) {
-                container.innerHTML = '<div class="h-screen flex items-center justify-center text-gray-500 italic px-10 text-center">Toutes les pépites ont été triées ! Reviens demain. ✨</div>';
+            if (filteredProducts.length === 0) {
+                container.innerHTML = `
+                    <div class="h-screen flex flex-col items-center justify-center text-gray-500 px-10 text-center gap-4">
+                        <span class="text-6xl">😢</span>
+                        <p class="italic text-lg">Aucune pépite avec ces filtres</p>
+                        <button onclick="resetFilters()" class="bg-yellow-400 text-black px-6 py-3 rounded-full font-bold uppercase text-sm">
+                            Réinitialiser les filtres
+                        </button>
+                    </div>
+                `;
                 return;
             }
 
@@ -171,10 +377,10 @@
                     <div class="card" id="card-${i}" onclick="detectDoubleTap(event, ${i})">
                         <div class="heart-tap" id="heart-${i}">💎</div>
                         <div class="promo-badge">${p.reduction_label || "-50%"}</div>
-                        <button onclick="shareProduct('${p.nom}', '${p.url}')" class="share-btn">
+                        <button onclick="shareProduct(event, '${p.nom.replace(/'/g, "\\'")}', '${p.url}')" class="share-btn" aria-label="Partager ce produit">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><polyline points="16 6 12 2 8 6"/><line x1="12" y1="2" x2="12" y2="15"/></svg>
                         </button>
-                        <img src="${p.image}" class="product-img" referrerpolicy="no-referrer">
+                        <img src="${p.image}" loading="lazy" class="product-img" referrerpolicy="no-referrer" alt="${p.nom}">
                         <div class="product-info">
                             <div>
                                 <p class="text-yellow-400 font-bold uppercase text-[10px] mb-1">${p.marque}</p>
@@ -186,12 +392,12 @@
                                 <p class="text-[9px] text-gray-400 mt-2 uppercase tracking-tighter">Tailles: ${p.tailles.join(', ')}</p>
                             </div>
                             <div class="flex gap-3 mt-4">
-                                <button onclick="vote(${i}, 'nope')" class="btn-action btn-nope">✖️ Bof</button>
-                                <button onclick="vote(${i}, 'like')" id="btn-like-${i}" class="btn-action btn-like ${isLiked ? 'voted-like' : ''}">
+                                <button onclick="vote(${i}, 'nope')" class="btn-action btn-nope" aria-label="Rejeter ce produit">✖️ Bof</button>
+                                <button onclick="vote(${i}, 'like')" id="btn-like-${i}" class="btn-action btn-like ${isLiked ? 'voted-like' : ''}" aria-label="${isLiked ? 'Produit sauvegardé' : 'Sauvegarder ce produit'}">
                                     💎 ${isLiked ? 'Sauvé' : 'Pépite'}
                                 </button>
                             </div>
-                            <a href="${p.url}" target="_blank" class="block w-full text-center bg-white text-black py-4 rounded-2xl font-black text-xs uppercase mt-3">Saisir l'offre</a>
+                            <a href="${p.url}" target="_blank" rel="noopener noreferrer" class="block w-full text-center bg-white text-black py-4 rounded-2xl font-black text-xs uppercase mt-3">Saisir l'offre</a>
                         </div>
                     </div>
                 `;
@@ -200,9 +406,12 @@
         }
 
         function detectDoubleTap(e, index) {
+            // Ne pas déclencher si on clique sur un bouton
+            if (e.target.closest('button') || e.target.closest('a')) return;
+            
             let now = new Date().getTime();
             let timesince = now - lastTap;
-            if((timesince < 300) && (timesince > 0)){
+            if ((timesince < 300) && (timesince > 0)) {
                 const heart = document.getElementById(`heart-${index}`);
                 heart.classList.add('animate-heart');
                 setTimeout(() => heart.classList.remove('animate-heart'), 600);
@@ -219,14 +428,19 @@
             if (type === 'like') {
                 if (!likedIds.includes(pId)) {
                     likedIds.push(pId);
-                    confetti({ particleCount: 100, spread: 70, origin: { y: 0.6 }, colors: ['#facb15', '#ffffff'] });
+                    confetti({ 
+                        particleCount: 100, 
+                        spread: 70, 
+                        origin: { y: 0.6 }, 
+                        colors: ['#facb15', '#ffffff'] 
+                    });
                 } else {
                     likedIds = likedIds.filter(id => id !== pId);
                 }
                 localStorage.setItem('pepite_likes', JSON.stringify(likedIds));
                 render(); 
             } else if (type === 'nope') {
-                history.push({ index: index, data: product }); // Sauvegarde pour Undo
+                history.push({ index: index, data: product });
                 dislikedIds.push(pId);
                 localStorage.setItem('pepite_dislikes', JSON.stringify(dislikedIds));
                 
@@ -244,7 +458,11 @@
         }
 
         function undoLastAction() {
-            if (history.length === 0) return;
+            if (history.length === 0) {
+                alert('Rien à annuler !');
+                return;
+            }
+            
             const last = history.pop();
             
             // Retirer du stockage des dislikes
@@ -257,8 +475,10 @@
             updateCounts();
             
             // Scroller vers l'élément remis
-            const target = document.getElementById(`wrapper-${last.index}`);
-            if (target) target.scrollIntoView({ behavior: 'smooth' });
+            setTimeout(() => {
+                const target = document.getElementById(`wrapper-${last.index}`);
+                if (target) target.scrollIntoView({ behavior: 'smooth' });
+            }, 100);
         }
 
         function updateCounts() { 
@@ -270,19 +490,60 @@
             const modal = document.getElementById('saved-modal');
             const grid = document.getElementById('saved-grid');
             modal.style.display = (modal.style.display === 'block') ? 'none' : 'block';
+            
             if (modal.style.display === 'block') {
                 const savedItems = allProducts.filter(p => likedIds.includes(String(p.id)));
-                grid.innerHTML = savedItems.length ? '' : '<p class="col-span-full text-center text-gray-500 py-20 italic">Rien par ici...</p>';
+                grid.innerHTML = savedItems.length ? '' : '<p class="col-span-full text-center text-gray-500 py-20 italic">Rien par ici... Double-tape sur un produit pour le sauvegarder ! 💎</p>';
                 savedItems.forEach(p => {
                     grid.innerHTML += `
                         <div class="bg-zinc-900 border border-white/5 p-3 rounded-3xl">
-                            <img src="${p.image}" class="w-full h-32 object-cover rounded-2xl mb-3" referrerpolicy="no-referrer">
+                            <img src="${p.image}" loading="lazy" class="w-full h-32 object-cover rounded-2xl mb-3" referrerpolicy="no-referrer" alt="${p.nom}">
                             <p class="text-yellow-400 font-black text-[9px] uppercase mb-1">${p.marque}</p>
+                            <h3 class="text-sm font-bold mb-1 line-clamp-1">${p.nom}</h3>
                             <span class="font-black text-sm">${p.prix_actuel}</span>
-                            <a href="${p.url}" target="_blank" class="block w-full mt-2 bg-white text-black py-2 rounded-lg text-[10px] text-center font-bold uppercase">🛒 VOIR</a>
+                            <div class="flex gap-2 mt-2">
+                                <a href="${p.url}" target="_blank" rel="noopener noreferrer" class="flex-1 bg-white text-black py-2 rounded-lg text-[10px] text-center font-bold uppercase">🛒 VOIR</a>
+                                <button onclick="removeSaved('${p.id}')" class="bg-red-500/20 text-red-500 px-3 rounded-lg text-[10px] font-bold" aria-label="Retirer des favoris">🗑️</button>
+                            </div>
                         </div>`;
                 });
             }
+        }
+
+        function removeSaved(productId) {
+            likedIds = likedIds.filter(id => id !== String(productId));
+            localStorage.setItem('pepite_likes', JSON.stringify(likedIds));
+            updateCounts();
+            toggleSavedList();
+            toggleSavedList(); // Rafraîchir
+        }
+
+        function shareProduct(event, nom, url) {
+            event.stopPropagation();
+            
+            if (navigator.share) {
+                navigator.share({
+                    title: `Pépite trouvée : ${nom}`,
+                    text: `Regarde cette pépite sur PÉPITE 💎`,
+                    url: url
+                }).catch(() => {});
+            } else {
+                navigator.clipboard.writeText(url).then(() => {
+                    alert('✅ Lien copié dans le presse-papier !');
+                });
+            }
+        }
+
+        function showStats() {
+            const total = likedIds.length + dislikedIds.length;
+            const tauxAcceptation = total > 0 ? ((likedIds.length / total) * 100).toFixed(1) : 0;
+            
+            alert(`📊 VOS STATISTIQUES\n\n` +
+                  `💎 Pépites sauvées : ${likedIds.length}\n` +
+                  `❌ Produits rejetés : ${dislikedIds.length}\n` +
+                  `📦 Total évalués : ${total}\n` +
+                  `✨ Taux d'acceptation : ${tauxAcceptation}%\n` +
+                  `🔄 Produits restants : ${filteredProducts.length}`);
         }
 
         function updateActiveCard() {
@@ -290,17 +551,47 @@
         }
 
         function clearCache() {
-            if(confirm("Supprimer tous tes choix ?")) {
+            if (confirm("⚠️ Supprimer tous tes choix et réinitialiser l'application ?")) {
                 localStorage.clear();
+                sessionStorage.clear();
                 location.reload();
             }
         }
 
+        // Gestion du scroll avec debounce
         window.addEventListener('scroll', () => {
-            const index = Math.round(window.scrollY / window.innerHeight);
-            if (index !== currentIndex) { currentIndex = index; updateActiveCard(); }
+            clearTimeout(scrollTimeout);
+            scrollTimeout = setTimeout(() => {
+                const index = Math.round(window.scrollY / window.innerHeight);
+                if (index !== currentIndex) { 
+                    currentIndex = index; 
+                    updateActiveCard(); 
+                }
+            }, 50);
         });
 
+        // Gestion du swipe gauche/droite
+        document.addEventListener('touchstart', e => {
+            touchStartX = e.touches[0].clientX;
+        });
+
+        document.addEventListener('touchend', e => {
+            const touchEndX = e.changedTouches[0].clientX;
+            const diff = touchStartX - touchEndX;
+            
+            // Swipe détecté (plus de 100px)
+            if (Math.abs(diff) > 100) {
+                if (diff > 0) {
+                    // Swipe gauche = Nope
+                    vote(currentIndex, 'nope');
+                } else {
+                    // Swipe droite = Like
+                    vote(currentIndex, 'like');
+                }
+            }
+        });
+
+        // Initialisation
         init();
     </script>
 </body>
