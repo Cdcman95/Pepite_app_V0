@@ -18,6 +18,38 @@
             scroll-snap-type: y mandatory;
             -webkit-overflow-scrolling: touch;
             overscroll-behavior-y: contain;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        /* Mode clair */
+        body.light-mode {
+            background: #f5f5f5;
+            color: #000;
+        }
+
+        body.light-mode .card {
+            background: #fff;
+            border-color: rgba(0,0,0,0.1);
+        }
+
+        body.light-mode .card.active {
+            border-color: #facb15;
+        }
+
+        body.light-mode #filter-menu,
+        body.light-mode .bg-zinc-900,
+        body.light-mode .bg-zinc-800 {
+            background: #e5e5e5 !important;
+            color: #000;
+        }
+
+        body.light-mode .text-gray-400,
+        body.light-mode .text-gray-500 {
+            color: #666 !important;
+        }
+
+        body.light-mode .border-white\/10 {
+            border-color: rgba(0,0,0,0.1) !important;
         }
         
         body::-webkit-scrollbar { display: none; }
@@ -84,6 +116,21 @@
             font-size: 0.9rem; 
             z-index: 10; 
         }
+
+        .priority-badge {
+            position: absolute;
+            top: 20px;
+            right: 70px;
+            padding: 8px 12px;
+            border-radius: 12px;
+            font-size: 1.2rem;
+            z-index: 10;
+            backdrop-filter: blur(10px);
+        }
+
+        .priority-high { background: rgba(239, 68, 68, 0.9); }
+        .priority-medium { background: rgba(251, 191, 36, 0.9); }
+        .priority-low { background: rgba(59, 130, 246, 0.9); }
         
         .share-btn {
             position: absolute;
@@ -177,7 +224,9 @@
             border-radius: 1.5rem; 
             z-index: 150; 
             padding: 20px; 
-            box-shadow: 0 20px 40px rgba(0,0,0,0.8); 
+            box-shadow: 0 20px 40px rgba(0,0,0,0.8);
+            max-height: 80vh;
+            overflow-y: auto;
         }
         
         #saved-modal { 
@@ -188,6 +237,10 @@
             z-index: 200; 
             overflow-y: auto; 
             padding: 20px; 
+        }
+
+        body.light-mode #saved-modal {
+            background: rgba(245,245,245,0.98);
         }
         
         .grid-saved { 
@@ -203,21 +256,150 @@
             -webkit-box-orient: vertical;
             overflow: hidden;
         }
+
+        .line-clamp-2 {
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        /* Badge notification */
+        .badge-notification {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0);
+            background: linear-gradient(135deg, #facb15, #f59e0b);
+            color: black;
+            padding: 30px;
+            border-radius: 2rem;
+            z-index: 300;
+            text-align: center;
+            box-shadow: 0 20px 60px rgba(250, 203, 21, 0.4);
+            animation: badgePop 0.5s ease-out forwards;
+        }
+
+        @keyframes badgePop {
+            0% { transform: translate(-50%, -50%) scale(0); }
+            50% { transform: translate(-50%, -50%) scale(1.1); }
+            100% { transform: translate(-50%, -50%) scale(1); }
+        }
+
+        /* Style profil */
+        .style-tag {
+            display: inline-block;
+            background: rgba(250, 203, 21, 0.2);
+            color: #facb15;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 0.7rem;
+            font-weight: 700;
+            margin: 2px;
+        }
+
+        /* Range slider custom */
+        input[type="range"] {
+            -webkit-appearance: none;
+            appearance: none;
+            background: transparent;
+            cursor: pointer;
+        }
+
+        input[type="range"]::-webkit-slider-track {
+            background: #3f3f46;
+            height: 0.5rem;
+            border-radius: 0.5rem;
+        }
+
+        input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            background: #facb15;
+            height: 1.5rem;
+            width: 1.5rem;
+            border-radius: 50%;
+            margin-top: -0.5rem;
+        }
+
+        input[type="range"]::-moz-range-track {
+            background: #3f3f46;
+            height: 0.5rem;
+            border-radius: 0.5rem;
+        }
+
+        input[type="range"]::-moz-range-thumb {
+            background: #facb15;
+            height: 1.5rem;
+            width: 1.5rem;
+            border-radius: 50%;
+            border: none;
+        }
     </style>
 </head>
 <body>
 
     <div class="fixed top-0 left-0 w-full z-[100] bg-black/80 backdrop-blur-lg p-4 flex justify-between items-center border-b border-white/10">
         <h1 class="text-2xl brand-logo uppercase">PÉ<span class="text-yellow-400">PITE</span> 💎</h1>
-        <button onclick="toggleFilterMenu()" class="bg-zinc-800 px-4 py-2 rounded-full text-[10px] font-black uppercase border border-white/10 flex items-center gap-2">
-            <span>🔍</span> Marques
-        </button>
+        <div class="flex gap-2">
+            <button onclick="toggleTheme()" class="bg-zinc-800 p-2 rounded-full border border-white/10" aria-label="Changer de thème">
+                <span id="theme-icon">🌙</span>
+            </button>
+            <button onclick="toggleFilterMenu()" class="bg-zinc-800 px-4 py-2 rounded-full text-[10px] font-black uppercase border border-white/10 flex items-center gap-2">
+                <span>🔍</span> Filtres
+            </button>
+        </div>
     </div>
 
     <div id="filter-menu">
-        <h3 class="text-xs font-black uppercase text-gray-500 mb-4 tracking-widest text-center">Filtrer par marques</h3>
-        <div id="brands-container" class="grid grid-cols-2 gap-3 mb-6 max-h-60 overflow-y-auto pr-2"></div>
-        <button onclick="applyFilters(event)" id="apply-filters-btn" class="w-full bg-yellow-400 text-black py-4 rounded-xl font-black uppercase text-xs">Appliquer</button>
+        <h3 class="text-xs font-black uppercase text-gray-500 mb-4 tracking-widest text-center">Filtres avancés</h3>
+        
+        <!-- Recherche -->
+        <div class="mb-6">
+            <label class="text-xs font-bold uppercase text-gray-400 mb-2 block">🔍 Rechercher</label>
+            <input type="text" id="search-input" placeholder="Nom de l'article ou marque..." 
+                   class="w-full bg-zinc-800 p-3 rounded-xl text-white border border-white/10 focus:border-yellow-400 outline-none"
+                   oninput="searchProducts(this.value)">
+        </div>
+
+        <!-- Filtre réduction -->
+        <div class="mb-6">
+            <label class="text-xs font-bold uppercase text-gray-400 mb-2 block">
+                💰 Réduction minimum : <span id="reduction-value" class="text-yellow-400">30%</span>
+            </label>
+            <input type="range" min="20" max="80" value="30" step="10" 
+                   id="reduction-slider" class="w-full accent-yellow-400"
+                   oninput="updateReductionFilter(this.value)">
+            <div class="flex justify-between text-[10px] text-gray-500 mt-1">
+                <span>20%</span>
+                <span>80%</span>
+            </div>
+        </div>
+
+        <!-- Filtre prix -->
+        <div class="mb-6">
+            <label class="text-xs font-bold uppercase text-gray-400 mb-2 block">💵 Fourchette de prix</label>
+            <div class="flex gap-4">
+                <div class="flex-1">
+                    <label class="text-[10px] text-gray-500">Prix min</label>
+                    <input type="number" id="prix-min" placeholder="0€" 
+                           class="w-full bg-zinc-800 p-2 rounded-lg text-white border border-white/10 focus:border-yellow-400 outline-none">
+                </div>
+                <div class="flex-1">
+                    <label class="text-[10px] text-gray-500">Prix max</label>
+                    <input type="number" id="prix-max" placeholder="200€" 
+                           class="w-full bg-zinc-800 p-2 rounded-lg text-white border border-white/10 focus:border-yellow-400 outline-none">
+                </div>
+            </div>
+        </div>
+
+        <!-- Marques -->
+        <div class="mb-6">
+            <label class="text-xs font-bold uppercase text-gray-400 mb-2 block">🏷️ Marques</label>
+            <div id="brands-container" class="grid grid-cols-2 gap-3 max-h-40 overflow-y-auto pr-2"></div>
+        </div>
+
+        <button onclick="applyFilters(event)" id="apply-filters-btn" class="w-full bg-yellow-400 text-black py-4 rounded-xl font-black uppercase text-xs">Appliquer les filtres</button>
         <button onclick="resetFilters()" class="w-full bg-transparent border border-gray-600 text-gray-400 py-3 rounded-xl font-bold uppercase text-xs mt-2">Réinitialiser</button>
     </div>
 
@@ -238,10 +420,25 @@
     <div id="main-container" class="mt-20"></div>
 
     <div id="saved-modal">
-        <div class="flex justify-between items-center max-w-4xl mx-auto">
+        <div class="flex justify-between items-center max-w-4xl mx-auto mb-4">
             <h2 class="text-3xl font-black italic uppercase">Mon <span class="text-yellow-400">Butin</span></h2>
             <button onclick="toggleSavedList()" class="text-4xl text-gray-400">&times;</button>
         </div>
+
+        <!-- Profil style -->
+        <div id="style-profile" class="max-w-4xl mx-auto mb-6 bg-gradient-to-r from-purple-900/30 to-pink-900/30 border border-purple-500/30 rounded-2xl p-6">
+            <h3 class="text-xl font-black mb-3">✨ Ton Style</h3>
+            <p class="text-sm text-gray-300 mb-3" id="style-description">Analyse en cours...</p>
+            <div id="style-tags" class="flex flex-wrap gap-2"></div>
+        </div>
+
+        <!-- Recommandations -->
+        <div id="recommendations-section" class="max-w-4xl mx-auto mb-6">
+            <button onclick="showRecommendations()" class="w-full bg-gradient-to-r from-purple-500 to-pink-500 text-white py-4 rounded-xl font-black uppercase text-sm flex items-center justify-center gap-2">
+                <span>✨</span> Voir les recommandations pour toi
+            </button>
+        </div>
+
         <div id="saved-grid" class="grid-saved max-w-4xl mx-auto"></div>
         <div class="flex justify-center mt-10 gap-4">
             <button onclick="showStats()" class="text-yellow-400 text-[10px] font-bold uppercase tracking-widest border border-yellow-400/30 px-6 py-2 rounded-full">📊 Statistiques</button>
@@ -260,10 +457,29 @@
 
         let likedIds = JSON.parse(localStorage.getItem('pepite_likes')) || [];
         let dislikedIds = JSON.parse(localStorage.getItem('pepite_dislikes')) || [];
+        let priorities = JSON.parse(localStorage.getItem('priorities')) || {};
+        let notes = JSON.parse(localStorage.getItem('notes')) || {};
+
+        // Thème
+        function toggleTheme() {
+            const isLight = document.body.classList.toggle('light-mode');
+            localStorage.setItem('theme', isLight ? 'light' : 'dark');
+            document.getElementById('theme-icon').textContent = isLight ? '☀️' : '🌙';
+        }
+
+        // Charger le thème au démarrage
+        function loadTheme() {
+            const theme = localStorage.getItem('theme');
+            if (theme === 'light') {
+                document.body.classList.add('light-mode');
+                document.getElementById('theme-icon').textContent = '☀️';
+            }
+        }
 
         async function init() {
+            loadTheme();
+            
             try {
-                // Vérifier le cache de session
                 const cached = sessionStorage.getItem('products_cache');
                 if (cached) {
                     allProducts = JSON.parse(cached);
@@ -275,7 +491,6 @@
                 const response = await fetch('tinder_shopping_final.json?t=' + Date.now());
                 allProducts = await response.json();
                 
-                // Mettre en cache
                 sessionStorage.setItem('products_cache', JSON.stringify(allProducts));
                 
                 initBrands();
@@ -313,15 +528,45 @@
             menu.style.display = (menu.style.display === 'block') ? 'none' : 'block';
         }
 
+        function updateReductionFilter(value) {
+            document.getElementById('reduction-value').textContent = value + '%';
+        }
+
+        function searchProducts(query) {
+            // La recherche sera appliquée dans applyFilters
+        }
+
         function applyFilters(event) {
             const checkboxes = document.querySelectorAll('.brand-checkbox:checked');
             let selectedBrands = Array.from(checkboxes).map(cb => cb.value);
             
+            // Récupérer les valeurs des filtres
+            const minReduction = parseInt(document.getElementById('reduction-slider').value);
+            const prixMin = parseFloat(document.getElementById('prix-min').value) || 0;
+            const prixMax = parseFloat(document.getElementById('prix-max').value) || Infinity;
+            const searchQuery = document.getElementById('search-input').value.toLowerCase();
+            
             // Filtrer les produits
             filteredProducts = allProducts.filter(p => {
+                // Filtre marque
                 const isBrandMatch = selectedBrands.length === 0 || selectedBrands.includes(p.marque);
+                
+                // Filtre réduction
+                const hasGoodDiscount = p.reduction_valeur >= minReduction;
+                
+                // Filtre prix
+                const prix = parseFloat(p.prix_actuel.replace('€', ''));
+                const isPriceMatch = prix >= prixMin && prix <= prixMax;
+                
+                // Filtre recherche
+                const matchSearch = !searchQuery || 
+                    p.nom.toLowerCase().includes(searchQuery) || 
+                    p.marque.toLowerCase().includes(searchQuery);
+                
+                // Pas déjà rejeté
                 const isNotDisliked = !dislikedIds.includes(String(p.id));
-                return isBrandMatch && isNotDisliked;
+                
+                return isBrandMatch && hasGoodDiscount && isPriceMatch && matchSearch && isNotDisliked;
             });
 
             // Feedback visuel sur le bouton
@@ -348,6 +593,11 @@
 
         function resetFilters() {
             document.querySelectorAll('.brand-checkbox').forEach(cb => cb.checked = false);
+            document.getElementById('reduction-slider').value = 30;
+            document.getElementById('reduction-value').textContent = '30%';
+            document.getElementById('prix-min').value = '';
+            document.getElementById('prix-max').value = '';
+            document.getElementById('search-input').value = '';
             applyFilters();
         }
 
@@ -370,6 +620,9 @@
 
             filteredProducts.forEach((p, i) => {
                 const isLiked = likedIds.includes(String(p.id));
+                const priority = priorities[String(p.id)];
+                const note = notes[String(p.id)];
+                
                 const wrapper = document.createElement('div');
                 wrapper.className = "card-wrapper";
                 wrapper.id = `wrapper-${i}`;
@@ -377,6 +630,7 @@
                     <div class="card" id="card-${i}" onclick="detectDoubleTap(event, ${i})">
                         <div class="heart-tap" id="heart-${i}">💎</div>
                         <div class="promo-badge">${p.reduction_label || "-50%"}</div>
+                        ${priority ? `<div class="priority-badge priority-${priority}">${priority === 'high' ? '🔥' : priority === 'medium' ? '⭐' : '💙'}</div>` : ''}
                         <button onclick="shareProduct(event, '${p.nom.replace(/'/g, "\\'")}', '${p.url}')" class="share-btn" aria-label="Partager ce produit">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><polyline points="16 6 12 2 8 6"/><line x1="12" y1="2" x2="12" y2="15"/></svg>
                         </button>
@@ -390,6 +644,7 @@
                                     <span class="ml-2 text-sm text-gray-500 line-through">${p.prix_base}</span>
                                 </div>
                                 <p class="text-[9px] text-gray-400 mt-2 uppercase tracking-tighter">Tailles: ${p.tailles.join(', ')}</p>
+                                ${note ? `<p class="text-xs text-yellow-400 italic mt-2 line-clamp-2">📝 "${note}"</p>` : ''}
                             </div>
                             <div class="flex gap-3 mt-4">
                                 <button onclick="vote(${i}, 'nope')" class="btn-action btn-nope" aria-label="Rejeter ce produit">✖️ Bof</button>
@@ -406,7 +661,6 @@
         }
 
         function detectDoubleTap(e, index) {
-            // Ne pas déclencher si on clique sur un bouton
             if (e.target.closest('button') || e.target.closest('a')) return;
             
             let now = new Date().getTime();
@@ -434,6 +688,7 @@
                         origin: { y: 0.6 }, 
                         colors: ['#facb15', '#ffffff'] 
                     });
+                    checkBadges(); // Vérifier les badges
                 } else {
                     likedIds = likedIds.filter(id => id !== pId);
                 }
@@ -465,16 +720,13 @@
             
             const last = history.pop();
             
-            // Retirer du stockage des dislikes
             dislikedIds = dislikedIds.filter(id => id !== String(last.data.id));
             localStorage.setItem('pepite_dislikes', JSON.stringify(dislikedIds));
             
-            // Remettre dans la liste affichée
             filteredProducts.splice(last.index, 0, last.data);
             render();
             updateCounts();
             
-            // Scroller vers l'élément remis
             setTimeout(() => {
                 const target = document.getElementById(`wrapper-${last.index}`);
                 if (target) target.scrollIntoView({ behavior: 'smooth' });
@@ -486,24 +738,276 @@
             document.getElementById('flow-count').innerText = filteredProducts.length;
         }
 
+        // Fonction 9: Priorités
+        function setPriority(productId, priority) {
+            priorities[String(productId)] = priority;
+            localStorage.setItem('priorities', JSON.stringify(priorities));
+            toggleSavedList();
+            toggleSavedList(); // Refresh
+        }
+
+        // Fonction 9: Notes
+        function addNote(productId) {
+            const note = prompt('Ajoute une note personnelle :');
+            if (note && note.trim()) {
+                notes[String(productId)] = note.trim();
+                localStorage.setItem('notes', JSON.stringify(notes));
+                toggleSavedList();
+                toggleSavedList(); // Refresh
+            }
+        }
+
+        function deleteNote(productId) {
+            delete notes[String(productId)];
+            localStorage.setItem('notes', JSON.stringify(notes));
+            toggleSavedList();
+            toggleSavedList();
+        }
+
+        // Fonction 17: Recommandations
+        function getRecommendations() {
+            const saved = allProducts.filter(p => likedIds.includes(String(p.id)));
+            
+            if (saved.length === 0) {
+                return [];
+            }
+            
+            // Analyser les marques préférées
+            const marqueFreq = {};
+            saved.forEach(p => {
+                marqueFreq[p.marque] = (marqueFreq[p.marque] || 0) + 1;
+            });
+            
+            // Prix moyen
+            const prixMoyen = saved.reduce((sum, p) => 
+                sum + parseFloat(p.prix_actuel.replace('€', '')), 0
+            ) / saved.length;
+            
+            // Recommander des produits similaires
+            const recommendations = allProducts.filter(p => {
+                const isSimilarBrand = marqueFreq[p.marque] > 0;
+                const prix = parseFloat(p.prix_actuel.replace('€', ''));
+                const isSimilarPrice = Math.abs(prix - prixMoyen) < 50;
+                const notSeen = !dislikedIds.includes(String(p.id)) && !likedIds.includes(String(p.id));
+                
+                return isSimilarBrand && isSimilarPrice && notSeen;
+            });
+            
+            // Trier par réduction
+            return recommendations.sort((a, b) => b.reduction_valeur - a.reduction_valeur).slice(0, 10);
+        }
+
+        function showRecommendations() {
+            const reco = getRecommendations();
+            
+            if (reco.length === 0) {
+                alert('💡 Sauvegarde quelques pépites pour obtenir des recommandations personnalisées !');
+                return;
+            }
+            
+            // Filtrer pour afficher uniquement les recommandations
+            filteredProducts = reco;
+            render();
+            updateCounts();
+            toggleSavedList(); // Fermer la modale
+            window.scrollTo(0, 0);
+            
+            // Notification
+            const notif = document.createElement('div');
+            notif.className = 'fixed top-24 left-1/2 transform -translate-x-1/2 bg-purple-500 text-white px-6 py-3 rounded-2xl font-bold z-[300] text-center';
+            notif.textContent = `✨ ${reco.length} recommandations pour toi !`;
+            document.body.appendChild(notif);
+            setTimeout(() => notif.remove(), 3000);
+        }
+
+        // Fonction 18: Détection de style
+        function detectStyle() {
+            const saved = allProducts.filter(p => likedIds.includes(String(p.id)));
+            
+            if (saved.length === 0) {
+                return {
+                    keywords: [],
+                    description: 'Sauvegarde des pépites pour découvrir ton style !',
+                    marquesPref: []
+                };
+            }
+            
+            // Analyser les noms pour détecter des mots-clés
+            const keywords = {};
+            saved.forEach(p => {
+                const words = p.nom.toLowerCase()
+                    .replace(/[^\w\s]/g, '')
+                    .split(' ');
+                words.forEach(word => {
+                    if (word.length > 4) {
+                        keywords[word] = (keywords[word] || 0) + 1;
+                    }
+                });
+            });
+            
+            // Top 5 mots-clés
+            const topKeywords = Object.entries(keywords)
+                .sort((a, b) => b[1] - a[1])
+                .slice(0, 5)
+                .map(([word]) => word);
+            
+            // Marques préférées
+            const marques = {};
+            saved.forEach(p => {
+                marques[p.marque] = (marques[p.marque] || 0) + 1;
+            });
+            
+            const topMarques = Object.entries(marques)
+                .sort((a, b) => b[1] - a[1])
+                .slice(0, 3)
+                .map(([marque]) => marque);
+            
+            return {
+                keywords: topKeywords,
+                description: `Tu aimes le style : ${topKeywords.slice(0, 3).join(', ')}`,
+                marquesPref: topMarques
+            };
+        }
+
+        function updateStyleProfile() {
+            const style = detectStyle();
+            
+            document.getElementById('style-description').textContent = style.description;
+            
+            const tagsContainer = document.getElementById('style-tags');
+            tagsContainer.innerHTML = '';
+            
+            style.keywords.forEach(keyword => {
+                tagsContainer.innerHTML += `<span class="style-tag">#${keyword}</span>`;
+            });
+            
+            if (style.marquesPref.length > 0) {
+                tagsContainer.innerHTML += '<div class="w-full mt-2 pt-2 border-t border-white/10 text-xs text-gray-400">Marques favorites : ' + style.marquesPref.join(', ') + '</div>';
+            }
+        }
+
+        // Badges
+        const badges = {
+            'first_like': { nom: '🌟 Première pépite', desc: 'Sauvegarde ton premier article', condition: () => likedIds.length >= 1 },
+            'collector': { nom: '💎 Collectionneur', desc: 'Sauvegarde 10 pépites', condition: () => likedIds.length >= 10 },
+            'big_spender': { nom: '💸 Gros budget', desc: 'Sauvegarde un article > 100€', condition: () => {
+                const saved = allProducts.filter(p => likedIds.includes(String(p.id)));
+                return saved.some(p => parseFloat(p.prix_actuel.replace('€', '')) > 100);
+            }},
+            'bargain_hunter': { nom: '🎯 Chasseur de promos', desc: 'Trouve une promo > 60%', condition: () => {
+                const saved = allProducts.filter(p => likedIds.includes(String(p.id)));
+                return saved.some(p => p.reduction_valeur > 60);
+            }},
+            'swipe_master': { nom: '👆 Swipe Master', desc: 'Évalue 50 produits', condition: () => {
+                return (likedIds.length + dislikedIds.length) >= 50;
+            }},
+            'brand_lover': { nom: '❤️ Fan de marque', desc: 'Sauvegarde 5 articles d\'une même marque', condition: () => {
+                const saved = allProducts.filter(p => likedIds.includes(String(p.id)));
+                const marques = {};
+                saved.forEach(p => {
+                    marques[p.marque] = (marques[p.marque] || 0) + 1;
+                });
+                return Object.values(marques).some(count => count >= 5);
+            }}
+        };
+
+        function checkBadges() {
+            const earned = JSON.parse(localStorage.getItem('badges_earned')) || [];
+            const newBadges = [];
+            
+            Object.entries(badges).forEach(([id, badge]) => {
+                if (!earned.includes(id) && badge.condition()) {
+                    newBadges.push(id);
+                }
+            });
+            
+            if (newBadges.length > 0) {
+                earned.push(...newBadges);
+                localStorage.setItem('badges_earned', JSON.stringify(earned));
+                showBadgeNotification(newBadges[0]);
+            }
+        }
+
+        function showBadgeNotification(badgeId) {
+            const badge = badges[badgeId];
+            const notif = document.createElement('div');
+            notif.className = 'badge-notification';
+            notif.innerHTML = `
+                <div class="text-5xl mb-3">${badge.nom.split(' ')[0]}</div>
+                <div class="text-xl font-black mb-2">${badge.nom.substring(2)}</div>
+                <div class="text-sm opacity-80">${badge.desc}</div>
+            `;
+            document.body.appendChild(notif);
+            
+            confetti({ 
+                particleCount: 150, 
+                spread: 100, 
+                origin: { y: 0.5 },
+                colors: ['#facb15', '#f59e0b', '#ffffff']
+            });
+            
+            setTimeout(() => {
+                notif.style.animation = 'badgePop 0.3s ease-out reverse';
+                setTimeout(() => notif.remove(), 300);
+            }, 3000);
+        }
+
         function toggleSavedList() {
             const modal = document.getElementById('saved-modal');
             const grid = document.getElementById('saved-grid');
             modal.style.display = (modal.style.display === 'block') ? 'none' : 'block';
             
             if (modal.style.display === 'block') {
+                updateStyleProfile(); // Mettre à jour le profil de style
+                
                 const savedItems = allProducts.filter(p => likedIds.includes(String(p.id)));
+                
+                // Trier par priorité
+                savedItems.sort((a, b) => {
+                    const priorityOrder = { 'high': 0, 'medium': 1, 'low': 2 };
+                    const aPriority = priorities[String(a.id)] || 'none';
+                    const bPriority = priorities[String(b.id)] || 'none';
+                    
+                    if (aPriority === bPriority) return 0;
+                    if (aPriority === 'none') return 1;
+                    if (bPriority === 'none') return -1;
+                    return priorityOrder[aPriority] - priorityOrder[bPriority];
+                });
+                
                 grid.innerHTML = savedItems.length ? '' : '<p class="col-span-full text-center text-gray-500 py-20 italic">Rien par ici... Double-tape sur un produit pour le sauvegarder ! 💎</p>';
+                
                 savedItems.forEach(p => {
+                    const priority = priorities[String(p.id)];
+                    const note = notes[String(p.id)];
+                    
                     grid.innerHTML += `
-                        <div class="bg-zinc-900 border border-white/5 p-3 rounded-3xl">
+                        <div class="bg-zinc-900 border border-white/5 p-3 rounded-3xl relative">
+                            ${priority ? `<div class="absolute top-2 right-2 text-xl">${priority === 'high' ? '🔥' : priority === 'medium' ? '⭐' : '💙'}</div>` : ''}
                             <img src="${p.image}" loading="lazy" class="w-full h-32 object-cover rounded-2xl mb-3" referrerpolicy="no-referrer" alt="${p.nom}">
                             <p class="text-yellow-400 font-black text-[9px] uppercase mb-1">${p.marque}</p>
-                            <h3 class="text-sm font-bold mb-1 line-clamp-1">${p.nom}</h3>
+                            <h3 class="text-sm font-bold mb-1 line-clamp-2">${p.nom}</h3>
                             <span class="font-black text-sm">${p.prix_actuel}</span>
+                            <span class="text-xs text-gray-500 line-through ml-1">${p.prix_base}</span>
+                            
+                            ${note ? `<p class="text-xs text-gray-400 italic mt-2 line-clamp-2">📝 "${note}"</p>` : ''}
+                            
+                            <!-- Priorités -->
+                            <div class="flex gap-1 mt-2">
+                                <button onclick="setPriority('${p.id}', 'high')" class="flex-1 ${priority === 'high' ? 'bg-red-500' : 'bg-red-500/20'} text-red-500 py-1 rounded text-xs font-bold" title="Haute priorité">🔥</button>
+                                <button onclick="setPriority('${p.id}', 'medium')" class="flex-1 ${priority === 'medium' ? 'bg-yellow-500' : 'bg-yellow-500/20'} text-yellow-500 py-1 rounded text-xs font-bold" title="Priorité moyenne">⭐</button>
+                                <button onclick="setPriority('${p.id}', 'low')" class="flex-1 ${priority === 'low' ? 'bg-blue-500' : 'bg-blue-500/20'} text-blue-500 py-1 rounded text-xs font-bold" title="Basse priorité">💙</button>
+                            </div>
+                            
                             <div class="flex gap-2 mt-2">
                                 <a href="${p.url}" target="_blank" rel="noopener noreferrer" class="flex-1 bg-white text-black py-2 rounded-lg text-[10px] text-center font-bold uppercase">🛒 VOIR</a>
                                 <button onclick="removeSaved('${p.id}')" class="bg-red-500/20 text-red-500 px-3 rounded-lg text-[10px] font-bold" aria-label="Retirer des favoris">🗑️</button>
+                            </div>
+                            
+                            <div class="flex gap-2 mt-2">
+                                ${note ? 
+                                    `<button onclick="deleteNote('${p.id}')" class="flex-1 text-gray-400 text-xs py-1 border border-gray-600 rounded">❌ Note</button>` :
+                                    `<button onclick="addNote('${p.id}')" class="flex-1 text-gray-400 text-xs py-1 border border-gray-600 rounded">📝 Note</button>`
+                                }
                             </div>
                         </div>`;
                 });
@@ -513,9 +1017,16 @@
         function removeSaved(productId) {
             likedIds = likedIds.filter(id => id !== String(productId));
             localStorage.setItem('pepite_likes', JSON.stringify(likedIds));
+            
+            // Supprimer aussi la priorité et la note
+            delete priorities[String(productId)];
+            delete notes[String(productId)];
+            localStorage.setItem('priorities', JSON.stringify(priorities));
+            localStorage.setItem('notes', JSON.stringify(notes));
+            
             updateCounts();
             toggleSavedList();
-            toggleSavedList(); // Rafraîchir
+            toggleSavedList();
         }
 
         function shareProduct(event, nom, url) {
@@ -535,15 +1046,48 @@
         }
 
         function showStats() {
+            const saved = allProducts.filter(p => likedIds.includes(String(p.id)));
             const total = likedIds.length + dislikedIds.length;
             const tauxAcceptation = total > 0 ? ((likedIds.length / total) * 100).toFixed(1) : 0;
+            
+            // Calculer économies
+            let totalEconomies = 0;
+            saved.forEach(p => {
+                const prixBase = parseFloat(p.prix_base.replace('€', ''));
+                const prixActuel = parseFloat(p.prix_actuel.replace('€', ''));
+                totalEconomies += (prixBase - prixActuel);
+            });
+            
+            // Prix moyen
+            const prixMoyen = saved.length > 0 ? 
+                (saved.reduce((sum, p) => sum + parseFloat(p.prix_actuel.replace('€', '')), 0) / saved.length).toFixed(2) : 0;
+            
+            // Réduction moyenne
+            const reductionMoy = saved.length > 0 ?
+                (saved.reduce((sum, p) => sum + p.reduction_valeur, 0) / saved.length).toFixed(0) : 0;
+            
+            // Marque préférée
+            const marques = {};
+            saved.forEach(p => {
+                marques[p.marque] = (marques[p.marque] || 0) + 1;
+            });
+            const marquePref = Object.keys(marques).length > 0 ?
+                Object.keys(marques).reduce((a, b) => marques[a] > marques[b] ? a : b) : 'Aucune';
+            
+            // Badges gagnés
+            const earnedBadges = JSON.parse(localStorage.getItem('badges_earned')) || [];
             
             alert(`📊 VOS STATISTIQUES\n\n` +
                   `💎 Pépites sauvées : ${likedIds.length}\n` +
                   `❌ Produits rejetés : ${dislikedIds.length}\n` +
                   `📦 Total évalués : ${total}\n` +
                   `✨ Taux d'acceptation : ${tauxAcceptation}%\n` +
-                  `🔄 Produits restants : ${filteredProducts.length}`);
+                  `🔄 Produits restants : ${filteredProducts.length}\n\n` +
+                  `💰 Économies potentielles : ${totalEconomies.toFixed(2)}€\n` +
+                  `📊 Prix moyen sauvé : ${prixMoyen}€\n` +
+                  `🎯 Réduction moyenne : ${reductionMoy}%\n` +
+                  `❤️ Marque préférée : ${marquePref}\n\n` +
+                  `🏆 Badges débloqués : ${earnedBadges.length}/${Object.keys(badges).length}`);
         }
 
         function updateActiveCard() {
@@ -579,13 +1123,10 @@
             const touchEndX = e.changedTouches[0].clientX;
             const diff = touchStartX - touchEndX;
             
-            // Swipe détecté (plus de 100px)
             if (Math.abs(diff) > 100) {
                 if (diff > 0) {
-                    // Swipe gauche = Nope
                     vote(currentIndex, 'nope');
                 } else {
-                    // Swipe droite = Like
                     vote(currentIndex, 'like');
                 }
             }
