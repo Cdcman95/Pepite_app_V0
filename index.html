@@ -335,6 +335,29 @@
             border-radius: 50%;
             border: none;
         }
+
+        /* Boutons de tri */
+        .sort-btn {
+            background: rgba(250, 203, 21, 0.1);
+            border: 1px solid rgba(250, 203, 21, 0.3);
+            color: #facb15;
+            padding: 8px 16px;
+            border-radius: 12px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .sort-btn.active {
+            background: #facb15;
+            color: black;
+            border-color: #facb15;
+        }
+
+        .sort-btn:hover {
+            transform: scale(1.05);
+        }
     </style>
 </head>
 <body>
@@ -360,6 +383,25 @@
             <input type="text" id="search-input" placeholder="Nom de l'article ou marque..." 
                    class="w-full bg-zinc-800 p-3 rounded-xl text-white border border-white/10 focus:border-yellow-400 outline-none"
                    oninput="searchProducts(this.value)">
+        </div>
+
+        <!-- Tri -->
+        <div class="mb-6">
+            <label class="text-xs font-bold uppercase text-gray-400 mb-2 block">📊 Trier par</label>
+            <div class="grid grid-cols-2 gap-2">
+                <button onclick="setSortOrder('price_asc')" id="sort-price-asc" class="sort-btn">
+                    💰 Prix ↑
+                </button>
+                <button onclick="setSortOrder('price_desc')" id="sort-price-desc" class="sort-btn">
+                    💰 Prix ↓
+                </button>
+                <button onclick="setSortOrder('discount_asc')" id="sort-discount-asc" class="sort-btn">
+                    🔥 Promo ↑
+                </button>
+                <button onclick="setSortOrder('discount_desc')" id="sort-discount-desc" class="sort-btn active">
+                    🔥 Promo ↓
+                </button>
+            </div>
         </div>
 
         <!-- Filtre réduction -->
@@ -454,11 +496,19 @@
         let lastTap = 0;
         let touchStartX = 0;
         let scrollTimeout;
+        let currentSort = 'discount_desc'; // Tri par défaut
 
         let likedIds = JSON.parse(localStorage.getItem('pepite_likes')) || [];
         let dislikedIds = JSON.parse(localStorage.getItem('pepite_dislikes')) || [];
         let priorities = JSON.parse(localStorage.getItem('priorities')) || {};
         let notes = JSON.parse(localStorage.getItem('notes')) || {};
+
+        // Fonction de vibration
+        function vibrate(pattern = 50) {
+            if ('vibrate' in navigator) {
+                navigator.vibrate(pattern);
+            }
+        }
 
         // Thème
         function toggleTheme() {
@@ -474,6 +524,51 @@
                 document.body.classList.add('light-mode');
                 document.getElementById('theme-icon').textContent = '☀️';
             }
+        }
+
+        // Fonction de tri
+        function setSortOrder(order) {
+            currentSort = order;
+            
+            // Mettre à jour les boutons actifs
+            document.querySelectorAll('.sort-btn').forEach(btn => btn.classList.remove('active'));
+            document.getElementById(`sort-${order.replace('_', '-')}`).classList.add('active');
+            
+            // Réappliquer les filtres avec le nouveau tri
+            applyFilters();
+        }
+
+        function sortProducts(products) {
+            const sorted = [...products];
+            
+            switch(currentSort) {
+                case 'price_asc':
+                    sorted.sort((a, b) => {
+                        const priceA = parseFloat(a.prix_actuel.replace('€', ''));
+                        const priceB = parseFloat(b.prix_actuel.replace('€', ''));
+                        return priceA - priceB;
+                    });
+                    break;
+                    
+                case 'price_desc':
+                    sorted.sort((a, b) => {
+                        const priceA = parseFloat(a.prix_actuel.replace('€', ''));
+                        const priceB = parseFloat(b.prix_actuel.replace('€', ''));
+                        return priceB - priceA;
+                    });
+                    break;
+                    
+                case 'discount_asc':
+                    sorted.sort((a, b) => a.reduction_valeur - b.reduction_valeur);
+                    break;
+                    
+                case 'discount_desc':
+                default:
+                    sorted.sort((a, b) => b.reduction_valeur - a.reduction_valeur);
+                    break;
+            }
+            
+            return sorted;
         }
 
         async function init() {
@@ -547,7 +642,7 @@
             const searchQuery = document.getElementById('search-input').value.toLowerCase();
             
             // Filtrer les produits
-            filteredProducts = allProducts.filter(p => {
+            let filtered = allProducts.filter(p => {
                 // Filtre marque
                 const isBrandMatch = selectedBrands.length === 0 || selectedBrands.includes(p.marque);
                 
@@ -563,11 +658,14 @@
                     p.nom.toLowerCase().includes(searchQuery) || 
                     p.marque.toLowerCase().includes(searchQuery);
                 
-                // Pas déjà rejeté
-                const isNotDisliked = !dislikedIds.includes(String(p.id));
+                // Pas déjà rejeté OU liké (NOUVEAU: retirer les likés du feed)
+                const isNotProcessed = !dislikedIds.includes(String(p.id)) && !likedIds.includes(String(p.id));
                 
-                return isBrandMatch && hasGoodDiscount && isPriceMatch && matchSearch && isNotDisliked;
+                return isBrandMatch && hasGoodDiscount && isPriceMatch && matchSearch && isNotProcessed;
             });
+
+            // Appliquer le tri
+            filteredProducts = sortProducts(filtered);
 
             // Feedback visuel sur le bouton
             if (event) {
@@ -598,6 +696,9 @@
             document.getElementById('prix-min').value = '';
             document.getElementById('prix-max').value = '';
             document.getElementById('search-input').value = '';
+            currentSort = 'discount_desc';
+            document.querySelectorAll('.sort-btn').forEach(btn => btn.classList.remove('active'));
+            document.getElementById('sort-discount-desc').classList.add('active');
             applyFilters();
         }
 
@@ -682,22 +783,43 @@
             if (type === 'like') {
                 if (!likedIds.includes(pId)) {
                     likedIds.push(pId);
+                    
+                    // VIBRATION au moment du like
+                    vibrate([50, 30, 50]); // Pattern: vibrer 50ms, pause 30ms, vibrer 50ms
+                    
                     confetti({ 
                         particleCount: 100, 
                         spread: 70, 
                         origin: { y: 0.6 }, 
                         colors: ['#facb15', '#ffffff'] 
                     });
-                    checkBadges(); // Vérifier les badges
+                    checkBadges();
+                    
+                    // Animation de retrait du feed
+                    wrapper.style.opacity = '0';
+                    wrapper.style.transform = 'scale(0.8)';
+                    wrapper.style.maxHeight = '0';
+                    
+                    setTimeout(() => {
+                        filteredProducts.splice(index, 1);
+                        render();
+                        updateCounts();
+                        updateActiveCard();
+                    }, 400);
+                    
                 } else {
+                    // Si déjà liké, on le retire des likes (toggle)
                     likedIds = likedIds.filter(id => id !== pId);
                 }
                 localStorage.setItem('pepite_likes', JSON.stringify(likedIds));
-                render(); 
+                
             } else if (type === 'nope') {
                 history.push({ index: index, data: product });
                 dislikedIds.push(pId);
                 localStorage.setItem('pepite_dislikes', JSON.stringify(dislikedIds));
+                
+                // Vibration légère pour le rejet
+                vibrate(30);
                 
                 wrapper.style.opacity = '0';
                 wrapper.style.maxHeight = '0';
@@ -742,6 +864,7 @@
         function setPriority(productId, priority) {
             priorities[String(productId)] = priority;
             localStorage.setItem('priorities', JSON.stringify(priorities));
+            vibrate(20); // Petite vibration de confirmation
             toggleSavedList();
             toggleSavedList(); // Refresh
         }
@@ -752,6 +875,7 @@
             if (note && note.trim()) {
                 notes[String(productId)] = note.trim();
                 localStorage.setItem('notes', JSON.stringify(notes));
+                vibrate(20);
                 toggleSavedList();
                 toggleSavedList(); // Refresh
             }
@@ -760,6 +884,7 @@
         function deleteNote(productId) {
             delete notes[String(productId)];
             localStorage.setItem('notes', JSON.stringify(notes));
+            vibrate(20);
             toggleSavedList();
             toggleSavedList();
         }
@@ -804,6 +929,8 @@
                 alert('💡 Sauvegarde quelques pépites pour obtenir des recommandations personnalisées !');
                 return;
             }
+            
+            vibrate(30);
             
             // Filtrer pour afficher uniquement les recommandations
             filteredProducts = reco;
@@ -939,6 +1066,8 @@
             `;
             document.body.appendChild(notif);
             
+            vibrate([100, 50, 100, 50, 100]); // Vibration spéciale pour les badges
+            
             confetti({ 
                 particleCount: 150, 
                 spread: 100, 
@@ -1024,7 +1153,12 @@
             localStorage.setItem('priorities', JSON.stringify(priorities));
             localStorage.setItem('notes', JSON.stringify(notes));
             
+            vibrate(30);
             updateCounts();
+            
+            // Réappliquer les filtres pour que l'article réapparaisse dans le feed
+            applyFilters();
+            
             toggleSavedList();
             toggleSavedList();
         }
@@ -1040,6 +1174,7 @@
                 }).catch(() => {});
             } else {
                 navigator.clipboard.writeText(url).then(() => {
+                    vibrate(20);
                     alert('✅ Lien copié dans le presse-papier !');
                 });
             }
